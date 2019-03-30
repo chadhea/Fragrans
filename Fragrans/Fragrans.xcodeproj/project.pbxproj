@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50C90F1222527D000DC5113 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50C90F0222527D000DC5113 /* AVFoundation.framework */; };
+		F521EE4B2238E09C00B0BC2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4A2238E09C00B0BC2B /* UIKit.framework */; };
+		F521EE4D2238E0A300B0BC2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4C2238E0A200B0BC2B /* Foundation.framework */; };
+		F521EE4F2238E0AD00B0BC2B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */; };
+		F58C4EC6224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E75224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m */; };
+		F58C4EC7224F510C0033A7F3 /* UIImageView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E76224F510C0033A7F3 /* UIImageView+Fragrans.m */; };
+		F58C4EC8224F510C0033A7F3 /* NSMutableString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E78224F510C0033A7F3 /* NSMutableString+Fragrans.m */; };
+		F58C4EC9224F510C0033A7F3 /* CALayer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */; };
+		F58C4ECA224F510C0033A7F3 /* NSDate+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E7A224F510C0033A7F3 /* NSDate+Fragrans.m */; };
+		F58C4ECB224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E7B224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m */; };
+		F58C4ECC224F510C0033A7F3 /* UITableView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E7F224F510C0033A7F3 /* UITableView+Fragrans.m */; };
+		F58C4ECD224F510C0033A7F3 /* NSArray+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E80224F510C0033A7F3 /* NSArray+Fragrans.m */; };
+		F58C4ECE224F510C0033A7F3 /* CABasicAnimation+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E81224F510C0033A7F3 /* CABasicAnimation+Fragrans.m */; };
+		F58C4ECF224F510C0033A7F3 /* UIImage+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E87224F510C0033A7F3 /* UIImage+Fragrans.m */; };
+		F58C4ED0224F510C0033A7F3 /* NSURLRequest+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E88224F510C0033A7F3 /* NSURLRequest+Fragrans.m */; };
+		F58C4ED1224F510C0033A7F3 /* UIScreen+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E8A224F510C0033A7F3 /* UIScreen+Fragrans.m */; };
+		F58C4ED2224F510C0033A7F3 /* UIButton+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E8B224F510C0033A7F3 /* UIButton+Fragrans.m */; };
+		F58C4ED3224F510C0033A7F3 /* UIView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E8E224F510C0033A7F3 /* UIView+Fragrans.m */; };
+		F58C4ED4224F510C0033A7F3 /* UISlider+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E90224F510C0033A7F3 /* UISlider+Fragrans.m */; };
+		F58C4ED5224F510C0033A7F3 /* NSNetService+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E91224F510C0033A7F3 /* NSNetService+Fragrans.m */; };
+		F58C4ED6224F510C0033A7F3 /* UIAlertController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E92224F510C0033A7F3 /* UIAlertController+Fragrans.m */; };
+		F58C4ED7224F510C0033A7F3 /* NSURLSession+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E93224F510C0033A7F3 /* NSURLSession+Fragrans.m */; };
+		F58C4ED8224F510C0033A7F3 /* UIBarButtonItem+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E97224F510C0033A7F3 /* UIBarButtonItem+Fragrans.m */; };
+		F58C4ED9224F510C0033A7F3 /* NSFileManager+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E98224F510C0033A7F3 /* NSFileManager+Fragrans.m */; };
+		F58C4EDA224F510C0033A7F3 /* UIDevice+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E99224F510C0033A7F3 /* UIDevice+Fragrans.m */; };
+		F58C4EDB224F510C0033A7F3 /* UILabel+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E9A224F510C0033A7F3 /* UILabel+Fragrans.m */; };
+		F58C4EDC224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E9B224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.m */; };
+		F58C4EDD224F510C0033A7F3 /* UITextView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E9C224F510C0033A7F3 /* UITextView+Fragrans.m */; };
+		F58C4EDE224F510C0033A7F3 /* NSData+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E9D224F510C0033A7F3 /* NSData+Fragrans.m */; };
+		F58C4EDF224F510C0033A7F3 /* NSString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E9E224F510C0033A7F3 /* NSString+Fragrans.m */; };
+		F58C4EE0224F510C0033A7F3 /* NSBundle+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E9F224F510C0033A7F3 /* NSBundle+Fragrans.m */; };
+		F58C4EE1224F510C0033A7F3 /* UIPageControl+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EA3224F510C0033A7F3 /* UIPageControl+Fragrans.m */; };
+		F58C4EE2224F510C0033A7F3 /* UIViewController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EA9224F510C0033A7F3 /* UIViewController+Fragrans.m */; };
+		F58C4EE3224F510C0033A7F3 /* NSDateFormatter+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EAB224F510C0033A7F3 /* NSDateFormatter+Fragrans.m */; };
+		F58C4EE4224F510C0033A7F3 /* UIFont+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EAC224F510C0033A7F3 /* UIFont+Fragrans.m */; };
+		F58C4EE5224F510C0033A7F3 /* UIScrollView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EAD224F510C0033A7F3 /* UIScrollView+Fragrans.m */; };
+		F58C4EE6224F510C0033A7F3 /* NSMutableDictionary+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EAE224F510C0033A7F3 /* NSMutableDictionary+Fragrans.m */; };
+		F58C4EE7224F510C0033A7F3 /* UIColor+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EB4224F510C0033A7F3 /* UIColor+Fragrans.m */; };
+		F58C4EE8224F510C0033A7F3 /* NSObject+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EB5224F510C0033A7F3 /* NSObject+Fragrans.m */; };
+		F58C4EE9224F510C0033A7F3 /* NSDictionary+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EB6224F510C0033A7F3 /* NSDictionary+Fragrans.m */; };
+		F58C4EEA224F510C0033A7F3 /* UITextField+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EB9224F510C0033A7F3 /* UITextField+Fragrans.m */; };
+		F58C4EEB224F510C0033A7F3 /* NSMutableArray+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EC0224F510C0033A7F3 /* NSMutableArray+Fragrans.m */; };
+		F58C4EEC224F510C0033A7F3 /* UISwitch+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EC1224F510C0033A7F3 /* UISwitch+Fragrans.m */; };
+		F58C4EED224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4EC2224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.m */; };
+		F5FAB6AF22003B4E00618786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6AE22003B4E00618786 /* AppDelegate.m */; };
+		F5FAB6B222003B4E00618786 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6B122003B4E00618786 /* ViewController.m */; };
+		F5FAB6B522003B4E00618786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B322003B4E00618786 /* Main.storyboard */; };
+		F5FAB6B722003B5200618786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B622003B5200618786 /* Assets.xcassets */; };
+		F5FAB6BA22003B5200618786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B822003B5200618786 /* LaunchScreen.storyboard */; };
+		F5FAB6BD22003B5200618786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6BC22003B5200618786 /* main.m */; };
+		F5FAB6C722003B5200618786 /* FragransTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6C622003B5200618786 /* FragransTests.m */; };
+		F5FAB6D222003B5200618786 /* FragransUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6D122003B5200618786 /* FragransUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5FAB6C322003B5200618786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FAB6A222003B4E00618786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FAB6A922003B4E00618786;
+			remoteInfo = Fragrans;
+		};
+		F5FAB6CE22003B5200618786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5FAB6A222003B4E00618786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5FAB6A922003B4E00618786;
+			remoteInfo = Fragrans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F50C90F0222527D000DC5113 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F521EE4A2238E09C00B0BC2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F521EE4C2238E0A200B0BC2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F58C4E75224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E76224F510C0033A7F3 /* UIImageView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E77224F510C0033A7F3 /* UIPageControl+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E78224F510C0033A7F3 /* NSMutableString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E7A224F510C0033A7F3 /* NSDate+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E7B224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E7C224F510C0033A7F3 /* NSString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E7D224F510C0033A7F3 /* NSData+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E7E224F510C0033A7F3 /* NSBundle+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E7F224F510C0033A7F3 /* UITableView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E80224F510C0033A7F3 /* NSArray+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E81224F510C0033A7F3 /* CABasicAnimation+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E82224F510C0033A7F3 /* NSMutableDictionary+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E83224F510C0033A7F3 /* UIScrollView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E84224F510C0033A7F3 /* UIFont+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E85224F510C0033A7F3 /* NSDateFormatter+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E86224F510C0033A7F3 /* UIViewController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E87224F510C0033A7F3 /* UIImage+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E88224F510C0033A7F3 /* NSURLRequest+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E89224F510C0033A7F3 /* UITextField+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E8A224F510C0033A7F3 /* UIScreen+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E8B224F510C0033A7F3 /* UIButton+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E8C224F510C0033A7F3 /* NSDictionary+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E8D224F510C0033A7F3 /* NSObject+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E8E224F510C0033A7F3 /* UIView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E8F224F510C0033A7F3 /* UIColor+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E90224F510C0033A7F3 /* UISlider+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E91224F510C0033A7F3 /* NSNetService+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetService+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E92224F510C0033A7F3 /* UIAlertController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E93224F510C0033A7F3 /* NSURLSession+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E94224F510C0033A7F3 /* UISwitch+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E95224F510C0033A7F3 /* NSMutableArray+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E96224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4E97224F510C0033A7F3 /* UIBarButtonItem+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E98224F510C0033A7F3 /* NSFileManager+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E99224F510C0033A7F3 /* UIDevice+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E9A224F510C0033A7F3 /* UILabel+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E9B224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetServiceBrowser+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E9C224F510C0033A7F3 /* UITextView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E9D224F510C0033A7F3 /* NSData+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E9E224F510C0033A7F3 /* NSString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4E9F224F510C0033A7F3 /* NSBundle+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EA0224F510C0033A7F3 /* UICollectionViewCell+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA1224F510C0033A7F3 /* NSDate+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA2224F510C0033A7F3 /* CALayer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA3224F510C0033A7F3 /* UIPageControl+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EA4224F510C0033A7F3 /* NSMutableString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA5224F510C0033A7F3 /* UIImageView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA6224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA7224F510C0033A7F3 /* NSURLRequest+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA8224F510C0033A7F3 /* UIImage+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EA9224F510C0033A7F3 /* UIViewController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EAA224F510C0033A7F3 /* FragransDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragransDefine.h; sourceTree = "<group>"; };
+		F58C4EAB224F510C0033A7F3 /* NSDateFormatter+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EAC224F510C0033A7F3 /* UIFont+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EAD224F510C0033A7F3 /* UIScrollView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EAE224F510C0033A7F3 /* NSMutableDictionary+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EAF224F510C0033A7F3 /* CABasicAnimation+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB0224F510C0033A7F3 /* NSArray+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB1224F510C0033A7F3 /* UITableView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB2224F510C0033A7F3 /* UISlider+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB3224F510C0033A7F3 /* UIView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB4224F510C0033A7F3 /* UIColor+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EB5224F510C0033A7F3 /* NSObject+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EB6224F510C0033A7F3 /* NSDictionary+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EB7224F510C0033A7F3 /* UIScreen+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB8224F510C0033A7F3 /* UIButton+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EB9224F510C0033A7F3 /* UITextField+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EBA224F510C0033A7F3 /* UITextView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EBB224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetServiceBrowser+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EBC224F510C0033A7F3 /* UILabel+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EBD224F510C0033A7F3 /* UIBarButtonItem+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EBE224F510C0033A7F3 /* UIDevice+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EBF224F510C0033A7F3 /* NSFileManager+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EC0224F510C0033A7F3 /* NSMutableArray+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EC1224F510C0033A7F3 /* UISwitch+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EC2224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Fragrans.m"; sourceTree = "<group>"; };
+		F58C4EC3224F510C0033A7F3 /* NSURLSession+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EC4224F510C0033A7F3 /* UIAlertController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EC5224F510C0033A7F3 /* NSNetService+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetService+Fragrans.h"; sourceTree = "<group>"; };
+		F58C4EEE224F515B0033A7F3 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
+		F5FAB6AA22003B4E00618786 /* Fragrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fragrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FAB6AD22003B4E00618786 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5FAB6AE22003B4E00618786 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5FAB6B022003B4E00618786 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5FAB6B122003B4E00618786 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5FAB6B422003B4E00618786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5FAB6B622003B5200618786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5FAB6B922003B5200618786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5FAB6BB22003B5200618786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FAB6BC22003B5200618786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5FAB6C222003B5200618786 /* FragransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FragransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FAB6C622003B5200618786 /* FragransTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransTests.m; sourceTree = "<group>"; };
+		F5FAB6C822003B5200618786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5FAB6CD22003B5200618786 /* FragransUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FragransUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FAB6D122003B5200618786 /* FragransUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransUITests.m; sourceTree = "<group>"; };
+		F5FAB6D322003B5200618786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5FAB6A722003B4E00618786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F521EE4F2238E0AD00B0BC2B /* CoreFoundation.framework in Frameworks */,
+				F521EE4D2238E0A300B0BC2B /* Foundation.framework in Frameworks */,
+				F521EE4B2238E09C00B0BC2B /* UIKit.framework in Frameworks */,
+				F50C90F1222527D000DC5113 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAB6BF22003B5200618786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAB6CA22003B5200618786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50C90EF222527CF00DC5113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */,
+				F521EE4C2238E0A200B0BC2B /* Foundation.framework */,
+				F521EE4A2238E09C00B0BC2B /* UIKit.framework */,
+				F50C90F0222527D000DC5113 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F58C4E74224F510C0033A7F3 /* Fragrans */ = {
+			isa = PBXGroup;
+			children = (
+				F58C4EEE224F515B0033A7F3 /* Fragrans.h */,
+				F58C4EAA224F510C0033A7F3 /* FragransDefine.h */,
+				F58C4EA2224F510C0033A7F3 /* CALayer+Fragrans.h */,
+				F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */,
+				F58C4EB0224F510C0033A7F3 /* NSArray+Fragrans.h */,
+				F58C4E80224F510C0033A7F3 /* NSArray+Fragrans.m */,
+				F58C4E95224F510C0033A7F3 /* NSMutableArray+Fragrans.h */,
+				F58C4EC0224F510C0033A7F3 /* NSMutableArray+Fragrans.m */,
+				F58C4E8C224F510C0033A7F3 /* NSDictionary+Fragrans.h */,
+				F58C4EB6224F510C0033A7F3 /* NSDictionary+Fragrans.m */,
+				F58C4E82224F510C0033A7F3 /* NSMutableDictionary+Fragrans.h */,
+				F58C4EAE224F510C0033A7F3 /* NSMutableDictionary+Fragrans.m */,
+				F58C4E7E224F510C0033A7F3 /* NSBundle+Fragrans.h */,
+				F58C4E9F224F510C0033A7F3 /* NSBundle+Fragrans.m */,
+				F58C4EBF224F510C0033A7F3 /* NSFileManager+Fragrans.h */,
+				F58C4E98224F510C0033A7F3 /* NSFileManager+Fragrans.m */,
+				F58C4E8D224F510C0033A7F3 /* NSObject+Fragrans.h */,
+				F58C4EB5224F510C0033A7F3 /* NSObject+Fragrans.m */,
+				F58C4EC3224F510C0033A7F3 /* NSURLSession+Fragrans.h */,
+				F58C4E93224F510C0033A7F3 /* NSURLSession+Fragrans.m */,
+				F58C4EA7224F510C0033A7F3 /* NSURLRequest+Fragrans.h */,
+				F58C4E88224F510C0033A7F3 /* NSURLRequest+Fragrans.m */,
+				F58C4EC5224F510C0033A7F3 /* NSNetService+Fragrans.h */,
+				F58C4E91224F510C0033A7F3 /* NSNetService+Fragrans.m */,
+				F58C4EBB224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.h */,
+				F58C4E9B224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.m */,
+				F58C4E84224F510C0033A7F3 /* UIFont+Fragrans.h */,
+				F58C4EAC224F510C0033A7F3 /* UIFont+Fragrans.m */,
+				F58C4E8F224F510C0033A7F3 /* UIColor+Fragrans.h */,
+				F58C4EB4224F510C0033A7F3 /* UIColor+Fragrans.m */,
+				F58C4EB7224F510C0033A7F3 /* UIScreen+Fragrans.h */,
+				F58C4E8A224F510C0033A7F3 /* UIScreen+Fragrans.m */,
+				F58C4EBE224F510C0033A7F3 /* UIDevice+Fragrans.h */,
+				F58C4E99224F510C0033A7F3 /* UIDevice+Fragrans.m */,
+				F58C4EA1224F510C0033A7F3 /* NSDate+Fragrans.h */,
+				F58C4E7A224F510C0033A7F3 /* NSDate+Fragrans.m */,
+				F58C4E85224F510C0033A7F3 /* NSDateFormatter+Fragrans.h */,
+				F58C4EAB224F510C0033A7F3 /* NSDateFormatter+Fragrans.m */,
+				F58C4E7D224F510C0033A7F3 /* NSData+Fragrans.h */,
+				F58C4E9D224F510C0033A7F3 /* NSData+Fragrans.m */,
+				F58C4E7C224F510C0033A7F3 /* NSString+Fragrans.h */,
+				F58C4E9E224F510C0033A7F3 /* NSString+Fragrans.m */,
+				F58C4EA4224F510C0033A7F3 /* NSMutableString+Fragrans.h */,
+				F58C4E78224F510C0033A7F3 /* NSMutableString+Fragrans.m */,
+				F58C4E96224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.h */,
+				F58C4EC2224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.m */,
+				F58C4EB3224F510C0033A7F3 /* UIView+Fragrans.h */,
+				F58C4E8E224F510C0033A7F3 /* UIView+Fragrans.m */,
+				F58C4EBC224F510C0033A7F3 /* UILabel+Fragrans.h */,
+				F58C4E9A224F510C0033A7F3 /* UILabel+Fragrans.m */,
+				F58C4EB8224F510C0033A7F3 /* UIButton+Fragrans.h */,
+				F58C4E8B224F510C0033A7F3 /* UIButton+Fragrans.m */,
+				F58C4E94224F510C0033A7F3 /* UISwitch+Fragrans.h */,
+				F58C4EC1224F510C0033A7F3 /* UISwitch+Fragrans.m */,
+				F58C4EB2224F510C0033A7F3 /* UISlider+Fragrans.h */,
+				F58C4E90224F510C0033A7F3 /* UISlider+Fragrans.m */,
+				F58C4EA8224F510C0033A7F3 /* UIImage+Fragrans.h */,
+				F58C4E87224F510C0033A7F3 /* UIImage+Fragrans.m */,
+				F58C4EA5224F510C0033A7F3 /* UIImageView+Fragrans.h */,
+				F58C4E76224F510C0033A7F3 /* UIImageView+Fragrans.m */,
+				F58C4E89224F510C0033A7F3 /* UITextField+Fragrans.h */,
+				F58C4EB9224F510C0033A7F3 /* UITextField+Fragrans.m */,
+				F58C4EBA224F510C0033A7F3 /* UITextView+Fragrans.h */,
+				F58C4E9C224F510C0033A7F3 /* UITextView+Fragrans.m */,
+				F58C4E83224F510C0033A7F3 /* UIScrollView+Fragrans.h */,
+				F58C4EAD224F510C0033A7F3 /* UIScrollView+Fragrans.m */,
+				F58C4EB1224F510C0033A7F3 /* UITableView+Fragrans.h */,
+				F58C4E7F224F510C0033A7F3 /* UITableView+Fragrans.m */,
+				F58C4E77224F510C0033A7F3 /* UIPageControl+Fragrans.h */,
+				F58C4EA3224F510C0033A7F3 /* UIPageControl+Fragrans.m */,
+				F58C4EBD224F510C0033A7F3 /* UIBarButtonItem+Fragrans.h */,
+				F58C4E97224F510C0033A7F3 /* UIBarButtonItem+Fragrans.m */,
+				F58C4EA0224F510C0033A7F3 /* UICollectionViewCell+Fragrans.h */,
+				F58C4E7B224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m */,
+				F58C4EA6224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.h */,
+				F58C4E75224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m */,
+				F58C4EC4224F510C0033A7F3 /* UIAlertController+Fragrans.h */,
+				F58C4E92224F510C0033A7F3 /* UIAlertController+Fragrans.m */,
+				F58C4E86224F510C0033A7F3 /* UIViewController+Fragrans.h */,
+				F58C4EA9224F510C0033A7F3 /* UIViewController+Fragrans.m */,
+				F58C4EAF224F510C0033A7F3 /* CABasicAnimation+Fragrans.h */,
+				F58C4E81224F510C0033A7F3 /* CABasicAnimation+Fragrans.m */,
+			);
+			path = Fragrans;
+			sourceTree = "<group>";
+		};
+		F5FAB6A122003B4E00618786 = {
+			isa = PBXGroup;
+			children = (
+				F5FAB6AC22003B4E00618786 /* Fragrans */,
+				F5FAB6C522003B5200618786 /* FragransTests */,
+				F5FAB6D022003B5200618786 /* FragransUITests */,
+				F5FAB6AB22003B4E00618786 /* Products */,
+				F50C90EF222527CF00DC5113 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5FAB6AB22003B4E00618786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAB6AA22003B4E00618786 /* Fragrans.app */,
+				F5FAB6C222003B5200618786 /* FragransTests.xctest */,
+				F5FAB6CD22003B5200618786 /* FragransUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5FAB6AC22003B4E00618786 /* Fragrans */ = {
+			isa = PBXGroup;
+			children = (
+				F58C4E74224F510C0033A7F3 /* Fragrans */,
+				F5FAB6AD22003B4E00618786 /* AppDelegate.h */,
+				F5FAB6AE22003B4E00618786 /* AppDelegate.m */,
+				F5FAB6B022003B4E00618786 /* ViewController.h */,
+				F5FAB6B122003B4E00618786 /* ViewController.m */,
+				F5FAB6B322003B4E00618786 /* Main.storyboard */,
+				F5FAB6B622003B5200618786 /* Assets.xcassets */,
+				F5FAB6B822003B5200618786 /* LaunchScreen.storyboard */,
+				F5FAB6BB22003B5200618786 /* Info.plist */,
+				F5FAB6BC22003B5200618786 /* main.m */,
+			);
+			path = Fragrans;
+			sourceTree = "<group>";
+		};
+		F5FAB6C522003B5200618786 /* FragransTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAB6C622003B5200618786 /* FragransTests.m */,
+				F5FAB6C822003B5200618786 /* Info.plist */,
+			);
+			path = FragransTests;
+			sourceTree = "<group>";
+		};
+		F5FAB6D022003B5200618786 /* FragransUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5FAB6D122003B5200618786 /* FragransUITests.m */,
+				F5FAB6D322003B5200618786 /* Info.plist */,
+			);
+			path = FragransUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5FAB6A922003B4E00618786 /* Fragrans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FAB6D622003B5200618786 /* Build configuration list for PBXNativeTarget "Fragrans" */;
+			buildPhases = (
+				F5FAB6A622003B4E00618786 /* Sources */,
+				F5FAB6A722003B4E00618786 /* Frameworks */,
+				F5FAB6A822003B4E00618786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fragrans;
+			productName = Fragrans;
+			productReference = F5FAB6AA22003B4E00618786 /* Fragrans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5FAB6C122003B5200618786 /* FragransTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FAB6D922003B5200618786 /* Build configuration list for PBXNativeTarget "FragransTests" */;
+			buildPhases = (
+				F5FAB6BE22003B5200618786 /* Sources */,
+				F5FAB6BF22003B5200618786 /* Frameworks */,
+				F5FAB6C022003B5200618786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FAB6C422003B5200618786 /* PBXTargetDependency */,
+			);
+			name = FragransTests;
+			productName = FragransTests;
+			productReference = F5FAB6C222003B5200618786 /* FragransTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5FAB6CC22003B5200618786 /* FragransUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5FAB6DC22003B5200618786 /* Build configuration list for PBXNativeTarget "FragransUITests" */;
+			buildPhases = (
+				F5FAB6C922003B5200618786 /* Sources */,
+				F5FAB6CA22003B5200618786 /* Frameworks */,
+				F5FAB6CB22003B5200618786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FAB6CF22003B5200618786 /* PBXTargetDependency */,
+			);
+			name = FragransUITests;
+			productName = FragransUITests;
+			productReference = F5FAB6CD22003B5200618786 /* FragransUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5FAB6A222003B4E00618786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					F5FAB6A922003B4E00618786 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F5FAB6C122003B5200618786 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F5FAB6A922003B4E00618786;
+					};
+					F5FAB6CC22003B5200618786 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F5FAB6A922003B4E00618786;
+					};
+				};
+			};
+			buildConfigurationList = F5FAB6A522003B4E00618786 /* Build configuration list for PBXProject "Fragrans" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5FAB6A122003B4E00618786;
+			productRefGroup = F5FAB6AB22003B4E00618786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5FAB6A922003B4E00618786 /* Fragrans */,
+				F5FAB6C122003B5200618786 /* FragransTests */,
+				F5FAB6CC22003B5200618786 /* FragransUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5FAB6A822003B4E00618786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FAB6BA22003B5200618786 /* LaunchScreen.storyboard in Resources */,
+				F5FAB6B722003B5200618786 /* Assets.xcassets in Resources */,
+				F5FAB6B522003B4E00618786 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAB6C022003B5200618786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAB6CB22003B5200618786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5FAB6A622003B4E00618786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58C4EE4224F510C0033A7F3 /* UIFont+Fragrans.m in Sources */,
+				F58C4ED1224F510C0033A7F3 /* UIScreen+Fragrans.m in Sources */,
+				F58C4ED0224F510C0033A7F3 /* NSURLRequest+Fragrans.m in Sources */,
+				F5FAB6B222003B4E00618786 /* ViewController.m in Sources */,
+				F5FAB6BD22003B5200618786 /* main.m in Sources */,
+				F58C4ED6224F510C0033A7F3 /* UIAlertController+Fragrans.m in Sources */,
+				F58C4EE7224F510C0033A7F3 /* UIColor+Fragrans.m in Sources */,
+				F58C4EC6224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m in Sources */,
+				F58C4ECF224F510C0033A7F3 /* UIImage+Fragrans.m in Sources */,
+				F58C4EE6224F510C0033A7F3 /* NSMutableDictionary+Fragrans.m in Sources */,
+				F58C4EE1224F510C0033A7F3 /* UIPageControl+Fragrans.m in Sources */,
+				F58C4EE3224F510C0033A7F3 /* NSDateFormatter+Fragrans.m in Sources */,
+				F58C4EDE224F510C0033A7F3 /* NSData+Fragrans.m in Sources */,
+				F58C4EEB224F510C0033A7F3 /* NSMutableArray+Fragrans.m in Sources */,
+				F58C4ED5224F510C0033A7F3 /* NSNetService+Fragrans.m in Sources */,
+				F58C4ECE224F510C0033A7F3 /* CABasicAnimation+Fragrans.m in Sources */,
+				F58C4EDA224F510C0033A7F3 /* UIDevice+Fragrans.m in Sources */,
+				F58C4EE0224F510C0033A7F3 /* NSBundle+Fragrans.m in Sources */,
+				F58C4EDC224F510C0033A7F3 /* NSNetServiceBrowser+Fragrans.m in Sources */,
+				F58C4EEA224F510C0033A7F3 /* UITextField+Fragrans.m in Sources */,
+				F58C4ECD224F510C0033A7F3 /* NSArray+Fragrans.m in Sources */,
+				F58C4EDF224F510C0033A7F3 /* NSString+Fragrans.m in Sources */,
+				F58C4ECB224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m in Sources */,
+				F58C4ED3224F510C0033A7F3 /* UIView+Fragrans.m in Sources */,
+				F58C4EC7224F510C0033A7F3 /* UIImageView+Fragrans.m in Sources */,
+				F58C4EEC224F510C0033A7F3 /* UISwitch+Fragrans.m in Sources */,
+				F58C4ED7224F510C0033A7F3 /* NSURLSession+Fragrans.m in Sources */,
+				F58C4ECC224F510C0033A7F3 /* UITableView+Fragrans.m in Sources */,
+				F58C4ED2224F510C0033A7F3 /* UIButton+Fragrans.m in Sources */,
+				F58C4EDD224F510C0033A7F3 /* UITextView+Fragrans.m in Sources */,
+				F58C4ED9224F510C0033A7F3 /* NSFileManager+Fragrans.m in Sources */,
+				F58C4EE2224F510C0033A7F3 /* UIViewController+Fragrans.m in Sources */,
+				F58C4EC8224F510C0033A7F3 /* NSMutableString+Fragrans.m in Sources */,
+				F58C4EE8224F510C0033A7F3 /* NSObject+Fragrans.m in Sources */,
+				F58C4ECA224F510C0033A7F3 /* NSDate+Fragrans.m in Sources */,
+				F5FAB6AF22003B4E00618786 /* AppDelegate.m in Sources */,
+				F58C4EED224F510C0033A7F3 /* NSMutableAttributedString+Fragrans.m in Sources */,
+				F58C4EDB224F510C0033A7F3 /* UILabel+Fragrans.m in Sources */,
+				F58C4EE9224F510C0033A7F3 /* NSDictionary+Fragrans.m in Sources */,
+				F58C4EE5224F510C0033A7F3 /* UIScrollView+Fragrans.m in Sources */,
+				F58C4ED8224F510C0033A7F3 /* UIBarButtonItem+Fragrans.m in Sources */,
+				F58C4EC9224F510C0033A7F3 /* CALayer+Fragrans.m in Sources */,
+				F58C4ED4224F510C0033A7F3 /* UISlider+Fragrans.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAB6BE22003B5200618786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FAB6C722003B5200618786 /* FragransTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5FAB6C922003B5200618786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5FAB6D222003B5200618786 /* FragransUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5FAB6C422003B5200618786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FAB6A922003B4E00618786 /* Fragrans */;
+			targetProxy = F5FAB6C322003B5200618786 /* PBXContainerItemProxy */;
+		};
+		F5FAB6CF22003B5200618786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5FAB6A922003B4E00618786 /* Fragrans */;
+			targetProxy = F5FAB6CE22003B5200618786 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5FAB6B322003B4E00618786 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FAB6B422003B4E00618786 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5FAB6B822003B5200618786 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5FAB6B922003B5200618786 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5FAB6D422003B5200618786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5FAB6D522003B5200618786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5FAB6D722003B5200618786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK9Z5ULKZ;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Fragrans/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qmz.Fragrans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5FAB6D822003B5200618786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK9Z5ULKZ;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = Fragrans/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qmz.Fragrans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F5FAB6DA22003B5200618786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK9Z5ULKZ;
+				INFOPLIST_FILE = FragransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qmz.FragransTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fragrans.app/Fragrans";
+			};
+			name = Debug;
+		};
+		F5FAB6DB22003B5200618786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK9Z5ULKZ;
+				INFOPLIST_FILE = FragransTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qmz.FragransTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fragrans.app/Fragrans";
+			};
+			name = Release;
+		};
+		F5FAB6DD22003B5200618786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK9Z5ULKZ;
+				INFOPLIST_FILE = FragransUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qmz.FragransUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fragrans;
+			};
+			name = Debug;
+		};
+		F5FAB6DE22003B5200618786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZKK9Z5ULKZ;
+				INFOPLIST_FILE = FragransUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qmz.FragransUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fragrans;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5FAB6A522003B4E00618786 /* Build configuration list for PBXProject "Fragrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FAB6D422003B5200618786 /* Debug */,
+				F5FAB6D522003B5200618786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FAB6D622003B5200618786 /* Build configuration list for PBXNativeTarget "Fragrans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FAB6D722003B5200618786 /* Debug */,
+				F5FAB6D822003B5200618786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FAB6D922003B5200618786 /* Build configuration list for PBXNativeTarget "FragransTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FAB6DA22003B5200618786 /* Debug */,
+				F5FAB6DB22003B5200618786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5FAB6DC22003B5200618786 /* Build configuration list for PBXNativeTarget "FragransUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5FAB6DD22003B5200618786 /* Debug */,
+				F5FAB6DE22003B5200618786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5FAB6A222003B4E00618786 /* Project object */;
+}
