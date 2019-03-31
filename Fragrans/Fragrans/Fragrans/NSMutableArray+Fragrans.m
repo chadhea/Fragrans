@@ -21,7 +21,7 @@
     });
 }
 
-- (id)frg_objectAtIndex:(long)index{
+- (id)frg_objectAtIndex:(NSUInteger)index{
     if (index < self.count) {
         return [self frg_objectAtIndex:index];
     }else{
@@ -30,7 +30,7 @@
     }
 }
 
-- (id)frg_objectAtIndexedSubscript:(long)index{
+- (id)frg_objectAtIndexedSubscript:(NSUInteger)index{
     if (index < self.count) {
         return [self frg_objectAtIndexedSubscript:index];
     }else{
