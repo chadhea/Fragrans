@@ -8,6 +8,7 @@
 #ifndef Fragrans_h
 #define Fragrans_h
 
+/*
 #import "NSArray+Fragrans.h"
 #import "NSMutableArray+Fragrans.h"
 #import "NSDictionary+Fragrans.h"
@@ -47,7 +48,7 @@
 #import "UIAlertController+Fragrans.h"
 #import "UIViewController+Fragrans.h"
 #import "CABasicAnimation+Fragrans.h"
-
+*/
 
 #endif /* Fragrans_h */
 
