@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.public_header_files = "Fragrans/Fragrans/Fragrans/Fragrans.h"
   
   s.subspec 'Fragrans' do |ss|
-    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Fragrans/**/*'
+    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Fragrans'
     ss.source_files = 'Fragrans/Fragrans/Fragrans/Fragrans/**/*'
   end
 	
