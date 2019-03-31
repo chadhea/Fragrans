@@ -8,7 +8,6 @@
 #ifndef Fragrans_h
 #define Fragrans_h
 
-#import "CALayer+Fragrans.h"
 #import "NSArray+Fragrans.h"
 #import "NSMutableArray+Fragrans.h"
 #import "NSDictionary+Fragrans.h"

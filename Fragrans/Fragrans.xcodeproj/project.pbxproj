@@ -14,7 +14,6 @@
 		F58C4EC6224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E75224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m */; };
 		F58C4EC7224F510C0033A7F3 /* UIImageView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E76224F510C0033A7F3 /* UIImageView+Fragrans.m */; };
 		F58C4EC8224F510C0033A7F3 /* NSMutableString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E78224F510C0033A7F3 /* NSMutableString+Fragrans.m */; };
-		F58C4EC9224F510C0033A7F3 /* CALayer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */; };
 		F58C4ECA224F510C0033A7F3 /* NSDate+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E7A224F510C0033A7F3 /* NSDate+Fragrans.m */; };
 		F58C4ECB224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E7B224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m */; };
 		F58C4ECC224F510C0033A7F3 /* UITableView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C4E7F224F510C0033A7F3 /* UITableView+Fragrans.m */; };
@@ -87,7 +86,6 @@
 		F58C4E76224F510C0033A7F3 /* UIImageView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4E77224F510C0033A7F3 /* UIPageControl+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4E78224F510C0033A7F3 /* NSMutableString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Fragrans.m"; sourceTree = "<group>"; };
-		F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4E7A224F510C0033A7F3 /* NSDate+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4E7B224F510C0033A7F3 /* UICollectionViewCell+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4E7C224F510C0033A7F3 /* NSString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Fragrans.h"; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		F58C4E9F224F510C0033A7F3 /* NSBundle+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4EA0224F510C0033A7F3 /* UICollectionViewCell+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EA1224F510C0033A7F3 /* NSDate+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Fragrans.h"; sourceTree = "<group>"; };
-		F58C4EA2224F510C0033A7F3 /* CALayer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EA3224F510C0033A7F3 /* UIPageControl+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4EA4224F510C0033A7F3 /* NSMutableString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EA5224F510C0033A7F3 /* UIImageView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Fragrans.h"; sourceTree = "<group>"; };
@@ -226,8 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				F58C4EEE224F515B0033A7F3 /* Fragrans.h */,
-				F58C4EA2224F510C0033A7F3 /* CALayer+Fragrans.h */,
-				F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */,
 				F58C4EB0224F510C0033A7F3 /* NSArray+Fragrans.h */,
 				F58C4E80224F510C0033A7F3 /* NSArray+Fragrans.m */,
 				F58C4E95224F510C0033A7F3 /* NSMutableArray+Fragrans.h */,
@@ -536,7 +531,6 @@
 				F58C4EE9224F510C0033A7F3 /* NSDictionary+Fragrans.m in Sources */,
 				F58C4EE5224F510C0033A7F3 /* UIScrollView+Fragrans.m in Sources */,
 				F58C4ED8224F510C0033A7F3 /* UIBarButtonItem+Fragrans.m in Sources */,
-				F58C4EC9224F510C0033A7F3 /* CALayer+Fragrans.m in Sources */,
 				F58C4ED4224F510C0033A7F3 /* UISlider+Fragrans.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
