@@ -10,7 +10,7 @@
 #import "NSString+Fragrans.h"
 #import "UIFont+Fragrans.h"
 #import "UIColor+Fragrans.h"
-#import "FragransDefine.h"
+#import "Fragrans.h"
 static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
 
 @implementation UITextField (Fragrans)

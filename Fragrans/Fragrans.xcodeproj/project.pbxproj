@@ -136,7 +136,6 @@
 		F58C4EA7224F510C0033A7F3 /* NSURLRequest+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EA8224F510C0033A7F3 /* UIImage+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EA9224F510C0033A7F3 /* UIViewController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Fragrans.m"; sourceTree = "<group>"; };
-		F58C4EAA224F510C0033A7F3 /* FragransDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragransDefine.h; sourceTree = "<group>"; };
 		F58C4EAB224F510C0033A7F3 /* NSDateFormatter+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4EAC224F510C0033A7F3 /* UIFont+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4EAD224F510C0033A7F3 /* UIScrollView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Fragrans.m"; sourceTree = "<group>"; };
@@ -227,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				F58C4EEE224F515B0033A7F3 /* Fragrans.h */,
-				F58C4EAA224F510C0033A7F3 /* FragransDefine.h */,
 				F58C4EA2224F510C0033A7F3 /* CALayer+Fragrans.h */,
 				F58C4E79224F510C0033A7F3 /* CALayer+Fragrans.m */,
 				F58C4EB0224F510C0033A7F3 /* NSArray+Fragrans.h */,
