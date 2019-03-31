@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Fragrans/Fragrans/Fragrans/**/*"
 
-  s.public_header_files = "Fragrans/Fragrans/Fragrans/Fragrans.h"
+  s.public_header_files = "Fragrans/Fragrans/Fragrans.h"
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
