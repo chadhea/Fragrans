@@ -21,20 +21,20 @@
     });
 }
 
-- (id)frg_objectAtIndex:(NSUInteger)index{
+- (id)frg_objectAtIndex:(unsigned long)index{
     if (index < self.count) {
         return [self frg_objectAtIndex:index];
     }else{
-        NSLog(@"已处理NSMutableArray的越界情况.objectAtIndex = %ld.withArray:%@,count = %ld", index,self,self.count);
+        NSLog(@"已处理NSMutableArray的越界情况.objectAtIndex = %lu.withArray:%@,count = %lu", (unsigned long)index,self,(unsigned long)self.count);
         return nil;
     }
 }
 
-- (id)frg_objectAtIndexedSubscript:(NSUInteger)index{
+- (id)frg_objectAtIndexedSubscript:(unsigned long)index{
     if (index < self.count) {
         return [self frg_objectAtIndexedSubscript:index];
     }else{
-        NSLog(@"已处理NSMutableArray的越界情况.objectAtIndex = %ld.withArray:%@,count = %ld", index,self,self.count);
+        NSLog(@"已处理NSMutableArray的越界情况.objectAtIndex = %lu.withArray:%@,count = %lu", (unsigned long)index,self,(unsigned long)self.count);
         return nil;
     }
 }

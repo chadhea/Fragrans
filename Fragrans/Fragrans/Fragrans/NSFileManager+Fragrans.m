@@ -211,10 +211,9 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL existed = [fileManager fileExistsAtPath:directoryPath isDirectory:&isDir];
     if (!existed) {
-        existed = [self createDirectory:directoryPath];
-        if (existed) {
-            isDir = YES;
-        }
+        [self createDirectory:directoryPath];
+        existed = YES;
+        isDir = YES;
     }
     BOOL isSaved = NO;
     if ( isDir == YES && existed == YES ) {
@@ -299,7 +298,7 @@
  */
 + (NSString *)convertFileSize:(long long)length {
     if(length < 1024)
-        return [NSString stringWithFormat:@"%ldB",(NSUInteger)length];
+        return [NSString stringWithFormat:@"%luB",(unsigned long)length];
     else if(length >= 1024 && length < 1024*1024)
         return [NSString stringWithFormat:@"%.2fKB",(float)length/1024.0];
     else if(length >= 1024*1024 &&length < 1024*1024*1024)
