@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios,'8.0'
   s.source       = { :git => "https://github.com/chadhea/Fragrans.git", :tag => s.version }
 
-  s.source_files  = "Fragrans/Fragrans/Fragrans.{h,m}"
+  s.source_files  = "Fragrans/Fragrans/Header.{h,m}"
 
   s.public_header_files = "Fragrans/Fragrans/Header/Fragrans.h"
 
