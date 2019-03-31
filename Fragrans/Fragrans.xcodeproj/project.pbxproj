@@ -82,6 +82,7 @@
 		F521EE4A2238E09C00B0BC2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F521EE4C2238E0A200B0BC2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F5694D6122508DE200BD4F80 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
 		F58C4E75224F510C0033A7F3 /* UITapGestureRecognizer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4E76224F510C0033A7F3 /* UIImageView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Fragrans.m"; sourceTree = "<group>"; };
 		F58C4E77224F510C0033A7F3 /* UIPageControl+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+Fragrans.h"; sourceTree = "<group>"; };
@@ -160,7 +161,6 @@
 		F58C4EC3224F510C0033A7F3 /* NSURLSession+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EC4224F510C0033A7F3 /* UIAlertController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Fragrans.h"; sourceTree = "<group>"; };
 		F58C4EC5224F510C0033A7F3 /* NSNetService+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetService+Fragrans.h"; sourceTree = "<group>"; };
-		F58C4EEE224F515B0033A7F3 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
 		F5FAB6AA22003B4E00618786 /* Fragrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fragrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FAB6AD22003B4E00618786 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5FAB6AE22003B4E00618786 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -219,10 +219,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F5694D6022508DE200BD4F80 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F5694D6122508DE200BD4F80 /* Fragrans.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		F58C4E74224F510C0033A7F3 /* Fragrans */ = {
 			isa = PBXGroup;
 			children = (
-				F58C4EEE224F515B0033A7F3 /* Fragrans.h */,
 				F58C4EB0224F510C0033A7F3 /* NSArray+Fragrans.h */,
 				F58C4E80224F510C0033A7F3 /* NSArray+Fragrans.m */,
 				F58C4E95224F510C0033A7F3 /* NSMutableArray+Fragrans.h */,
@@ -329,6 +336,7 @@
 		F5FAB6AC22003B4E00618786 /* Fragrans */ = {
 			isa = PBXGroup;
 			children = (
+				F5694D6022508DE200BD4F80 /* Header */,
 				F58C4E74224F510C0033A7F3 /* Fragrans */,
 				F5FAB6AD22003B4E00618786 /* AppDelegate.h */,
 				F5FAB6AE22003B4E00618786 /* AppDelegate.m */,
