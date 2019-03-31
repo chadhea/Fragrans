@@ -8,7 +8,7 @@
 #import "NSURLRequest+Fragrans.h"
 #import "NSString+Fragrans.h"
 #import "NSDictionary+Fragrans.h"
-#import "Fragrans.h"
+#import "FragransDefine.h"
 @implementation NSURLRequest (Fragrans)
 
 /**
