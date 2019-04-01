@@ -187,7 +187,7 @@ UIScrollView+Fragrans
 ```
 UIScrollView   *scroll = [UIScrollView scrollViewWithFrame:CGRectMake(10, 100, [UIScreen screenWidth] - 20, 80) contentSize:CGSizeZero backgroundColor:@"c" showsScrollIndicator:NO bounces:YES delegate:self];
 [self addSubview:scroll];
-//scroll上添加图片
+//scroll上添加图片,contentSize属性自动适应
 [scroll addimages:@[@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",@"ceshi_normal"] starPoint:CGPointMake(10, 10) interval:10 direction:Frg_ScrollViewAddImageDirectionType_Horizontal taps:^(id  _Nonnull sender, NSInteger index) {
    //每张图片的点击事件
         
