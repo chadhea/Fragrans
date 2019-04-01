@@ -2,8 +2,7 @@
 //  FragransDemoController.m
 //  Fragrans
 //
-//  Created by 祁明振 on 2019/3/31.
-//
+
 
 #import "FragransDemoController.h"
 
