@@ -121,7 +121,8 @@ pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
 [self addSubview:pageControl];
 ```  
 效果  
-![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)
+![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)  
+
 NSString+Fragrans  
 ```
 //判断字符串是否符合要求。比如是否为手机号、邮箱、身份证等，如：
