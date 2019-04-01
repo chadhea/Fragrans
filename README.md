@@ -37,7 +37,7 @@ UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:
 ```
 效果  
 ![uilabel_01](https://github.com/chadhea/Fragrans_image/blob/master/UILabel/uilabel_01.png)  
-UITextField+Frafrans示例
+UITextField+Frafrans示例  
 ```
 UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30)  placeholder:@"测试" font:@14 textColor:@3  delegate:self];
 [self addSubview:textField];
@@ -50,7 +50,20 @@ UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 
 }];
 ```  
 效果  
-![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)
+![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)  
+UIButton+Fragrans示例  
+```
+UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) bounds:CGRectMake(0, 0, 150, 100) title:@"测试" font:@"15" titleColor:[UIColor redColor] backgroundColor:@"e" target:self action:@selector(ceshiclick)];
+[self addSubview:button];
+//设置图片
+[button normalImage:@"ceshi_normal" selectImage:@"ceshi_select"];
+//设置button的titleLabel和imageView的布局样式，及间距
+//FRGButtonEdgeInsetsStyleTop、Bottom、Left、Right、Center
+[button layoutButtonWithEdgeInsetsStyle:FRGButtonEdgeInsetsStyleCenter imageTitleSpace:10];
+```  
+效果  
+![button_top](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_top.png)![button_bottom](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_bottom.png)![button_left](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_left.png)![button_right](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_right.png)![button_center](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_center.png)  
+
 
 
 
