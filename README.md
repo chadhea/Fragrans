@@ -1,4 +1,4 @@
-# Fragrans
+![fragrans_icon](https://github.com/chadhea/Fragrans_image/blob/master/fragrans_icon.png)
 类属性方法扩展辅助工具
 
 Installation with CocoaPods  
@@ -49,6 +49,8 @@ UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 
     //返回长度内字符串
 }];
 ```
+效果
+![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)
 
 
 
