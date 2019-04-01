@@ -122,7 +122,20 @@ pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
 ```  
 效果  
 ![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)
-
+NSString+Fragrans  
+```
+//判断字符串是否符合要求。比如是否为手机号、邮箱、身份证等，如：
+NSString   *str = @"xxx@163.com";
+[str isEmailValidate];//是否为邮箱
+//对字符串进行加密和解密,如：
+[NSString encrypt_md5With:@"xxx"];//md5加密
+NSString *key = @"key";//加密解密的key
+NSString *jiami_str = [NSString  encryptAESWithString:@"xxx" secretKey:key];//AES加密
+[NSString decryptAESWithString:jiami_str secretKey:key];//AES解密,返回原字符串
+//过滤特殊的字符
+[NSString filterHTML:@"xxx"];//去除html标签对
+[NSString filterEmoji:@"xxx"];//去除emoji表情
+```
 
 
 
