@@ -37,3 +37,21 @@ UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:
 ```
 效果  
 ![uilabel_01](https://github.com/chadhea/Fragrans_image/blob/master/UILabel/uilabel_01.png)  
+UITextField+Frafrans示例
+```
+UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30)  placeholder:@"测试" font:@14 textColor:@3  delegate:self];
+[self addSubview:textField];
+[textField layerBorderColor:@9 width:1];
+//设置placeholder颜色和字体
+[textField placeholderColor:[UIColor redColor] placeholderFont:@14];
+//限制最多可以输入的字符,并返回长度内字符串
+[textField maxLength:10 textStringBlock:^(NSString * _Nonnull textString) {
+    //返回长度内字符串
+}];
+```
+
+
+
+
+
+
