@@ -967,7 +967,7 @@ static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
     }else {
         textField.textAlignment = NSTextAlignmentLeft;
     }
-    textField.clearButtonMode = UITextFieldViewModeAlways;
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     return textField;
 }
 

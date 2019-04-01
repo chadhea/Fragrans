@@ -2051,6 +2051,67 @@ static const char  *frg_imageRectKey = "frg_imageRectKey";
     self.contentVerticalAlignment = verticalAlignment;
 }
 
+
+/**
+ set button normalImage + selectImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param selectImage UIImage或者NSString格式
+ */
+- (void)normalImage:(id)normalImage selectImage:(id)selectImage {
+    if (normalImage) {
+        [self setImage:[UIImage safeImage:normalImage] forState:UIControlStateNormal];
+    }
+    if (selectImage) {
+        [self setImage:[UIImage safeImage:selectImage] forState:UIControlStateSelected];
+    }
+}
+
+/**
+ set button normalImage + highlightedImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param highlightedImage UIImage或者NSString格式
+ */
+- (void)normalImage:(id)normalImage highlightedImage:(id)highlightedImage {
+    if (normalImage) {
+        [self setImage:[UIImage safeImage:normalImage] forState:UIControlStateNormal];
+    }
+    if (highlightedImage) {
+        [self setImage:[UIImage safeImage:highlightedImage] forState:UIControlStateHighlighted];
+    }
+}
+
+/**
+ set button by normalImage + selectImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param selectImage UIImage或者NSString格式
+ */
+- (void)normalBackgroundImage:(id)normalImage selectBackgroundImage:(id)selectImage {
+    if (normalImage) {
+        [self setBackgroundImage:[UIImage safeImage:normalImage] forState:UIControlStateNormal];
+    }
+    if (selectImage) {
+        [self setBackgroundImage:[UIImage safeImage:selectImage] forState:UIControlStateSelected];
+    }
+}
+
+/**
+ set button normalImage + highlightedImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param highlightedImage UIImage或者NSString格式
+ */
+- (void)normalBackgroundImage:(id)normalImage highlightedBackgroundImage:(id)highlightedImage {
+    if (normalImage) {
+        [self setBackgroundImage:[UIImage safeImage:normalImage] forState:UIControlStateNormal];
+    }
+    if (highlightedImage) {
+        [self setBackgroundImage:[UIImage safeImage:highlightedImage] forState:UIControlStateHighlighted];
+    }
+}
+
 /**
  设置button的titleLabel和imageView的布局样式，及间距
  

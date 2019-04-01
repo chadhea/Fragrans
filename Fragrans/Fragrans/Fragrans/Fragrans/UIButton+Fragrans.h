@@ -1520,6 +1520,38 @@ typedef NS_ENUM(NSUInteger, FRGButtonEdgeInsetsStyle) {
  */
 - (void)horizontalAlignment:(UIControlContentHorizontalAlignment)horizontalAlignment verticalAlignment:(UIControlContentVerticalAlignment)verticalAlignment;
 
+/**
+ set button normalImage + selectImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param selectImage UIImage或者NSString格式
+ */
+- (void)normalImage:(id)normalImage selectImage:(id)selectImage;
+
+/**
+ set button normalImage + highlightedImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param highlightedImage UIImage或者NSString格式
+ */
+- (void)normalImage:(id)normalImage highlightedImage:(id)highlightedImage;
+
+/**
+ set button by normalImage + selectImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param selectImage UIImage或者NSString格式
+ */
+- (void)normalBackgroundImage:(id)normalImage selectBackgroundImage:(id)selectImage;
+
+/**
+ set button normalImage + highlightedImage
+ 
+ @param normalImage UIImage或者NSString格式
+ @param highlightedImage UIImage或者NSString格式
+ */
+- (void)normalBackgroundImage:(id)normalImage highlightedBackgroundImage:(id)highlightedImage;
+
 #pragma mark --- 添加button样式
 @property (nonatomic,assign) CGRect titleRect;/**< 可用来控制按钮的titleRect */
 @property (nonatomic,assign) CGRect imageRect;/**< 可用来控制按钮的imageRect */
