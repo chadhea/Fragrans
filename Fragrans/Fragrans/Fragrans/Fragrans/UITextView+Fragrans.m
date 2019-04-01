@@ -1014,7 +1014,7 @@
  color 默认cccccc
  */
 - (void)placeholder:(NSString *)placeholder {
-    [self placeholder:placeholder font:@14 color:@"c"];
+    [self placeholder:placeholder font:self.font color:@"c"];
 }
 /**
  设置placeholder
@@ -1027,7 +1027,8 @@
     if (placeholder.length <= 0) {
         return;
     }
-    UILabel   *placeholderLab = [UILabel labelWithFrame:CGRectMake(5, 4, [placeholder boundingWidthForFont:font] + 3, 17) text:placeholder font:font textColor:color backgroundColor:[UIColor clearColor]];
+    CGFloat  fontstr = [UIFont safeFont:font].pointSize;
+    UILabel   *placeholderLab = [UILabel labelWithFrame:CGRectMake(5, 10 * fontstr / 15.0, [placeholder boundingWidthForFont:font] + 3, 17) text:placeholder font:font textColor:color backgroundColor:[UIColor clearColor]];
     [self addSubview:placeholderLab];
     self.frg_placeholderLabel = placeholderLab;
     if (self.text.length > 0) {
