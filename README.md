@@ -102,7 +102,19 @@ UIDevice+Fragrans
 [UIDevice totalMemorySpace];//获取系统总内存空间  
 [UIDevice cpuFrequency];//CPU使用频率  
 ...
+```  
+NSFileManager+Fragrans  
 ```
+[NSFileManager homeDirectoryPath];//获取Directory的路径  
+[NSFileManager removeFile:@"xx"];//删除一个文件  
+[NSFileManager createDirectory:@"xx"];//创建文件夹  
+[NSFileManager copyResourceFileToCachesDirectory:@"xx"];//拷贝资源目录文件到caches目录  
+[NSFileManager saveImageToDirectoryPath:@"xx" image:image imageName:@"ceshi" imageType:@"png"];//存储图片到指定的目录下  
+[NSFileManager loadResourceByDirectoryPath:@"xx"];//获取指定目录下的资源  
+[NSFileManager fileSizeAtPath:@"xx"];//获取文件或者文件夹占用空间（单位跟随文件大小变化）  
+...
+```
+
 
 
 
