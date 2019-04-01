@@ -15,7 +15,7 @@ end
 部分代码示例  
 =
 
-NSURLRequest+Fragrans示例  
+NSURLRequest+Fragrans  
 ```
 [NSURLRequest post_requestWithURL:@"xxx" params:@{} completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
      //数据解析
@@ -30,7 +30,7 @@ BOOL net = [NSNetService checkNetWork];
 };
 ```
 
-UIView+Fragrans示例
+UIView+Fragrans  
 ```
 UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) backgroundColor:@9 tap:^(id  _Nonnull sender) {
    //点击事件
@@ -41,7 +41,7 @@ UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) background
 ```
 效果  
 ![uiview_01](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_01.png)  
-UILabel+Fragrans示例
+UILabel+Fragrans  
 ```
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter tap:^(id  _Nonnull sender) {
     //点击事件
@@ -54,7 +54,7 @@ UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:
 ```
 效果  
 ![uilabel_01](https://github.com/chadhea/Fragrans_image/blob/master/UILabel/uilabel_01.png)  
-UITextField+Frafrans示例  
+UITextField+Frafrans   
 ```
 UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30)  placeholder:@"测试" font:@14 textColor:@3  delegate:self];
 [self addSubview:textField];
@@ -68,7 +68,7 @@ UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 
 ```  
 效果  
 ![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)  
-UIButton+Fragrans示例  
+UIButton+Fragrans  
 ```
 UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) bounds:CGRectMake(0, 0, 150, 100) title:@"测试" font:@"15" titleColor:[UIColor redColor] backgroundColor:@"e" target:self action:@selector(ceshiclick)];
 [self addSubview:button];
