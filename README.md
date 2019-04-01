@@ -136,7 +136,14 @@ NSString *jiami_str = [NSString  encryptAESWithString:@"xxx" secretKey:key];//AE
 //过滤特殊的字符
 [NSString filterHTML:@"xxx"];//去除html标签对
 [NSString filterEmoji:@"xxx"];//去除emoji表情
+```   
+UISlider+Fragrans  
 ```
+UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 200, 30) value:10 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] minimumTrackTintColor:[UIColor cyanColor] maximumTrackTintColor:[UIColor redColor] target:self action:@selector(sliderEvent:)];
+[self addSubview:slider];
+```  
+效果  
+![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_01.png)  
 
 
 
