@@ -17,6 +17,11 @@ end
 
 NSURLRequest+Fragrans  
 ```
+//get
+[NSURLRequest get_requestWithURL:@"" params:nil completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
+     //数据解析
+}];
+//post
 [NSURLRequest post_requestWithURL:@"xxx" params:@{} completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
      //数据解析
 }];
