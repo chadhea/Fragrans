@@ -9,7 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'Fragrans', '~> 0.0.2'
+pod 'Fragrans', '~> 0.0.3'
 end
 ```  
 部分代码示例  
