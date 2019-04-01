@@ -145,6 +145,13 @@ UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 200, 30) val
 效果  
 ![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_01.png)  
 
+UISwitch+Fragrans  
+```
+UISwitch   *frg_switch = [UISwitch switchWithStarPoint:CGPointMake(100, 100) thumbTintColor:[UIColor greenColor] onTintColor:[UIColor yellowColor] tintColor:[UIColor magentaColor] target:self action:@selector(switchEvent:)];
+[self addSubview:frg_switch];
+```  
+效果  
+![switch_01](https://github.com/chadhea/Fragrans_image/blob/master/UISwitch/switch_01.gif)  
 
 
 
