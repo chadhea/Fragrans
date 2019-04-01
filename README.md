@@ -1,5 +1,5 @@
 ![fragrans_icon](https://github.com/chadhea/Fragrans_image/blob/master/fragrans_icon.png)
-类属性方法扩展辅助工具
+类属性与方法扩展
 
 Installation with CocoaPods  
 Podfile  
@@ -80,6 +80,29 @@ UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) bounds:CGRe
 ```  
 效果  
 ![button_top](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_top.png)![button_bottom](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_bottom.png)![button_left](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_left.png)![button_right](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_right.png)![button_center](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_center.png)  
+UIDevice+Fragrans  
+```
+[UIDevice getDeviceName];//获取设备型号  
+[UIDevice getDeviceStringName];//获取原装的设备名称  
+[UIDevice getIPAddress];//获取设备当前网络IP地址  
+[UIDevice getIPAddresses];//获取所有相关IP信息  
+[UIDevice isIpv6];//判断当前网络是否为ipv6  
+[UIDevice getWANIPAddress];//获取外网地址,获取失败返回内网地址  
+[UIDevice getDeviceUUID];//获取UUID  
+[UIDevice getIDFA];//获取广告标识符  
+[UIDevice systemVersion];//系统版本  
+[UIDevice systemVersion_iOS_12_AndLater];//判断系统版本  
+[UIDevice batteryLevel];//电量  
+[UIDevice getSystemUptime];//系统上次启动时间  
+[UIDevice getCPUCount];//获取CPU总数  
+[UIDevice getCPUUsage];//CPU使用总比例  
+[UIDevice getPerCPUUsage];//每个CPU使用比例  
+[UIDevice totalDiskSpace];//获取总磁盘空间  
+[UIDevice freeDiskSpace];//获取剩余磁盘空间  
+[UIDevice totalMemorySpace];//获取系统总内存空间  
+[UIDevice cpuFrequency];//CPU使用频率  
+...
+```
 
 
 
