@@ -48,8 +48,8 @@ UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 
 [textField maxLength:10 textStringBlock:^(NSString * _Nonnull textString) {
     //返回长度内字符串
 }];
-```
-效果
+```  
+效果  
 ![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)
 
 
