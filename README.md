@@ -22,4 +22,18 @@ UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) background
 //设置上边圆角
 [view setCornerWithTop:20];
 ```
-![uiview_01](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_01.png)
+效果  
+![uiview_01](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_01.png)  
+UILabel+Fragrans示例
+```
+UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter tap:^(id  _Nonnull sender) {
+    //点击事件
+}];
+[self addSubview:label];
+//描边颜色、描边宽度及圆角角度
+[label layerBorderColor:@9 width:3 cornerRadius:10];
+//设置行间距和字间距
+[label lineSpacing:20 wordSpacing:6];
+```
+效果  
+![uilabel_01](https://github.com/chadhea/Fragrans_image/blob/master/UILabel/uilabel_01.png)  
