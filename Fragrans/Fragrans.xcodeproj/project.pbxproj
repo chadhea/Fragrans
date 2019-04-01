@@ -56,10 +56,7 @@
 		F5FAB6B222003B4E00618786 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6B122003B4E00618786 /* ViewController.m */; };
 		F5FAB6B522003B4E00618786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B322003B4E00618786 /* Main.storyboard */; };
 		F5FAB6B722003B5200618786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B622003B5200618786 /* Assets.xcassets */; };
-		F5FAB6BA22003B5200618786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B822003B5200618786 /* LaunchScreen.storyboard */; };
 		F5FAB6BD22003B5200618786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6BC22003B5200618786 /* main.m */; };
-		F5FAB6C722003B5200618786 /* FragransTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6C622003B5200618786 /* FragransTests.m */; };
-		F5FAB6D222003B5200618786 /* FragransUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6D122003B5200618786 /* FragransUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,15 +172,10 @@
 		F5FAB6B122003B4E00618786 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5FAB6B422003B4E00618786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5FAB6B622003B5200618786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F5FAB6B922003B5200618786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5FAB6BB22003B5200618786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FAB6BC22003B5200618786 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5FAB6C222003B5200618786 /* FragransTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FragransTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5FAB6C622003B5200618786 /* FragransTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransTests.m; sourceTree = "<group>"; };
-		F5FAB6C822003B5200618786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FAB6CD22003B5200618786 /* FragransUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FragransUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5FAB6D122003B5200618786 /* FragransUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransUITests.m; sourceTree = "<group>"; };
-		F5FAB6D322003B5200618786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,8 +328,6 @@
 			isa = PBXGroup;
 			children = (
 				F5FAB6AC22003B4E00618786 /* Fragrans */,
-				F5FAB6C522003B5200618786 /* FragransTests */,
-				F5FAB6D022003B5200618786 /* FragransUITests */,
 				F5FAB6AB22003B4E00618786 /* Products */,
 				F50C90EF222527CF00DC5113 /* Frameworks */,
 			);
@@ -364,29 +354,10 @@
 				F5FAB6B122003B4E00618786 /* ViewController.m */,
 				F5FAB6B322003B4E00618786 /* Main.storyboard */,
 				F5FAB6B622003B5200618786 /* Assets.xcassets */,
-				F5FAB6B822003B5200618786 /* LaunchScreen.storyboard */,
 				F5FAB6BB22003B5200618786 /* Info.plist */,
 				F5FAB6BC22003B5200618786 /* main.m */,
 			);
 			path = Fragrans;
-			sourceTree = "<group>";
-		};
-		F5FAB6C522003B5200618786 /* FragransTests */ = {
-			isa = PBXGroup;
-			children = (
-				F5FAB6C622003B5200618786 /* FragransTests.m */,
-				F5FAB6C822003B5200618786 /* Info.plist */,
-			);
-			path = FragransTests;
-			sourceTree = "<group>";
-		};
-		F5FAB6D022003B5200618786 /* FragransUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F5FAB6D122003B5200618786 /* FragransUITests.m */,
-				F5FAB6D322003B5200618786 /* Info.plist */,
-			);
-			path = FragransUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -491,7 +462,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FAB6BA22003B5200618786 /* LaunchScreen.storyboard in Resources */,
 				F5FAB6B722003B5200618786 /* Assets.xcassets in Resources */,
 				F5FAB6B522003B4E00618786 /* Main.storyboard in Resources */,
 			);
@@ -569,7 +539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FAB6C722003B5200618786 /* FragransTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +546,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5FAB6D222003B5200618786 /* FragransUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,14 +571,6 @@
 				F5FAB6B422003B4E00618786 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F5FAB6B822003B5200618786 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5FAB6B922003B5200618786 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
