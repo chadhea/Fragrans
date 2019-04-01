@@ -183,7 +183,18 @@ UITextView   *textView = [UITextView textViewWithFrame:CGRectMake(30, 100, 160, 
 ```  
 效果  
 ![textview_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextView/textview_01.gif)  
-
+UIScrollView+Fragrans  
+```
+UIScrollView   *scroll = [UIScrollView scrollViewWithFrame:CGRectMake(10, 100, [UIScreen screenWidth] - 20, 80) contentSize:CGSizeZero backgroundColor:@"c" showsScrollIndicator:NO bounces:YES delegate:self];
+[self addSubview:scroll];
+//scroll上添加图片
+[scroll addimages:@[@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",@"ceshi_normal"] starPoint:CGPointMake(10, 10) interval:10 direction:Frg_ScrollViewAddImageDirectionType_Horizontal taps:^(id  _Nonnull sender, NSInteger index) {
+   //每张图片的点击事件
+        
+}];
+```  
+效果  
+![scroll_01](https://github.com/chadhea/Fragrans_image/blob/master/UIScrollView/scroll_01.gif)  
 
 
 
