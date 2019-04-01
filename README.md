@@ -109,11 +109,20 @@ NSFileManager+Fragrans
 [NSFileManager removeFile:@"xx"];//删除一个文件  
 [NSFileManager createDirectory:@"xx"];//创建文件夹  
 [NSFileManager copyResourceFileToCachesDirectory:@"xx"];//拷贝资源目录文件到caches目录  
-[NSFileManager saveImageToDirectoryPath:@"xx" image:image imageName:@"ceshi" imageType:@"png"];//存储图片到指定的目录下  
+[NSFileManager saveImageToDirectoryPath:@"xx" image:[UIImage imageNamed:@"ceshi"] imageName:@"ceshi" imageType:@"png"];//存储图片到指定的目录下  
 [NSFileManager loadResourceByDirectoryPath:@"xx"];//获取指定目录下的资源  
 [NSFileManager fileSizeAtPath:@"xx"];//获取文件或者文件夹占用空间（单位跟随文件大小变化）  
 ...
+```  
+UIPageControl+Fragrans  
 ```
+UIPageControl   *pageControl = [UIPageControl pageControlWithFrame:CGRectMake(30, 100, 200, 30) numberOfPages:10 currentPage:3 pageIndicatorTintColor:@8 currentPageIndicatorTintColor:@"eb3223" target:self action:@selector(pageEvent:)];
+pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
+[self addSubview:pageControl];
+```  
+效果  
+![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)
+
 
 
 
