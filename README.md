@@ -152,7 +152,24 @@ UISwitch   *frg_switch = [UISwitch switchWithStarPoint:CGPointMake(100, 100) thu
 ```  
 效果  
 ![switch_01](https://github.com/chadhea/Fragrans_image/blob/master/UISwitch/switch_01.gif)  
-
+NSDateFormatter+Fragrans  
+```
+[NSDateFormatter getCurrentTimeStamp];//获取当前系统时间戳
+NSString   *sp = [NSDateFormatter timeStampWithTime:@"2019-01-01 06:00:00" formatter:@"yyyy-MM-dd HH:mm:ss"];//时间转时间戳
+[NSDateFormatter timeWithTimeStamp:sp formatter:@"yyyy-MM-dd HH:mm:ss"];////时间戳转时间 + 格式
+[NSDateFormatter timeWithDate:[NSDate date] format:@"yyyy-MM-dd"];//时间转化
+    
+//快速获取固定格式时间
+[NSDateFormatter currentTime];//获取当前时间（24小时
+[NSDateFormatter timeShangXiaWu];//获取当前时间（上午+下午）
+[NSDateFormatter timeAM_PM];//获取当前时间（AM+PM）
+[NSDateFormatter timeYMD];//获取当前时间（yyyy-MM-dd）
+[NSDateFormatter timeYMD_Hms];//获取当前时间（yyyy-MM-dd hh:mm:ss）
+[NSDateFormatter timeYMD_Hms_S];//获取当前时间（yyyy-MM-dd hh:mm:ss.SSS）
+[NSDateFormatter currentWeekTime];//获取当前星期
+[NSDateFormatter currentHourTime];//获取当前小时
+[NSDateFormatter currentDataTime];//获取当前几号
+```
 
 
 
