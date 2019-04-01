@@ -11,6 +11,23 @@ platform :ios, '8.0'
 target 'TargetName' do
 pod 'Fragrans', '~> 0.0.2'
 end
+```  
+部分代码示例  
+=
+
+NSURLRequest+Fragrans示例  
+```
+[NSURLRequest post_requestWithURL:@"xxx" params:@{} completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
+     //数据解析
+}];
+```  
+NSNetService+Fragrans  
+```
+//检查网络状态
+BOOL net = [NSNetService checkNetWork];
+[NSNetService sharedInstance].networkChangeBlock = ^(FRGNetworkStatus status) {
+  //实时监听网络状态
+};
 ```
 
 UIView+Fragrans示例
