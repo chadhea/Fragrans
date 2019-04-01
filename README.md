@@ -139,11 +139,11 @@ NSString *jiami_str = [NSString  encryptAESWithString:@"xxx" secretKey:key];//AE
 ```   
 UISlider+Fragrans  
 ```
-UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 200, 30) value:10 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] minimumTrackTintColor:[UIColor cyanColor] maximumTrackTintColor:[UIColor redColor] target:self action:@selector(sliderEvent:)];
+UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 100, 30) value:50 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] minimumTrackTintColor:[UIColor cyanColor] maximumTrackTintColor:[UIColor redColor] target:self action:@selector(sliderEvent:)];
 [self addSubview:slider];
 ```  
 效果  
-![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_01.png)  
+![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_02.png)  
 
 UISwitch+Fragrans  
 ```
