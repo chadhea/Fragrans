@@ -169,7 +169,21 @@ NSString   *sp = [NSDateFormatter timeStampWithTime:@"2019-01-01 06:00:00" forma
 [NSDateFormatter currentWeekTime];//获取当前星期
 [NSDateFormatter currentHourTime];//获取当前小时
 [NSDateFormatter currentDataTime];//获取当前几号
+```  
+UITextView+Fragrans  
 ```
+UITextView   *textView = [UITextView textViewWithFrame:CGRectMake(30, 100, 160, 60) text:@"" font:@15 textColor:@3 backgroundColor:@"e" delegate:self];
+[self addSubview:textView];
+//设置placeholder
+[textView placeholder:@"测试"];
+- (void)textViewDidChange:(UITextView *)textView {
+     //设置最大可输入长度，并返回长度内字符串
+    NSString  *str = [textView frg_textViewDidChangeWithMaxLength:10];
+}
+```  
+效果  
+![textview_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextView/textview_01.gif)  
+
 
 
 
