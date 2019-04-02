@@ -93,10 +93,7 @@ for (int i = 0; i < 3; i ++) {
             [view.layer addAnimation:[CABasicAnimation planeRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_3"];
         }
     }
-```  
-效果  
-![uiview_06](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_06.gif)  
-
+```    
 UILabel+Fragrans  
 ```
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" 
