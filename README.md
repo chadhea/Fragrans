@@ -50,6 +50,7 @@ UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 
 ![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)  
 UIView+Fragrans  
 ```
+//(一)
 UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) backgroundColor:@9 tap:^(id  _Nonnull sender) {
    //点击事件
 }];
@@ -58,9 +59,17 @@ UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) background
 [view setCornerWithTop:20];
 //设置渐变色
 view.backgroundColor = [UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[UIColor blueColor] width:50];
+//(二)
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+    //drawRect重绘
+    [UIView drawLinePointArray:@[frg_kValueWithPoint(100, 300),frg_kValueWithPoint(200, 300),frg_kValueWithPoint(200, 200),frg_kValueWithPoint(100, 300)] lineWidth:3 strokeColor:[UIColor yellowColor] fillColor:[UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[UIColor redColor] width:100]];
+    
+}
 ```
 效果  
-![uiview_01](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_02.png)  
+![uiview_02](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_02.png)![uiview_03](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_03.png)  
+
 UILabel+Fragrans  
 ```
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter tap:^(id  _Nonnull sender) {
