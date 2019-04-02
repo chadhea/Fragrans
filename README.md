@@ -76,6 +76,25 @@ width:100]];
 ```  
 效果  
 ![uiview_05](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_05.png)  
+```
+for (int i = 0; i < 3; i ++) {
+        UIView   *view = [UIView viewWithFrame:CGRectMake(30 + 110 * i, 100, 80, 80) backgroundColor:[UIColor gradientForLeftToRightWithColors:@[[UIColor randomColor],[UIColor randomColor],[UIColor randomColor],[UIColor randomColor]] width:80]];
+        [self addSubview:view];
+        if (i == 0) {
+            //y轴旋转动画
+            [view.layer addAnimation:[CABasicAnimation yAxisRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_1"];
+        }else if (i == 1) {
+            //x轴旋转动画
+            [view.layer addAnimation:[CABasicAnimation xAxisRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_2"];
+        }else {
+            //平面旋转动画
+            [view.layer addAnimation:[CABasicAnimation planeRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_3"];
+        }
+        
+    }
+```  
+效果  
+![uiview_06](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_06.gif)  
 
 UILabel+Fragrans  
 ```
