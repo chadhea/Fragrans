@@ -40,8 +40,7 @@ backgroundColor:@9 tap:^(id  _Nonnull sender) {
 //设置上边圆角
 [view setCornerWithTop:20];
 //设置渐变色
-view.backgroundColor = [UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] 
-toColor:[UIColor blueColor] width:50];
+view.backgroundColor = [UIColor gradientForLeftToRightWithColors:@[[UIColor cyanColor],[UIColor blueColor],@9] width:50];
 ```
 效果  
 ![uiview_02](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_02.png)  
