@@ -70,8 +70,8 @@ height:15] round:YES];
 ```  
 - (void)drawRect:(CGRect)rect {
 [UIView drawCircleFrame:CGRectMake(100, 100, 100, 70) 
-color:[UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[UIColor magentaColor] 
-width:20]];
+color:[UIColor gradientForLeftToRightWithColors:@[[UIColor redColor],[UIColor blueColor],[UIColor cyanColor],[UIColor brownColor],@9,[UIColor greenColor],[UIColor orangeColor]] 
+width:100]];
 }
 ```  
 效果  
