@@ -14,7 +14,8 @@ end
 ```  
 Architecture  
 =
--> FragransDefine.h  
+-> Fragrahs.h//头文件  
+-> FragransDefine.h//宏定义文件  
 -> CALayer+Fragrans.h  
 -> NSArray+Fragrans.h  
 -> NSMutableArray+Fragrans.h  
