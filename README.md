@@ -89,6 +89,16 @@ height:15] round:YES];
 ```  
 效果  
 ![uiview_04](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_04.png)  
+```  
+- (void)drawRect:(CGRect)rect {
+[UIView drawCircleFrame:CGRectMake(100, 100, 100, 70) 
+color:[UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[UIColor magentaColor] 
+width:20]];
+}
+```  
+效果  
+![uiview_05](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_05.png)  
+
 UILabel+Fragrans  
 ```
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" 
