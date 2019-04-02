@@ -178,6 +178,35 @@
 }
 
 /**
+ 渐变颜色 (多种颜色)
+ 
+ @param colorsArray UIColor或者NSString或者NSNumber格式的集合
+ @param height 渐变高度
+ @return 渐变颜色
+ */
++ (UIColor *)gradientForTopToBottomWithColors:(NSArray <id>*)colorsArray height:(NSInteger)height {
+    if (colorsArray.count <= 0) {
+        return nil;
+    }
+    CGSize  size = CGSizeMake(1, height);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef   context = UIGraphicsGetCurrentContext();
+    CGColorSpaceRef   colorSpace = CGColorSpaceCreateDeviceRGB();
+    NSMutableArray  *new_colors = [NSMutableArray array];
+    for (int i = 0; i < colorsArray.count; i ++) {
+        [new_colors addObject:(id)[UIColor safeColor:colorsArray[i]].CGColor];
+    }
+    CGGradientRef   gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)new_colors, NULL);
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0, 0), CGPointMake(0, size.height), 0);
+    UIImage   *image = UIGraphicsGetImageFromCurrentImageContext();
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+    UIGraphicsEndImageContext();
+    return [UIColor colorWithPatternImage:image];
+    
+}
+
+/**
  渐变颜色
  
  @param fromColor 开始颜色 UIColor或者NSString或者NSNumber格式
@@ -197,6 +226,34 @@
     CGColorSpaceRef   colorSpace = CGColorSpaceCreateDeviceRGB();
     NSArray   *colors = [NSArray arrayWithObjects:(id)newFromColor.CGColor,(id)newToColor.CGColor, nil];
     CGGradientRef   gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)colors, NULL);
+    CGContextDrawLinearGradient(context, gradient, CGPointMake(0, 0), CGPointMake(size.width, 0), 0);
+    UIImage   *image = UIGraphicsGetImageFromCurrentImageContext();
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+    UIGraphicsEndImageContext();
+    return [UIColor colorWithPatternImage:image];
+}
+
+/**
+ 渐变颜色（多种颜色）
+ 
+ @param colorsArray UIColor或者NSString或者NSNumber格式的集合
+ @param width 渐变宽度
+ @return 渐变颜色
+ */
++ (UIColor *)gradientForLeftToRightWithColors:(NSArray <id>*)colorsArray width:(NSInteger)width {
+    if (colorsArray.count <= 0) {
+        return nil;
+    }
+    CGSize  size = CGSizeMake(width, 1);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+    CGContextRef   context = UIGraphicsGetCurrentContext();
+    CGColorSpaceRef   colorSpace = CGColorSpaceCreateDeviceRGB();
+    NSMutableArray  *new_colors = [NSMutableArray array];
+    for (int i = 0; i < colorsArray.count; i ++) {
+        [new_colors addObject:(id)[UIColor safeColor:colorsArray[i]].CGColor];
+    }
+    CGGradientRef   gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)new_colors, NULL);
     CGContextDrawLinearGradient(context, gradient, CGPointMake(0, 0), CGPointMake(size.width, 0), 0);
     UIImage   *image = UIGraphicsGetImageFromCurrentImageContext();
     CGGradientRelease(gradient);

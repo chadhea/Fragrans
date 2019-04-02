@@ -216,7 +216,337 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setCornerWithAll:(CGFloat)conner;
 
+#pragma mark --- 绘图
+/**
+ 住：
+ 一下方法需要在
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ 方法里面请求
+*/
 
+/**
+ 划线
+ 
+ @param fromPoint 起始点
+ @param toPoint 终点
+ 默认线宽：1.0
+ 默认线颜色black
+ */
++ (CGContextRef)drawLineFromPoint:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
+
+/**
+ 划线
+ 
+ @param fromPoint 起始点
+ @param toPoint 终点
+ @param lineWidth 线宽
+ 默认线颜色black
+ */
++ (CGContextRef)drawLineFromPoint:(CGPoint)fromPoint toPoint:(CGPoint)toPoint lineWidth:(CGFloat)lineWidth;
+
+/**
+ 划线
+ 
+ @param fromPoint 起始点
+ @param toPoint 终点
+ @param lineWidth 线宽
+ @param lineColor 线颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawLineFromPoint:(CGPoint)fromPoint toPoint:(CGPoint)toPoint lineWidth:(CGFloat)lineWidth lineColor:(id)lineColor;
+
+/**
+ 划线
+ 
+ @param pointArray 所划线的点的集合
+ @param lineWidth 线宽
+ @param strokeColor 线颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawLinePointArray:(NSArray <NSValue *>*)pointArray lineWidth:(CGFloat)lineWidth strokeColor:(id)strokeColor;
+
+/**
+ 划线
+ 
+ @param pointArray 所划线的点的集合
+ @param lineWidth 线宽
+ @param fillColor 填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawLinePointArray:(NSArray <NSValue *>*)pointArray lineWidth:(CGFloat)lineWidth fillColor:(id)fillColor;
+
+/**
+ 划线
+ 
+ @param pointArray 所划线的点的集合
+ @param lineWidth 线宽
+ @param strokeColor 线颜色 UIColor或者NSString格式
+ @param fillColor 填充颜色 UIColor或者NSString格式
+ */
++ (void)drawLinePointArray:(NSArray <NSValue *>*)pointArray lineWidth:(CGFloat)lineWidth strokeColor:(nullable id)strokeColor fillColor:(nullable id)fillColor;
+
+/**
+ 画矩形
+ 
+ 线宽默认为1
+ */
++ (CGContextRef)drawRect:(CGRect)rect;
+
+/**
+ 画矩形
+ 
+ @param lineWidth 线宽
+ */
++ (CGContextRef)drawRect:(CGRect)rect lineWidth:(CGFloat)lineWidth;
+
+/**
+ 画矩形
+ 
+ @param lineWidth 线宽
+ @param strokeColor 线颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawRect:(CGRect)rect lineWidth:(CGFloat)lineWidth strokeColor:(id)strokeColor;
+
+/**
+ 画矩形
+ 
+ @param lineWidth 线宽
+ @param fillColor 填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawRect:(CGRect)rect lineWidth:(CGFloat)lineWidth fillColor:(id)fillColor;
+
+/**
+ 画矩形
+ 
+ @param lineWidth 线宽
+ @param strokeColor 线颜色 UIColor或者NSString格式
+ @param fillColor 填充颜色 UIColor或者NSString格式
+ */
++ (void)drawRect:(CGRect)rect lineWidth:(CGFloat)lineWidth strokeColor:(id)strokeColor fillColor:(id)fillColor;
+
+/**
+ 画曲线
+ 
+ @param circleCenter 曲线圆中心点
+ @param radius 曲线圆半径
+ @param startAngle 曲线圆开始角度
+ @param endAngle 曲线圆结束角度
+ 曲线圆宽度默认为1
+ */
++ (CGContextRef)drawCurveCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle;
+
+/**
+ 画曲线
+ 
+ @param circleCenter 曲线圆中心点
+ @param radius 曲线圆半径
+ @param startAngle 曲线圆开始角度
+ @param endAngle 曲线圆结束角度
+ @param lineWidth 曲线圆宽度
+ */
++ (CGContextRef)drawCurveCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle lineWidth:(CGFloat)lineWidth;
+
+/**
+ 画曲线
+ 
+ @param circleCenter 曲线圆中心点
+ @param radius 曲线圆半径
+ @param startAngle 曲线圆开始角度
+ @param endAngle 曲线圆结束角度
+ @param lineWidth 曲线圆宽度
+ @param lineColor 曲线圆线颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCurveCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle lineWidth:(CGFloat)lineWidth lineColor:(id)lineColor;
+
+/**
+ 画曲线
+ 
+ @param circleCenter 曲线圆中心点
+ @param radius 曲线圆半径
+ @param startAngle 曲线圆开始角度
+ @param endAngle 曲线圆结束角度
+ @param clockwise 0顺时针  1逆时针
+ @param lineWidth 曲线圆宽度
+ @param lineColor 曲线圆线颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCurveCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(int)clockwise lineWidth:(CGFloat)lineWidth lineColor:(id)lineColor;
+
+/**
+ 画曲线
+ 
+ @param circleCenter 曲线圆中心点
+ @param radius 曲线圆半径
+ @param startAngle 曲线圆开始角度
+ @param endAngle 曲线圆结束角度
+ @param clockwise 0顺时针  1逆时针
+ @param lineWidth 曲线圆宽度
+ @param lineColor 曲线圆线颜色 UIColor或者NSString格式
+ @param round 是否圆角
+ */
++ (CGContextRef)drawCurveCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(int)clockwise lineWidth:(CGFloat)lineWidth lineColor:(id)lineColor round:(BOOL)round;
+
+/**
+ 画曲线(三点和半径画圆)
+ 
+ @param startPoint 曲线圆开始点
+ @param focusPoint 曲线圆中间点
+ @param endPoint 曲线圆结束点
+ @param radius 曲线圆半径
+ */
++ (CGContextRef)drawCurveWithStartPoint:(CGPoint)startPoint focusPoint:(CGPoint)focusPoint endPoint:(CGPoint)endPoint radius:(CGFloat)radius;
+
+/**
+ 画曲线(三点和半径画圆)
+ 
+ @param startPoint 曲线圆开始点
+ @param focusPoint 曲线圆中间点
+ @param endPoint 曲线圆结束点
+ @param radius 曲线圆半径
+ @param lineWidth 线宽
+ */
++ (CGContextRef)drawCurveWithStartPoint:(CGPoint)startPoint focusPoint:(CGPoint)focusPoint endPoint:(CGPoint)endPoint radius:(CGFloat)radius lineWidth:(CGFloat)lineWidth;
+
+/**
+ 画曲线(三点和半径画圆)
+ 
+ @param startPoint 曲线圆开始点
+ @param focusPoint 曲线圆中间点
+ @param endPoint 曲线圆结束点
+ @param radius 曲线圆半径
+ @param lineWidth 线宽
+ @param lineColor 线颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCurveWithStartPoint:(CGPoint)startPoint focusPoint:(CGPoint)focusPoint endPoint:(CGPoint)endPoint radius:(CGFloat)radius lineWidth:(CGFloat)lineWidth lineColor:(id)lineColor;
+
+/**
+ 画曲线(三点和半径画圆)
+ 
+ @param startPoint 曲线圆开始点
+ @param focusPoint 曲线圆中间点
+ @param endPoint 曲线圆结束点
+ @param radius 曲线圆半径
+ @param lineWidth 线宽
+ @param lineColor 线颜色 UIColor或者NSString格式
+ @param round 是否圆角
+ */
++ (CGContextRef)drawCurveWithStartPoint:(CGPoint)startPoint focusPoint:(CGPoint)focusPoint endPoint:(CGPoint)endPoint radius:(CGFloat)radius lineWidth:(CGFloat)lineWidth lineColor:(id)lineColor round:(BOOL)round;
+
+/**
+ 画圆
+ */
++ (CGContextRef)drawCircleFrame:(CGRect)frame;
+
+/**
+ 画圆
+ 
+ @param color 双填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleFrame:(CGRect)frame color:(id)color;
+
+/**
+ 画圆
+ */
++ (CGContextRef)drawCircleCenter:(CGPoint)center radius:(CGFloat)radius;
+
+/**
+ 画圆
+ 
+ @param color 双填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleCenter:(CGPoint)center radius:(CGFloat)radius color:(id)color;
+
+/**
+ 画圆
+ 
+ @param strokeColor 外填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleFrame:(CGRect)frame strokeColor:(id)strokeColor;
+
+/**
+ 画圆
+ 
+ @param lineWidth 线宽
+ @param strokeColor 外填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleFrame:(CGRect)frame lineWidth:(CGFloat)lineWidth strokeColor:(id)strokeColor;
+
+/**
+ 画圆
+ 
+ @param strokeColor 外填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleCenter:(CGPoint)center radius:(CGFloat)radius strokeColor:(id)strokeColor;
+
+/**
+ 画圆
+ 
+ @param strokeColor 外填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleCenter:(CGPoint)center radius:(CGFloat)radius lineWidth:(CGFloat)width strokeColor:(id)strokeColor;
+
+/**
+ 画圆
+ 
+ @param fillColor 内填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleFrame:(CGRect)frame fillColor:(id)fillColor;
+
+/**
+ 画圆
+ 
+ @param fillColor 内填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCircleCenter:(CGPoint)center radius:(CGFloat)radius fillColor:(id)fillColor;
+
+/**
+ 画饼
+ 
+ @param circleCenter 圆心点
+ @param radius 半径
+ @param startAngle 开始角度
+ @param endAngle 结束角度
+ */
++ (CGContextRef)drawCakeCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle;
+
+/**
+ 画饼
+ 
+ @param circleCenter 圆心点
+ @param radius 半径
+ @param startAngle 开始角度
+ @param endAngle 结束角度
+ @param color 双填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCakeCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle color:(id)color;
+
+/**
+ 画饼
+ 
+ @param circleCenter 圆心点
+ @param radius 半径
+ @param startAngle 开始角度
+ @param endAngle 结束角度
+ @param clockwise 0顺时针  1逆时针
+ @param color 双填充颜色 UIColor或者NSString格式
+ */
++ (CGContextRef)drawCakeCenter:(CGPoint)circleCenter radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle  clockwise:(int)clockwise color:(id)color;
+
+/**
+ 画字符串
+ 
+ @param center 中心点坐标
+ @param font 字体大小 UIFont或者NSString或者NSNumber格式
+ @param color UIColor或者NSString格式
+ */
++ (void)drawString:(NSString *)str center:(CGPoint)center font:(id)font color:(id)color;
+
+/**
+ 画字符串
+ 
+ @param rect 范围
+ @param font 字体大小 UIFont或者NSString或者NSNumber格式
+ @param color UIColor或者NSString格式
+ */
++ (void)drawString:(NSString *)str rect:(CGRect)rect font:(id)font color:(id)color;
 
 
 

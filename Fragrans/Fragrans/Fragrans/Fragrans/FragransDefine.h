@@ -3,6 +3,9 @@
 //  Fragrans
 
 
+
+#define frg_kValueWithPoint(POINT_X,POINT_Y) [NSValue valueWithCGPoint:CGPointMake(POINT_X, POINT_Y)]
+
 #define FRG_WEAKSELF(OBJC,NAME) typeof(OBJC) __weak NAME = OBJC;
 #define FRG_STRONGSELF(OBJC,NAME) typeof(OBJC) __strong NAME = OBJC;
 

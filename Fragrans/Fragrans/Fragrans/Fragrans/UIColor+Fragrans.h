@@ -62,6 +62,15 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)gradientForTopToBottomFromColor:(id)fromColor toColor:(id)toColor height:(NSInteger)height;
 
 /**
+ 渐变颜色 (多种颜色)
+ 
+ @param colorsArray UIColor或者NSString或者NSNumber格式的集合
+ @param height 渐变高度
+ @return 渐变颜色
+ */
++ (UIColor *)gradientForTopToBottomWithColors:(NSArray <id>*)colorsArray height:(NSInteger)height;
+
+/**
  渐变颜色
  
  @param fromColor 开始颜色 UIColor或者NSString或者NSNumber格式
@@ -70,6 +79,15 @@ NS_ASSUME_NONNULL_BEGIN
  @return 渐变颜色
  */
 + (UIColor *)gradientForLeftToRightFromColor:(id)fromColor toColor:(id)toColor width:(NSInteger)width;
+
+/**
+ 渐变颜色（多种颜色）
+ 
+ @param colorsArray UIColor或者NSString或者NSNumber格式的集合
+ @param width 渐变宽度
+ @return 渐变颜色
+ */
++ (UIColor *)gradientForLeftToRightWithColors:(NSArray <id>*)colorsArray width:(NSInteger)width;
 
 @end
 

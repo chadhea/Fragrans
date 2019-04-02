@@ -962,6 +962,7 @@
  */
 - (void)lineSpacing:(CGFloat)space {
     NSMutableAttributedString  *attributedString = nil;
+    NSTextAlignment  alignment = self.textAlignment;
     if (self.attributedText && self.attributedText.length > 0) {
         attributedString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
     }else {
@@ -972,6 +973,7 @@
     NSRange range = NSMakeRange(0, attributedString.length);
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
     self.attributedText = attributedString;
+    self.textAlignment = alignment;
 }
 
 /**
@@ -979,6 +981,7 @@
  */
 - (void)wordSpacing:(CGFloat)space {
     NSMutableAttributedString  *attributedString = nil;
+    NSTextAlignment  alignment = self.textAlignment;
     if (self.attributedText && self.attributedText.length > 0) {
         attributedString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
     }else {
@@ -988,6 +991,7 @@
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, attributedString.length)];
     self.attributedText = attributedString;
+    self.textAlignment = alignment;
 }
 
 /**
@@ -995,6 +999,7 @@
  */
 - (void)lineSpacing:(float)lineSpace wordSpacing:(float)wordSpace {
     NSMutableAttributedString  *attributedString = nil;
+    NSTextAlignment  alignment = self.textAlignment;
     if (self.attributedText && self.attributedText.length > 0) {
         attributedString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedText];
     }else {
@@ -1005,6 +1010,7 @@
     paragraphStyle.lineSpacing = lineSpace;
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [self.text length])];
     self.attributedText = attributedString;
+    self.textAlignment = alignment;
 }
 
 /**

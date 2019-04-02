@@ -284,6 +284,10 @@ typedef enum : NSUInteger {
     if ([deviceString isEqualToString:@"iPhone10,5"])   return @"iPhone 8 Plus";
     if ([deviceString isEqualToString:@"iPhone10,3"])   return @"iPhone X";
     if ([deviceString isEqualToString:@"iPhone10,6"])   return @"iPhone X";
+    if ([deviceString isEqualToString:@"iPhone11,2"])   return @"iPhone XS";
+    if ([deviceString isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
+    if ([deviceString isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max";
+    if ([deviceString isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
     if ([deviceString isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([deviceString isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
     if ([deviceString isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
@@ -326,6 +330,16 @@ typedef enum : NSUInteger {
     if ([deviceString isEqualToString:@"iPad7,2"])     return @"iPad Pro 12.9 inch 2nd gen (Cellular)";
     if ([deviceString isEqualToString:@"iPad7,3"])     return @"iPad Pro 10.5 inch (WiFi)";
     if ([deviceString isEqualToString:@"iPad7,4"])     return @"iPad Pro 10.5 inch (Cellular)";
+    if ([deviceString isEqualToString:@"iPad7,5"])     return @"iPad 6th generation";
+    if ([deviceString isEqualToString:@"iPad7,6"])     return @"iPad 6th generation";
+    if ([deviceString isEqualToString:@"iPad8,1"])     return @"iPad Pro (11-inch)";
+    if ([deviceString isEqualToString:@"iPad8,2"])     return @"iPad Pro (11-inch)";
+    if ([deviceString isEqualToString:@"iPad8,3"])     return @"iPad Pro (11-inch)";
+    if ([deviceString isEqualToString:@"iPad8,4"])     return @"iPad Pro (11-inch)";
+    if ([deviceString isEqualToString:@"iPad8,5"])     return @"iPad Pro (12.9-inch) (3rd generation)";
+    if ([deviceString isEqualToString:@"iPad8,6"])     return @"iPad Pro (12.9-inch) (3rd generation)";
+    if ([deviceString isEqualToString:@"iPad8,7"])     return @"iPad Pro (12.9-inch) (3rd generation)";
+    if ([deviceString isEqualToString:@"iPad8,8"])     return @"iPad Pro (12.9-inch) (3rd generation)";
     if ([deviceString isEqualToString:@"AppleTV2,1"])    return @"Apple TV 2";
     if ([deviceString isEqualToString:@"AppleTV3,1"])    return @"Apple TV 3";
     if ([deviceString isEqualToString:@"AppleTV3,2"])    return @"Apple TV 3";

@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "Fragrans.h"
+#import "FragransDemoView.h"
 
 @interface ViewController ()
 
