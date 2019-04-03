@@ -69,7 +69,7 @@ end
 =
 
 UITextField+Frafrans   
-```
+```objective-c
 UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30) 
 placeholder:@"测试"   font:@14 textColor:@3  delegate:self];
 [self addSubview:textField];
@@ -84,7 +84,7 @@ placeholder:@"测试"   font:@14 textColor:@3  delegate:self];
 效果  
 ![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)  
 UIView+Fragrans  
-```
+```objective-c
 UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) 
 backgroundColor:@9 tap:^(id  _Nonnull sender) {
    //点击事件
@@ -97,7 +97,7 @@ view.backgroundColor = [UIColor gradientForLeftToRightWithColors:@[[UIColor cyan
 ```
 效果  
 ![uiview_02](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_02.png)  
-```
+```objective-c
 - (void)drawRect:(CGRect)rect {
 //drawRect重绘
 [UIView drawLinePointArray: 
@@ -110,7 +110,7 @@ width:100]];
 ```  
 效果  
 ![uiview_03](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_03.png)  
-```  
+```objective-c
 - (void)drawRect:(CGRect)rect {
 [UIView drawCurveCenter:CGPointMake(200, 200)
 radius:60 startAngle:0 endAngle:M_PI clockwise:1 lineWidth:40 
@@ -120,7 +120,7 @@ height:15] round:YES];
 ```  
 效果  
 ![uiview_04](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_04.png)  
-```  
+```objective-c
 - (void)drawRect:(CGRect)rect {
 [UIView drawCircleFrame:CGRectMake(100, 100, 100, 70) 
 color:[UIColor gradientForLeftToRightWithColors:@[[UIColor redColor],[UIColor blueColor],[UIColor cyanColor],[UIColor brownColor],@9,[UIColor greenColor],[UIColor orangeColor]] 
@@ -130,7 +130,7 @@ width:100]];
 效果  
 ![uiview_05](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_05.png)  
 CABasicAnimation+Fragrans  
-```
+```objective-c
 for (int i = 0; i < 3; i ++) {
         UIView   *view = [UIView viewWithFrame:CGRectMake(30 + 110 * i, 100, 80, 80) 
         backgroundColor:[UIColor gradientForLeftToRightWithColors:@[[UIColor randomColor],[UIColor randomColor],[UIColor randomColor],[UIColor randomColor]] width:80]];
@@ -148,7 +148,7 @@ for (int i = 0; i < 3; i ++) {
     }
 ```    
 UILabel+Fragrans  
-```
+```objective-c
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" 
 font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter 
 tap:^(id  _Nonnull sender) {
@@ -164,7 +164,7 @@ tap:^(id  _Nonnull sender) {
 ![uilabel_01](https://github.com/chadhea/Fragrans_image/blob/master/UILabel/uilabel_01.png)  
 
 UIButton+Fragrans  
-```
+```objective-c
 UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) 
 bounds:CGRectMake(0, 0, 150, 100) title:@"测试" font:@"15" titleColor:[UIColor redColor]
 backgroundColor:@"e" target:self action:@selector(ceshiclick)];
@@ -178,7 +178,7 @@ backgroundColor:@"e" target:self action:@selector(ceshiclick)];
 效果  
 ![button_top](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_top.png)![button_bottom](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_bottom.png)![button_left](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_left.png)![button_right](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_right.png)![button_center](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_center.png)  
 NSURLRequest+Fragrans  
-```
+```objective-c
 //get
 [NSURLRequest get_requestWithURL:@"" params:nil 
 completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
@@ -191,7 +191,7 @@ completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) 
 }];
 ```  
 NSNetService+Fragrans  
-```
+```objective-c
 //检查网络状态
 BOOL net = [NSNetService checkNetWork];
 [NSNetService sharedInstance].networkChangeBlock = ^(FRGNetworkStatus status) {
@@ -199,7 +199,7 @@ BOOL net = [NSNetService checkNetWork];
 };
 ```  
 UIDevice+Fragrans  
-```
+```objective-c
 [UIDevice getDeviceName];//获取设备型号  
 [UIDevice getDeviceStringName];//获取原装的设备名称  
 [UIDevice getIPAddress];//获取设备当前网络IP地址  
@@ -222,7 +222,7 @@ UIDevice+Fragrans
 ...
 ```  
 NSFileManager+Fragrans  
-```
+```objective-c
 [NSFileManager homeDirectoryPath];//获取Directory的路径  
 [NSFileManager removeFile:@"xx"];//删除一个文件  
 [NSFileManager createDirectory:@"xx"];//创建文件夹  
@@ -233,7 +233,7 @@ NSFileManager+Fragrans
 ...
 ```  
 UIPageControl+Fragrans  
-```
+```objective-c
 UIPageControl   *pageControl = [UIPageControl pageControlWithFrame:CGRectMake(30, 100, 200, 30)
 numberOfPages:10 currentPage:3 pageIndicatorTintColor:@8 currentPageIndicatorTintColor:@"eb3223"
 target:self action:@selector(pageEvent:)];
@@ -244,7 +244,7 @@ pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
 ![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)  
 
 NSString+Fragrans  
-```
+```objective-c
 //判断字符串是否符合要求。比如是否为手机号、邮箱、身份证等，如：
 NSString   *str = @"xxx@163.com";
 [str isEmailValidate];//是否为邮箱
@@ -258,7 +258,7 @@ NSString *jiami_str = [NSString  encryptAESWithString:@"xxx" secretKey:key];//AE
 [NSString filterEmoji:@"xxx"];//去除emoji表情
 ```   
 UISlider+Fragrans  
-```
+```objective-c
 UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 100, 30) 
 value:50 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] 
 minimumTrackTintColor:[UIColor cyanColor] 
@@ -270,14 +270,14 @@ target:self action:@selector(sliderEvent:)];
 ![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_02.png)  
 
 UISwitch+Fragrans  
-```
+```objective-c
 UISwitch   *frg_switch = [UISwitch switchWithStarPoint:CGPointMake(100, 100)   thumbTintColor:[UIColor greenColor] onTintColor:[UIColor yellowColor] tintColor:[UIColor magentaColor]   target:self action:@selector(switchEvent:)];
 [self addSubview:frg_switch];
 ```  
 效果  
 ![switch_01](https://github.com/chadhea/Fragrans_image/blob/master/UISwitch/switch_01.gif)  
 NSDateFormatter+Fragrans  
-```
+```objective-c
 [NSDateFormatter getCurrentTimeStamp];//获取当前系统时间戳
 NSString   *sp = [NSDateFormatter timeStampWithTime:@"2019-01-01 06:00:00" formatter:@"yyyy-MM-dd HH:mm:ss"];//时间转时间戳
 [NSDateFormatter timeWithTimeStamp:sp formatter:@"yyyy-MM-dd HH:mm:ss"];////时间戳转时间 + 格式
@@ -295,7 +295,7 @@ NSString   *sp = [NSDateFormatter timeStampWithTime:@"2019-01-01 06:00:00" forma
 [NSDateFormatter currentDataTime];//获取当前几号
 ```  
 UITextView+Fragrans  
-```
+```objective-c
 UITextView   *textView = [UITextView textViewWithFrame:CGRectMake(30, 100, 160, 60) 
 text:@"" font:@15 textColor:@3 backgroundColor:@"e" delegate:self];
 [self addSubview:textView];
@@ -309,7 +309,7 @@ text:@"" font:@15 textColor:@3 backgroundColor:@"e" delegate:self];
 效果  
 ![textview_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextView/textview_01.gif)  
 UIScrollView+Fragrans  
-```
+```objective-c
 UIScrollView   *scroll = [UIScrollView scrollViewWithFrame:
 CGRectMake(10, 100, [UIScreen screenWidth] - 20, 80) 
 contentSize:CGSizeZero backgroundColor:@"c" showsScrollIndicator:NO 
