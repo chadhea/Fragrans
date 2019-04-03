@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "Fragrans"
-  s.version      = "0.0.3"
+  s.version      = "0.1.1"
   s.summary      = "The method of class attribute auxiliary tool"
 
   s.description  = <<-DESC
@@ -28,11 +28,26 @@ Pod::Spec.new do |s|
   s.source_files  = "Fragrans/Fragrans/Fragrans/Fragrans.h"
   s.public_header_files = "Fragrans/Fragrans/Fragrans/Fragrans.h"
   
-  s.subspec 'Fragrans' do |ss|
-    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Fragrans'
-    ss.source_files = 'Fragrans/Fragrans/Fragrans/Fragrans/**/*'
+  s.subspec 'Custom' do |ss|
+    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Custom'
+    ss.source_files = 'Fragrans/Fragrans/Fragrans/Custom/**/*'
   end
-	
+
+  s.subspec 'Extend' do |ss|
+    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Extend'
+    ss.source_files = 'Fragrans/Fragrans/Fragrans/Extend/**/*'
+  end
+
+  s.subspec 'Function' do |ss|
+    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Function'
+    ss.source_files = 'Fragrans/Fragrans/Fragrans/Function/**/*'
+  end
+
+  s.subspec 'UIKit' do |ss|
+    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/UIKit'
+    ss.source_files = 'Fragrans/Fragrans/Fragrans/UIKit/**/*'
+  end
+
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"

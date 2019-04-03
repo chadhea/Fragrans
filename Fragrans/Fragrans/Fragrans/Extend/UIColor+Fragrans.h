@@ -52,6 +52,34 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)randomColor;
 
 /**
+ 获取red值
+ 
+ @return 返回当前颜色的red值,0～255
+ */
+- (u_int8_t)redValue;
+
+/**
+ 获取green值
+ 
+ @return 返回当前颜色的green值,0～255
+ */
+- (u_int8_t)greenValue;
+
+/**
+ 获取blue值
+ 
+ @return 返回当前颜色的blue值,0～255
+ */
+- (u_int8_t)blueValue;
+
+/**
+ 获取alpha值
+ 
+ @return 返回当前颜色的alpha值,0～1
+ */
+- (CGFloat)alphaValue;
+
+/**
  渐变颜色
  
  @param fromColor 开始颜色 UIColor或者NSString或者NSNumber格式

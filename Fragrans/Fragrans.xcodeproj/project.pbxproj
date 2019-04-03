@@ -12,47 +12,47 @@
 		F521EE4D2238E0A300B0BC2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4C2238E0A200B0BC2B /* Foundation.framework */; };
 		F521EE4F2238E0AD00B0BC2B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */; };
 		F5394D2A2252F6560064AD54 /* FragransDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394D292252F6560064AD54 /* FragransDemoView.m */; };
+		F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DE622548C410064AD54 /* NSString+Fragrans.m */; };
+		F5394E0722548C420064AD54 /* NSData+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DE922548C410064AD54 /* NSData+Fragrans.m */; };
+		F5394E0822548C420064AD54 /* NSBundle+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DEA22548C410064AD54 /* NSBundle+Fragrans.m */; };
+		F5394E0922548C420064AD54 /* NSDictionary+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DEE22548C410064AD54 /* NSDictionary+Fragrans.m */; };
+		F5394E0A22548C420064AD54 /* NSDate+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DEF22548C410064AD54 /* NSDate+Fragrans.m */; };
+		F5394E0B22548C420064AD54 /* NSMutableDictionary+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DF022548C410064AD54 /* NSMutableDictionary+Fragrans.m */; };
+		F5394E0C22548C420064AD54 /* UIColor+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DF222548C410064AD54 /* UIColor+Fragrans.m */; };
+		F5394E0D22548C420064AD54 /* NSMutableString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DF322548C410064AD54 /* NSMutableString+Fragrans.m */; };
+		F5394E0E22548C420064AD54 /* NSObject+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DF422548C410064AD54 /* NSObject+Fragrans.m */; };
+		F5394E0F22548C420064AD54 /* UIScreen+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DF722548C410064AD54 /* UIScreen+Fragrans.m */; };
+		F5394E1022548C420064AD54 /* NSMutableAttributedString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DF822548C410064AD54 /* NSMutableAttributedString+Fragrans.m */; };
+		F5394E1122548C420064AD54 /* NSDateFormatter+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DFA22548C420064AD54 /* NSDateFormatter+Fragrans.m */; };
+		F5394E1222548C420064AD54 /* NSMutableArray+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DFB22548C420064AD54 /* NSMutableArray+Fragrans.m */; };
+		F5394E1322548C420064AD54 /* UIDevice+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DFE22548C420064AD54 /* UIDevice+Fragrans.m */; };
+		F5394E1422548C420064AD54 /* UIFont+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E0222548C420064AD54 /* UIFont+Fragrans.m */; };
+		F5394E1522548C420064AD54 /* NSArray+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E0522548C420064AD54 /* NSArray+Fragrans.m */; };
+		F5394E2422548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E1622548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m */; };
+		F5394E2522548C5B0064AD54 /* NSURLSession+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E1722548C5B0064AD54 /* NSURLSession+Fragrans.m */; };
+		F5394E2622548C5B0064AD54 /* NSURLRequest+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E1822548C5B0064AD54 /* NSURLRequest+Fragrans.m */; };
+		F5394E2722548C5B0064AD54 /* NSFileManager+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E1D22548C5B0064AD54 /* NSFileManager+Fragrans.m */; };
+		F5394E2822548C5B0064AD54 /* NSNetService+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E1E22548C5B0064AD54 /* NSNetService+Fragrans.m */; };
+		F5394E2922548C5B0064AD54 /* CALayer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E1F22548C5B0064AD54 /* CALayer+Fragrans.m */; };
+		F5394E2A22548C5B0064AD54 /* CABasicAnimation+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E2322548C5B0064AD54 /* CABasicAnimation+Fragrans.m */; };
+		F5394E4D22548C760064AD54 /* UISwitch+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E2B22548C740064AD54 /* UISwitch+Fragrans.m */; };
+		F5394E4E22548C760064AD54 /* UITextView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E2C22548C740064AD54 /* UITextView+Fragrans.m */; };
+		F5394E4F22548C760064AD54 /* UITableView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3022548C740064AD54 /* UITableView+Fragrans.m */; };
+		F5394E5022548C760064AD54 /* UIPageControl+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3222548C740064AD54 /* UIPageControl+Fragrans.m */; };
+		F5394E5122548C760064AD54 /* UIButton+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3322548C740064AD54 /* UIButton+Fragrans.m */; };
+		F5394E5222548C760064AD54 /* UIBarButtonItem+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3522548C740064AD54 /* UIBarButtonItem+Fragrans.m */; };
+		F5394E5322548C760064AD54 /* UITapGestureRecognizer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3622548C740064AD54 /* UITapGestureRecognizer+Fragrans.m */; };
+		F5394E5422548C760064AD54 /* UIAlertController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3A22548C750064AD54 /* UIAlertController+Fragrans.m */; };
+		F5394E5522548C760064AD54 /* UIImage+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3B22548C750064AD54 /* UIImage+Fragrans.m */; };
+		F5394E5622548C760064AD54 /* UILabel+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3C22548C750064AD54 /* UILabel+Fragrans.m */; };
+		F5394E5722548C760064AD54 /* UITextField+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E3F22548C750064AD54 /* UITextField+Fragrans.m */; };
+		F5394E5822548C760064AD54 /* UIImageView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4022548C750064AD54 /* UIImageView+Fragrans.m */; };
+		F5394E5922548C760064AD54 /* UIViewController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4122548C750064AD54 /* UIViewController+Fragrans.m */; };
+		F5394E5A22548C760064AD54 /* UICollectionViewCell+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4522548C750064AD54 /* UICollectionViewCell+Fragrans.m */; };
+		F5394E5B22548C760064AD54 /* UISlider+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4622548C750064AD54 /* UISlider+Fragrans.m */; };
+		F5394E5C22548C760064AD54 /* UIView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4A22548C750064AD54 /* UIView+Fragrans.m */; };
+		F5394E5D22548C760064AD54 /* UIScrollView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */; };
 		F5694DA82250A21B00BD4F80 /* FragransDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694DA72250A21B00BD4F80 /* FragransDemoController.m */; };
-		F5694E8C2250A64E00BD4F80 /* UIScrollView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E3B2250A64900BD4F80 /* UIScrollView+Fragrans.m */; };
-		F5694E8D2250A64E00BD4F80 /* UITapGestureRecognizer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E3C2250A64900BD4F80 /* UITapGestureRecognizer+Fragrans.m */; };
-		F5694E8E2250A64E00BD4F80 /* UISlider+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E3F2250A64900BD4F80 /* UISlider+Fragrans.m */; };
-		F5694E8F2250A64E00BD4F80 /* NSData+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E442250A64900BD4F80 /* NSData+Fragrans.m */; };
-		F5694E902250A64E00BD4F80 /* NSURLRequest+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E452250A64900BD4F80 /* NSURLRequest+Fragrans.m */; };
-		F5694E912250A64E00BD4F80 /* NSDateFormatter+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E472250A64900BD4F80 /* NSDateFormatter+Fragrans.m */; };
-		F5694E922250A64E00BD4F80 /* UIView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E482250A64900BD4F80 /* UIView+Fragrans.m */; };
-		F5694E932250A64E00BD4F80 /* NSMutableString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E492250A64900BD4F80 /* NSMutableString+Fragrans.m */; };
-		F5694E942250A64E00BD4F80 /* UITextView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E4D2250A64A00BD4F80 /* UITextView+Fragrans.m */; };
-		F5694E952250A64E00BD4F80 /* NSArray+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E4F2250A64A00BD4F80 /* NSArray+Fragrans.m */; };
-		F5694E962250A64E00BD4F80 /* UIImage+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E512250A64A00BD4F80 /* UIImage+Fragrans.m */; };
-		F5694E972250A64E00BD4F80 /* NSNetServiceBrowser+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E532250A64A00BD4F80 /* NSNetServiceBrowser+Fragrans.m */; };
-		F5694E982250A64E00BD4F80 /* UIFont+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E552250A64A00BD4F80 /* UIFont+Fragrans.m */; };
-		F5694E992250A64E00BD4F80 /* NSBundle+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E562250A64A00BD4F80 /* NSBundle+Fragrans.m */; };
-		F5694E9A2250A64E00BD4F80 /* NSMutableArray+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E5A2250A64A00BD4F80 /* NSMutableArray+Fragrans.m */; };
-		F5694E9B2250A64E00BD4F80 /* UITableView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E5C2250A64B00BD4F80 /* UITableView+Fragrans.m */; };
-		F5694E9C2250A64E00BD4F80 /* NSMutableAttributedString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E5F2250A64B00BD4F80 /* NSMutableAttributedString+Fragrans.m */; };
-		F5694E9D2250A64E00BD4F80 /* UIPageControl+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E612250A64B00BD4F80 /* UIPageControl+Fragrans.m */; };
-		F5694E9E2250A64E00BD4F80 /* NSObject+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E642250A64B00BD4F80 /* NSObject+Fragrans.m */; };
-		F5694E9F2250A64E00BD4F80 /* NSDictionary+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E652250A64B00BD4F80 /* NSDictionary+Fragrans.m */; };
-		F5694EA02250A64E00BD4F80 /* NSURLSession+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E672250A64B00BD4F80 /* NSURLSession+Fragrans.m */; };
-		F5694EA12250A64E00BD4F80 /* CABasicAnimation+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E682250A64C00BD4F80 /* CABasicAnimation+Fragrans.m */; };
-		F5694EA22250A64E00BD4F80 /* NSFileManager+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E6C2250A64C00BD4F80 /* NSFileManager+Fragrans.m */; };
-		F5694EA32250A64E00BD4F80 /* UIScreen+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E6E2250A64C00BD4F80 /* UIScreen+Fragrans.m */; };
-		F5694EA42250A64E00BD4F80 /* NSDate+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E6F2250A64C00BD4F80 /* NSDate+Fragrans.m */; };
-		F5694EA52250A64E00BD4F80 /* UISwitch+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E702250A64C00BD4F80 /* UISwitch+Fragrans.m */; };
-		F5694EA62250A64E00BD4F80 /* UIDevice+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E712250A64C00BD4F80 /* UIDevice+Fragrans.m */; };
-		F5694EA72250A64E00BD4F80 /* UIAlertController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E742250A64C00BD4F80 /* UIAlertController+Fragrans.m */; };
-		F5694EA82250A64E00BD4F80 /* UIButton+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E752250A64D00BD4F80 /* UIButton+Fragrans.m */; };
-		F5694EA92250A64E00BD4F80 /* NSString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E772250A64D00BD4F80 /* NSString+Fragrans.m */; };
-		F5694EAA2250A64E00BD4F80 /* CALayer+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E792250A64D00BD4F80 /* CALayer+Fragrans.m */; };
-		F5694EAB2250A64E00BD4F80 /* UILabel+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E7C2250A64D00BD4F80 /* UILabel+Fragrans.m */; };
-		F5694EAC2250A64E00BD4F80 /* UITextField+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E7D2250A64D00BD4F80 /* UITextField+Fragrans.m */; };
-		F5694EAD2250A64E00BD4F80 /* UIColor+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E7E2250A64D00BD4F80 /* UIColor+Fragrans.m */; };
-		F5694EAE2250A64E00BD4F80 /* UIBarButtonItem+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E812250A64E00BD4F80 /* UIBarButtonItem+Fragrans.m */; };
-		F5694EAF2250A64E00BD4F80 /* UIViewController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E822250A64E00BD4F80 /* UIViewController+Fragrans.m */; };
-		F5694EB02250A64E00BD4F80 /* NSMutableDictionary+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E862250A64E00BD4F80 /* NSMutableDictionary+Fragrans.m */; };
-		F5694EB12250A64E00BD4F80 /* UIImageView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E872250A64E00BD4F80 /* UIImageView+Fragrans.m */; };
-		F5694EB22250A64E00BD4F80 /* UICollectionViewCell+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E882250A64E00BD4F80 /* UICollectionViewCell+Fragrans.m */; };
-		F5694EB32250A64E00BD4F80 /* NSNetService+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694E8B2250A64E00BD4F80 /* NSNetService+Fragrans.m */; };
 		F5FAB6AF22003B4E00618786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6AE22003B4E00618786 /* AppDelegate.m */; };
 		F5FAB6B222003B4E00618786 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6B122003B4E00618786 /* ViewController.m */; };
 		F5FAB6B522003B4E00618786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FAB6B322003B4E00618786 /* Main.storyboard */; };
@@ -84,90 +84,90 @@
 		F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F5394D282252F6560064AD54 /* FragransDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoView.h; sourceTree = "<group>"; };
 		F5394D292252F6560064AD54 /* FragransDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoView.m; sourceTree = "<group>"; };
+		F5394DE522548C1C0064AD54 /* FragransDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragransDefine.h; sourceTree = "<group>"; };
+		F5394DE622548C410064AD54 /* NSString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DE722548C410064AD54 /* NSDate+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DE822548C410064AD54 /* NSData+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DE922548C410064AD54 /* NSData+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DEA22548C410064AD54 /* NSBundle+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DEB22548C410064AD54 /* NSMutableArray+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DEC22548C410064AD54 /* NSMutableDictionary+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DED22548C410064AD54 /* NSArray+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DEE22548C410064AD54 /* NSDictionary+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DEF22548C410064AD54 /* NSDate+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF022548C410064AD54 /* NSMutableDictionary+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF122548C410064AD54 /* NSDictionary+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DF222548C410064AD54 /* UIColor+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF322548C410064AD54 /* NSMutableString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF422548C410064AD54 /* NSObject+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF522548C410064AD54 /* NSDateFormatter+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DF622548C410064AD54 /* UIDevice+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DF722548C410064AD54 /* UIScreen+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF822548C410064AD54 /* NSMutableAttributedString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DF922548C410064AD54 /* UIColor+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DFA22548C420064AD54 /* NSDateFormatter+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DFB22548C420064AD54 /* NSMutableArray+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DFC22548C420064AD54 /* NSObject+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DFD22548C420064AD54 /* NSBundle+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Fragrans.h"; sourceTree = "<group>"; };
+		F5394DFE22548C420064AD54 /* UIDevice+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Fragrans.m"; sourceTree = "<group>"; };
+		F5394DFF22548C420064AD54 /* NSMutableAttributedString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E0022548C420064AD54 /* NSMutableString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E0122548C420064AD54 /* UIScreen+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E0222548C420064AD54 /* UIFont+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E0322548C420064AD54 /* UIFont+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E0422548C420064AD54 /* NSString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E0522548C420064AD54 /* NSArray+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E1622548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetServiceBrowser+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E1722548C5B0064AD54 /* NSURLSession+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E1822548C5B0064AD54 /* NSURLRequest+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E1922548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetServiceBrowser+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E1A22548C5B0064AD54 /* CABasicAnimation+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E1B22548C5B0064AD54 /* NSURLRequest+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E1C22548C5B0064AD54 /* CALayer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E1D22548C5B0064AD54 /* NSFileManager+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E1E22548C5B0064AD54 /* NSNetService+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetService+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E1F22548C5B0064AD54 /* CALayer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E2022548C5B0064AD54 /* NSURLSession+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E2122548C5B0064AD54 /* NSFileManager+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E2222548C5B0064AD54 /* NSNetService+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetService+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E2322548C5B0064AD54 /* CABasicAnimation+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E2B22548C740064AD54 /* UISwitch+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E2C22548C740064AD54 /* UITextView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E2D22548C740064AD54 /* UIViewController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E2E22548C740064AD54 /* UIPageControl+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E2F22548C740064AD54 /* UILabel+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3022548C740064AD54 /* UITableView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3122548C740064AD54 /* UIAlertController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3222548C740064AD54 /* UIPageControl+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3322548C740064AD54 /* UIButton+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3422548C740064AD54 /* UITextView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3522548C740064AD54 /* UIBarButtonItem+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3622548C740064AD54 /* UITapGestureRecognizer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3722548C740064AD54 /* UIButton+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3822548C740064AD54 /* UIImage+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3922548C740064AD54 /* UISlider+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3A22548C750064AD54 /* UIAlertController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3B22548C750064AD54 /* UIImage+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3C22548C750064AD54 /* UILabel+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E3D22548C750064AD54 /* UIImageView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3E22548C750064AD54 /* UISwitch+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E3F22548C750064AD54 /* UITextField+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4022548C750064AD54 /* UIImageView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4122548C750064AD54 /* UIViewController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4222548C750064AD54 /* UIScrollView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E4322548C750064AD54 /* UITableView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E4422548C750064AD54 /* UICollectionViewCell+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E4522548C750064AD54 /* UICollectionViewCell+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4622548C750064AD54 /* UISlider+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4722548C750064AD54 /* UITextField+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E4822548C750064AD54 /* UIView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E4922548C750064AD54 /* UIBarButtonItem+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Fragrans.h"; sourceTree = "<group>"; };
+		F5394E4A22548C750064AD54 /* UIView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Fragrans.m"; sourceTree = "<group>"; };
+		F5394E4C22548C760064AD54 /* UITapGestureRecognizer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Fragrans.h"; sourceTree = "<group>"; };
 		F5694DA62250A21B00BD4F80 /* FragransDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoController.h; sourceTree = "<group>"; };
 		F5694DA72250A21B00BD4F80 /* FragransDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoController.m; sourceTree = "<group>"; };
 		F5694DAA2250A3E500BD4F80 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
-		F5694E3B2250A64900BD4F80 /* UIScrollView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E3C2250A64900BD4F80 /* UITapGestureRecognizer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E3D2250A64900BD4F80 /* CABasicAnimation+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CABasicAnimation+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E3E2250A64900BD4F80 /* UIScreen+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E3F2250A64900BD4F80 /* UISlider+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E402250A64900BD4F80 /* NSString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E412250A64900BD4F80 /* NSDictionary+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E422250A64900BD4F80 /* NSURLRequest+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E432250A64900BD4F80 /* NSMutableArray+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E442250A64900BD4F80 /* NSData+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E452250A64900BD4F80 /* NSURLRequest+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E462250A64900BD4F80 /* UIImageView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E472250A64900BD4F80 /* NSDateFormatter+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E482250A64900BD4F80 /* UIView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E492250A64900BD4F80 /* NSMutableString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E4A2250A64900BD4F80 /* NSArray+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E4B2250A64900BD4F80 /* UIFont+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E4C2250A64900BD4F80 /* UIImage+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E4D2250A64A00BD4F80 /* UITextView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E4E2250A64A00BD4F80 /* UISlider+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E4F2250A64A00BD4F80 /* NSArray+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E502250A64A00BD4F80 /* UIColor+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E512250A64A00BD4F80 /* UIImage+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E522250A64A00BD4F80 /* NSNetService+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetService+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E532250A64A00BD4F80 /* NSNetServiceBrowser+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetServiceBrowser+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E542250A64A00BD4F80 /* UICollectionViewCell+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E552250A64A00BD4F80 /* UIFont+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E562250A64A00BD4F80 /* NSBundle+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E572250A64A00BD4F80 /* UILabel+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E582250A64A00BD4F80 /* UITapGestureRecognizer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E592250A64A00BD4F80 /* UIViewController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E5A2250A64A00BD4F80 /* NSMutableArray+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E5B2250A64B00BD4F80 /* UIButton+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E5C2250A64B00BD4F80 /* UITableView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E5D2250A64B00BD4F80 /* UITextField+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E5E2250A64B00BD4F80 /* NSMutableString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E5F2250A64B00BD4F80 /* NSMutableAttributedString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E602250A64B00BD4F80 /* UIAlertController+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E612250A64B00BD4F80 /* UIPageControl+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E622250A64B00BD4F80 /* UITableView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E632250A64B00BD4F80 /* NSBundle+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E642250A64B00BD4F80 /* NSObject+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E652250A64B00BD4F80 /* NSDictionary+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E662250A64B00BD4F80 /* NSURLSession+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E672250A64B00BD4F80 /* NSURLSession+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E682250A64C00BD4F80 /* CABasicAnimation+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CABasicAnimation+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E692250A64C00BD4F80 /* NSDate+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E6A2250A64C00BD4F80 /* CALayer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E6B2250A64C00BD4F80 /* NSObject+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E6C2250A64C00BD4F80 /* NSFileManager+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E6D2250A64C00BD4F80 /* UIScrollView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E6E2250A64C00BD4F80 /* UIScreen+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E6F2250A64C00BD4F80 /* NSDate+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E702250A64C00BD4F80 /* UISwitch+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E712250A64C00BD4F80 /* UIDevice+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E722250A64C00BD4F80 /* UIBarButtonItem+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E732250A64C00BD4F80 /* UIDevice+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E742250A64C00BD4F80 /* UIAlertController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E752250A64D00BD4F80 /* UIButton+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E762250A64D00BD4F80 /* NSMutableDictionary+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E772250A64D00BD4F80 /* NSString+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E782250A64D00BD4F80 /* FragransDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragransDefine.h; sourceTree = "<group>"; };
-		F5694E792250A64D00BD4F80 /* CALayer+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E7A2250A64D00BD4F80 /* NSNetServiceBrowser+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNetServiceBrowser+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E7B2250A64D00BD4F80 /* UIView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E7C2250A64D00BD4F80 /* UILabel+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E7D2250A64D00BD4F80 /* UITextField+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E7E2250A64D00BD4F80 /* UIColor+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E7F2250A64D00BD4F80 /* NSMutableAttributedString+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E802250A64D00BD4F80 /* NSData+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E812250A64E00BD4F80 /* UIBarButtonItem+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E822250A64E00BD4F80 /* UIViewController+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E832250A64E00BD4F80 /* UITextView+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E842250A64E00BD4F80 /* NSDateFormatter+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E852250A64E00BD4F80 /* UISwitch+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E862250A64E00BD4F80 /* NSMutableDictionary+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E872250A64E00BD4F80 /* UIImageView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E882250A64E00BD4F80 /* UICollectionViewCell+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+Fragrans.m"; sourceTree = "<group>"; };
-		F5694E892250A64E00BD4F80 /* NSFileManager+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E8A2250A64E00BD4F80 /* UIPageControl+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+Fragrans.h"; sourceTree = "<group>"; };
-		F5694E8B2250A64E00BD4F80 /* NSNetService+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNetService+Fragrans.m"; sourceTree = "<group>"; };
 		F5FAB6AA22003B4E00618786 /* Fragrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fragrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FAB6AD22003B4E00618786 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5FAB6AE22003B4E00618786 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -221,6 +221,115 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F5394D6922548BF60064AD54 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F5394E3122548C740064AD54 /* UIAlertController+Fragrans.h */,
+				F5394E3A22548C750064AD54 /* UIAlertController+Fragrans.m */,
+				F5394E4922548C750064AD54 /* UIBarButtonItem+Fragrans.h */,
+				F5394E3522548C740064AD54 /* UIBarButtonItem+Fragrans.m */,
+				F5394E3722548C740064AD54 /* UIButton+Fragrans.h */,
+				F5394E3322548C740064AD54 /* UIButton+Fragrans.m */,
+				F5394E4422548C750064AD54 /* UICollectionViewCell+Fragrans.h */,
+				F5394E4522548C750064AD54 /* UICollectionViewCell+Fragrans.m */,
+				F5394E3822548C740064AD54 /* UIImage+Fragrans.h */,
+				F5394E3B22548C750064AD54 /* UIImage+Fragrans.m */,
+				F5394E3D22548C750064AD54 /* UIImageView+Fragrans.h */,
+				F5394E4022548C750064AD54 /* UIImageView+Fragrans.m */,
+				F5394E2F22548C740064AD54 /* UILabel+Fragrans.h */,
+				F5394E3C22548C750064AD54 /* UILabel+Fragrans.m */,
+				F5394E2E22548C740064AD54 /* UIPageControl+Fragrans.h */,
+				F5394E3222548C740064AD54 /* UIPageControl+Fragrans.m */,
+				F5394E4222548C750064AD54 /* UIScrollView+Fragrans.h */,
+				F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */,
+				F5394E3922548C740064AD54 /* UISlider+Fragrans.h */,
+				F5394E4622548C750064AD54 /* UISlider+Fragrans.m */,
+				F5394E3E22548C750064AD54 /* UISwitch+Fragrans.h */,
+				F5394E2B22548C740064AD54 /* UISwitch+Fragrans.m */,
+				F5394E4322548C750064AD54 /* UITableView+Fragrans.h */,
+				F5394E3022548C740064AD54 /* UITableView+Fragrans.m */,
+				F5394E4C22548C760064AD54 /* UITapGestureRecognizer+Fragrans.h */,
+				F5394E3622548C740064AD54 /* UITapGestureRecognizer+Fragrans.m */,
+				F5394E4722548C750064AD54 /* UITextField+Fragrans.h */,
+				F5394E3F22548C750064AD54 /* UITextField+Fragrans.m */,
+				F5394E3422548C740064AD54 /* UITextView+Fragrans.h */,
+				F5394E2C22548C740064AD54 /* UITextView+Fragrans.m */,
+				F5394E4822548C750064AD54 /* UIView+Fragrans.h */,
+				F5394E4A22548C750064AD54 /* UIView+Fragrans.m */,
+				F5394E2D22548C740064AD54 /* UIViewController+Fragrans.h */,
+				F5394E4122548C750064AD54 /* UIViewController+Fragrans.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F5394D9D22548C050064AD54 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				F5394E1A22548C5B0064AD54 /* CABasicAnimation+Fragrans.h */,
+				F5394E2322548C5B0064AD54 /* CABasicAnimation+Fragrans.m */,
+				F5394E1C22548C5B0064AD54 /* CALayer+Fragrans.h */,
+				F5394E1F22548C5B0064AD54 /* CALayer+Fragrans.m */,
+				F5394E2122548C5B0064AD54 /* NSFileManager+Fragrans.h */,
+				F5394E1D22548C5B0064AD54 /* NSFileManager+Fragrans.m */,
+				F5394E2222548C5B0064AD54 /* NSNetService+Fragrans.h */,
+				F5394E1E22548C5B0064AD54 /* NSNetService+Fragrans.m */,
+				F5394E1922548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.h */,
+				F5394E1622548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m */,
+				F5394E1B22548C5B0064AD54 /* NSURLRequest+Fragrans.h */,
+				F5394E1822548C5B0064AD54 /* NSURLRequest+Fragrans.m */,
+				F5394E2022548C5B0064AD54 /* NSURLSession+Fragrans.h */,
+				F5394E1722548C5B0064AD54 /* NSURLSession+Fragrans.m */,
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
+		F5394DB322548C0C0064AD54 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				F5394DED22548C410064AD54 /* NSArray+Fragrans.h */,
+				F5394E0522548C420064AD54 /* NSArray+Fragrans.m */,
+				F5394DFD22548C420064AD54 /* NSBundle+Fragrans.h */,
+				F5394DEA22548C410064AD54 /* NSBundle+Fragrans.m */,
+				F5394DE822548C410064AD54 /* NSData+Fragrans.h */,
+				F5394DE922548C410064AD54 /* NSData+Fragrans.m */,
+				F5394DE722548C410064AD54 /* NSDate+Fragrans.h */,
+				F5394DEF22548C410064AD54 /* NSDate+Fragrans.m */,
+				F5394DF522548C410064AD54 /* NSDateFormatter+Fragrans.h */,
+				F5394DFA22548C420064AD54 /* NSDateFormatter+Fragrans.m */,
+				F5394DF122548C410064AD54 /* NSDictionary+Fragrans.h */,
+				F5394DEE22548C410064AD54 /* NSDictionary+Fragrans.m */,
+				F5394DEB22548C410064AD54 /* NSMutableArray+Fragrans.h */,
+				F5394DFB22548C420064AD54 /* NSMutableArray+Fragrans.m */,
+				F5394DFF22548C420064AD54 /* NSMutableAttributedString+Fragrans.h */,
+				F5394DF822548C410064AD54 /* NSMutableAttributedString+Fragrans.m */,
+				F5394DEC22548C410064AD54 /* NSMutableDictionary+Fragrans.h */,
+				F5394DF022548C410064AD54 /* NSMutableDictionary+Fragrans.m */,
+				F5394E0022548C420064AD54 /* NSMutableString+Fragrans.h */,
+				F5394DF322548C410064AD54 /* NSMutableString+Fragrans.m */,
+				F5394DFC22548C420064AD54 /* NSObject+Fragrans.h */,
+				F5394DF422548C410064AD54 /* NSObject+Fragrans.m */,
+				F5394E0422548C420064AD54 /* NSString+Fragrans.h */,
+				F5394DE622548C410064AD54 /* NSString+Fragrans.m */,
+				F5394DF922548C410064AD54 /* UIColor+Fragrans.h */,
+				F5394DF222548C410064AD54 /* UIColor+Fragrans.m */,
+				F5394DF622548C410064AD54 /* UIDevice+Fragrans.h */,
+				F5394DFE22548C420064AD54 /* UIDevice+Fragrans.m */,
+				F5394E0322548C420064AD54 /* UIFont+Fragrans.h */,
+				F5394E0222548C420064AD54 /* UIFont+Fragrans.m */,
+				F5394E0122548C420064AD54 /* UIScreen+Fragrans.h */,
+				F5394DF722548C410064AD54 /* UIScreen+Fragrans.m */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		F5394DE422548C1C0064AD54 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F5394DE522548C1C0064AD54 /* FragransDefine.h */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		F5694DA52250A1F400BD4F80 /* FragransDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,99 +341,14 @@
 			path = FragransDemo;
 			sourceTree = "<group>";
 		};
-		F5694DAB2250A4A300BD4F80 /* Fragrans */ = {
-			isa = PBXGroup;
-			children = (
-				F5694E3D2250A64900BD4F80 /* CABasicAnimation+Fragrans.h */,
-				F5694E682250A64C00BD4F80 /* CABasicAnimation+Fragrans.m */,
-				F5694E6A2250A64C00BD4F80 /* CALayer+Fragrans.h */,
-				F5694E792250A64D00BD4F80 /* CALayer+Fragrans.m */,
-				F5694E782250A64D00BD4F80 /* FragransDefine.h */,
-				F5694E4A2250A64900BD4F80 /* NSArray+Fragrans.h */,
-				F5694E4F2250A64A00BD4F80 /* NSArray+Fragrans.m */,
-				F5694E632250A64B00BD4F80 /* NSBundle+Fragrans.h */,
-				F5694E562250A64A00BD4F80 /* NSBundle+Fragrans.m */,
-				F5694E802250A64D00BD4F80 /* NSData+Fragrans.h */,
-				F5694E442250A64900BD4F80 /* NSData+Fragrans.m */,
-				F5694E692250A64C00BD4F80 /* NSDate+Fragrans.h */,
-				F5694E6F2250A64C00BD4F80 /* NSDate+Fragrans.m */,
-				F5694E842250A64E00BD4F80 /* NSDateFormatter+Fragrans.h */,
-				F5694E472250A64900BD4F80 /* NSDateFormatter+Fragrans.m */,
-				F5694E412250A64900BD4F80 /* NSDictionary+Fragrans.h */,
-				F5694E652250A64B00BD4F80 /* NSDictionary+Fragrans.m */,
-				F5694E892250A64E00BD4F80 /* NSFileManager+Fragrans.h */,
-				F5694E6C2250A64C00BD4F80 /* NSFileManager+Fragrans.m */,
-				F5694E432250A64900BD4F80 /* NSMutableArray+Fragrans.h */,
-				F5694E5A2250A64A00BD4F80 /* NSMutableArray+Fragrans.m */,
-				F5694E7F2250A64D00BD4F80 /* NSMutableAttributedString+Fragrans.h */,
-				F5694E5F2250A64B00BD4F80 /* NSMutableAttributedString+Fragrans.m */,
-				F5694E762250A64D00BD4F80 /* NSMutableDictionary+Fragrans.h */,
-				F5694E862250A64E00BD4F80 /* NSMutableDictionary+Fragrans.m */,
-				F5694E5E2250A64B00BD4F80 /* NSMutableString+Fragrans.h */,
-				F5694E492250A64900BD4F80 /* NSMutableString+Fragrans.m */,
-				F5694E522250A64A00BD4F80 /* NSNetService+Fragrans.h */,
-				F5694E8B2250A64E00BD4F80 /* NSNetService+Fragrans.m */,
-				F5694E7A2250A64D00BD4F80 /* NSNetServiceBrowser+Fragrans.h */,
-				F5694E532250A64A00BD4F80 /* NSNetServiceBrowser+Fragrans.m */,
-				F5694E6B2250A64C00BD4F80 /* NSObject+Fragrans.h */,
-				F5694E642250A64B00BD4F80 /* NSObject+Fragrans.m */,
-				F5694E402250A64900BD4F80 /* NSString+Fragrans.h */,
-				F5694E772250A64D00BD4F80 /* NSString+Fragrans.m */,
-				F5694E422250A64900BD4F80 /* NSURLRequest+Fragrans.h */,
-				F5694E452250A64900BD4F80 /* NSURLRequest+Fragrans.m */,
-				F5694E662250A64B00BD4F80 /* NSURLSession+Fragrans.h */,
-				F5694E672250A64B00BD4F80 /* NSURLSession+Fragrans.m */,
-				F5694E602250A64B00BD4F80 /* UIAlertController+Fragrans.h */,
-				F5694E742250A64C00BD4F80 /* UIAlertController+Fragrans.m */,
-				F5694E722250A64C00BD4F80 /* UIBarButtonItem+Fragrans.h */,
-				F5694E812250A64E00BD4F80 /* UIBarButtonItem+Fragrans.m */,
-				F5694E5B2250A64B00BD4F80 /* UIButton+Fragrans.h */,
-				F5694E752250A64D00BD4F80 /* UIButton+Fragrans.m */,
-				F5694E542250A64A00BD4F80 /* UICollectionViewCell+Fragrans.h */,
-				F5694E882250A64E00BD4F80 /* UICollectionViewCell+Fragrans.m */,
-				F5694E502250A64A00BD4F80 /* UIColor+Fragrans.h */,
-				F5694E7E2250A64D00BD4F80 /* UIColor+Fragrans.m */,
-				F5694E732250A64C00BD4F80 /* UIDevice+Fragrans.h */,
-				F5694E712250A64C00BD4F80 /* UIDevice+Fragrans.m */,
-				F5694E4B2250A64900BD4F80 /* UIFont+Fragrans.h */,
-				F5694E552250A64A00BD4F80 /* UIFont+Fragrans.m */,
-				F5694E4C2250A64900BD4F80 /* UIImage+Fragrans.h */,
-				F5694E512250A64A00BD4F80 /* UIImage+Fragrans.m */,
-				F5694E462250A64900BD4F80 /* UIImageView+Fragrans.h */,
-				F5694E872250A64E00BD4F80 /* UIImageView+Fragrans.m */,
-				F5694E572250A64A00BD4F80 /* UILabel+Fragrans.h */,
-				F5694E7C2250A64D00BD4F80 /* UILabel+Fragrans.m */,
-				F5694E8A2250A64E00BD4F80 /* UIPageControl+Fragrans.h */,
-				F5694E612250A64B00BD4F80 /* UIPageControl+Fragrans.m */,
-				F5694E3E2250A64900BD4F80 /* UIScreen+Fragrans.h */,
-				F5694E6E2250A64C00BD4F80 /* UIScreen+Fragrans.m */,
-				F5694E6D2250A64C00BD4F80 /* UIScrollView+Fragrans.h */,
-				F5694E3B2250A64900BD4F80 /* UIScrollView+Fragrans.m */,
-				F5694E4E2250A64A00BD4F80 /* UISlider+Fragrans.h */,
-				F5694E3F2250A64900BD4F80 /* UISlider+Fragrans.m */,
-				F5694E852250A64E00BD4F80 /* UISwitch+Fragrans.h */,
-				F5694E702250A64C00BD4F80 /* UISwitch+Fragrans.m */,
-				F5694E622250A64B00BD4F80 /* UITableView+Fragrans.h */,
-				F5694E5C2250A64B00BD4F80 /* UITableView+Fragrans.m */,
-				F5694E582250A64A00BD4F80 /* UITapGestureRecognizer+Fragrans.h */,
-				F5694E3C2250A64900BD4F80 /* UITapGestureRecognizer+Fragrans.m */,
-				F5694E5D2250A64B00BD4F80 /* UITextField+Fragrans.h */,
-				F5694E7D2250A64D00BD4F80 /* UITextField+Fragrans.m */,
-				F5694E832250A64E00BD4F80 /* UITextView+Fragrans.h */,
-				F5694E4D2250A64A00BD4F80 /* UITextView+Fragrans.m */,
-				F5694E7B2250A64D00BD4F80 /* UIView+Fragrans.h */,
-				F5694E482250A64900BD4F80 /* UIView+Fragrans.m */,
-				F5694E592250A64A00BD4F80 /* UIViewController+Fragrans.h */,
-				F5694E822250A64E00BD4F80 /* UIViewController+Fragrans.m */,
-			);
-			path = Fragrans;
-			sourceTree = "<group>";
-		};
 		F58C4E74224F510C0033A7F3 /* Fragrans */ = {
 			isa = PBXGroup;
 			children = (
 				F5694DAA2250A3E500BD4F80 /* Fragrans.h */,
-				F5694DAB2250A4A300BD4F80 /* Fragrans */,
+				F5394DE422548C1C0064AD54 /* Custom */,
+				F5394DB322548C0C0064AD54 /* Extend */,
+				F5394D9D22548C050064AD54 /* Function */,
+				F5394D6922548BF60064AD54 /* UIKit */,
 			);
 			path = Fragrans;
 			sourceTree = "<group>";
@@ -493,51 +517,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5694EA62250A64E00BD4F80 /* UIDevice+Fragrans.m in Sources */,
-				F5694E9D2250A64E00BD4F80 /* UIPageControl+Fragrans.m in Sources */,
-				F5694EB32250A64E00BD4F80 /* NSNetService+Fragrans.m in Sources */,
-				F5694E952250A64E00BD4F80 /* NSArray+Fragrans.m in Sources */,
-				F5694E8E2250A64E00BD4F80 /* UISlider+Fragrans.m in Sources */,
-				F5694E912250A64E00BD4F80 /* NSDateFormatter+Fragrans.m in Sources */,
-				F5694E932250A64E00BD4F80 /* NSMutableString+Fragrans.m in Sources */,
-				F5694E992250A64E00BD4F80 /* NSBundle+Fragrans.m in Sources */,
-				F5694EAE2250A64E00BD4F80 /* UIBarButtonItem+Fragrans.m in Sources */,
-				F5694EAC2250A64E00BD4F80 /* UITextField+Fragrans.m in Sources */,
-				F5694EA02250A64E00BD4F80 /* NSURLSession+Fragrans.m in Sources */,
-				F5694EAF2250A64E00BD4F80 /* UIViewController+Fragrans.m in Sources */,
-				F5694EA12250A64E00BD4F80 /* CABasicAnimation+Fragrans.m in Sources */,
-				F5694EA92250A64E00BD4F80 /* NSString+Fragrans.m in Sources */,
-				F5694E9B2250A64E00BD4F80 /* UITableView+Fragrans.m in Sources */,
-				F5694EA42250A64E00BD4F80 /* NSDate+Fragrans.m in Sources */,
-				F5694E942250A64E00BD4F80 /* UITextView+Fragrans.m in Sources */,
-				F5694E972250A64E00BD4F80 /* NSNetServiceBrowser+Fragrans.m in Sources */,
-				F5694E962250A64E00BD4F80 /* UIImage+Fragrans.m in Sources */,
-				F5694E9C2250A64E00BD4F80 /* NSMutableAttributedString+Fragrans.m in Sources */,
+				F5394E2A22548C5B0064AD54 /* CABasicAnimation+Fragrans.m in Sources */,
+				F5394E4F22548C760064AD54 /* UITableView+Fragrans.m in Sources */,
+				F5394E2822548C5B0064AD54 /* NSNetService+Fragrans.m in Sources */,
+				F5394E5B22548C760064AD54 /* UISlider+Fragrans.m in Sources */,
+				F5394E2522548C5B0064AD54 /* NSURLSession+Fragrans.m in Sources */,
+				F5394E2722548C5B0064AD54 /* NSFileManager+Fragrans.m in Sources */,
+				F5394E1422548C420064AD54 /* UIFont+Fragrans.m in Sources */,
+				F5394E1022548C420064AD54 /* NSMutableAttributedString+Fragrans.m in Sources */,
+				F5394E1522548C420064AD54 /* NSArray+Fragrans.m in Sources */,
+				F5394E4E22548C760064AD54 /* UITextView+Fragrans.m in Sources */,
+				F5394E0822548C420064AD54 /* NSBundle+Fragrans.m in Sources */,
 				F5FAB6B222003B4E00618786 /* ViewController.m in Sources */,
-				F5694EAA2250A64E00BD4F80 /* CALayer+Fragrans.m in Sources */,
-				F5694EA72250A64E00BD4F80 /* UIAlertController+Fragrans.m in Sources */,
-				F5694E9E2250A64E00BD4F80 /* NSObject+Fragrans.m in Sources */,
-				F5694EA32250A64E00BD4F80 /* UIScreen+Fragrans.m in Sources */,
-				F5694EB22250A64E00BD4F80 /* UICollectionViewCell+Fragrans.m in Sources */,
+				F5394E2422548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m in Sources */,
+				F5394E1222548C420064AD54 /* NSMutableArray+Fragrans.m in Sources */,
 				F5FAB6BD22003B5200618786 /* main.m in Sources */,
+				F5394E5622548C760064AD54 /* UILabel+Fragrans.m in Sources */,
+				F5394E5C22548C760064AD54 /* UIView+Fragrans.m in Sources */,
+				F5394E5322548C760064AD54 /* UITapGestureRecognizer+Fragrans.m in Sources */,
+				F5394E5522548C760064AD54 /* UIImage+Fragrans.m in Sources */,
+				F5394E5022548C760064AD54 /* UIPageControl+Fragrans.m in Sources */,
+				F5394E0722548C420064AD54 /* NSData+Fragrans.m in Sources */,
+				F5394E5722548C760064AD54 /* UITextField+Fragrans.m in Sources */,
+				F5394E0E22548C420064AD54 /* NSObject+Fragrans.m in Sources */,
+				F5394E5D22548C760064AD54 /* UIScrollView+Fragrans.m in Sources */,
 				F5694DA82250A21B00BD4F80 /* FragransDemoController.m in Sources */,
-				F5694E922250A64E00BD4F80 /* UIView+Fragrans.m in Sources */,
-				F5694E9F2250A64E00BD4F80 /* NSDictionary+Fragrans.m in Sources */,
-				F5694E8C2250A64E00BD4F80 /* UIScrollView+Fragrans.m in Sources */,
+				F5394E2922548C5B0064AD54 /* CALayer+Fragrans.m in Sources */,
+				F5394E5422548C760064AD54 /* UIAlertController+Fragrans.m in Sources */,
 				F5394D2A2252F6560064AD54 /* FragransDemoView.m in Sources */,
-				F5694EAD2250A64E00BD4F80 /* UIColor+Fragrans.m in Sources */,
-				F5694EB12250A64E00BD4F80 /* UIImageView+Fragrans.m in Sources */,
-				F5694EA22250A64E00BD4F80 /* NSFileManager+Fragrans.m in Sources */,
-				F5694E9A2250A64E00BD4F80 /* NSMutableArray+Fragrans.m in Sources */,
+				F5394E0922548C420064AD54 /* NSDictionary+Fragrans.m in Sources */,
+				F5394E0C22548C420064AD54 /* UIColor+Fragrans.m in Sources */,
+				F5394E5922548C760064AD54 /* UIViewController+Fragrans.m in Sources */,
+				F5394E0F22548C420064AD54 /* UIScreen+Fragrans.m in Sources */,
+				F5394E5822548C760064AD54 /* UIImageView+Fragrans.m in Sources */,
 				F5FAB6AF22003B4E00618786 /* AppDelegate.m in Sources */,
-				F5694E8F2250A64E00BD4F80 /* NSData+Fragrans.m in Sources */,
-				F5694E8D2250A64E00BD4F80 /* UITapGestureRecognizer+Fragrans.m in Sources */,
-				F5694EB02250A64E00BD4F80 /* NSMutableDictionary+Fragrans.m in Sources */,
-				F5694EA52250A64E00BD4F80 /* UISwitch+Fragrans.m in Sources */,
-				F5694E982250A64E00BD4F80 /* UIFont+Fragrans.m in Sources */,
-				F5694E902250A64E00BD4F80 /* NSURLRequest+Fragrans.m in Sources */,
-				F5694EAB2250A64E00BD4F80 /* UILabel+Fragrans.m in Sources */,
-				F5694EA82250A64E00BD4F80 /* UIButton+Fragrans.m in Sources */,
+				F5394E5222548C760064AD54 /* UIBarButtonItem+Fragrans.m in Sources */,
+				F5394E0A22548C420064AD54 /* NSDate+Fragrans.m in Sources */,
+				F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */,
+				F5394E2622548C5B0064AD54 /* NSURLRequest+Fragrans.m in Sources */,
+				F5394E0B22548C420064AD54 /* NSMutableDictionary+Fragrans.m in Sources */,
+				F5394E1322548C420064AD54 /* UIDevice+Fragrans.m in Sources */,
+				F5394E1122548C420064AD54 /* NSDateFormatter+Fragrans.m in Sources */,
+				F5394E0D22548C420064AD54 /* NSMutableString+Fragrans.m in Sources */,
+				F5394E4D22548C760064AD54 /* UISwitch+Fragrans.m in Sources */,
+				F5394E5A22548C760064AD54 /* UICollectionViewCell+Fragrans.m in Sources */,
+				F5394E5122548C760064AD54 /* UIButton+Fragrans.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
