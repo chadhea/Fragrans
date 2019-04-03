@@ -12,50 +12,58 @@ target 'TargetName' do
 pod 'Fragrans', '~> 0.1.0'
 end
 ```  
-Architecture  
-=
--> Fragrahs.h//头文件  
--> FragransDefine.h//宏定义文件  
--> CALayer+Fragrans.h  
--> NSArray+Fragrans.h  
--> NSMutableArray+Fragrans.h  
--> NSDictionary+Fragrans.h  
--> NSMutableDictionary+Fragrans.h    
--> NSBundle+Fragrans.h  
--> NSFileManager+Fragrans.h  
--> NSObject+Fragrans.h  
--> NSURLSession+Fragrans.h  
--> NSURLRequest+Fragrans.h  
--> NSNetService+Fragrans.h  
--> NSNetServiceBrowser+Fragrans.h  
--> UIFont+Fragrans.h  
--> UIColor+Fragrans.h  
--> UIScreen+Fragrans.h  
--> UIDevice+Fragrans.h  
--> NSDate+Fragrans.h  
--> NSDateFormatter+Fragrans.h  
--> NSData+Fragrans.h  
--> NSString+Fragrans.h  
--> NSMutableString+Fragrans.h  
--> NSMutableAttributedString+Fragrans.h  
--> UIView+Fragrans.h  
--> UILabel+Fragrans.h  
--> UIButton+Fragrans.h  
--> UISlider+Fragrans.h  
--> UISwitch+Fragrans.h  
--> UIImage+Fragrans.h  
--> UIImageView+Fragrans.h  
--> UITextField+Fragrans.h  
--> UITextView+Fragrans.h  
--> UIScrollView+Fragrans.h  
--> UITableView+Fragrans.h  
--> UIPageControl+Fragrans.h  
--> UIBarButtonItem+Fragrans.h  
--> UICollectionViewCell+Fragrans.h  
--> UITapGestureRecognizer+Fragrans.h  
--> UIAlertController+Fragrans.h  
--> UIViewController+Fragrans.h  
--> CABasicAnimation+Fragrans.h  
+## Architecture  
+
+### UIKit  
+- `UIAlertController+Fragrans.h`
+- `UIBarButtonItem+Fragrans.h`
+- `UIButton+Fragrans.h`
+- `UICollectionViewCell+Fragrans.h`
+- `UIImage+Fragrans.h`
+- `UIImageView+Fragrans.h`
+- `UILabel+Fragrans.h`
+- `UIPageControl+Fragrans.h`
+- `UIScrollView+Fragrans.h`
+- `UISlider+Fragrans.h`
+- `UISwitch+Fragrans.h`
+- `UITableView+Fragrans.h`
+- `UITapGestureRecognizer+Fragrans.h`
+- `UITextField+Fragrans.h`
+- `UITextView+Fragrans.h`
+- `UIView+Fragrans.h`
+- `UIViewController+Fragrans.h`
+
+### Extend  
+- `NSArray+Fragrans.h`
+- `NSBundle+Fragrans.h`
+- `NSData+Fragrans.h`
+- `NSDate+Fragrans.h`
+- `NSDateFormatter+Fragrans.h`
+- `NSDictionary+Fragrans.h`
+- `NSMutableArray+Fragrans.h`
+- `NSMutableAttributedString+Fragrans.h`
+- `NSMutableDictionary+Fragrans.h`
+- `NSMutableString+Fragrans.h`
+- `NSObject+Fragrans.h`
+- `NSString+Fragrans.h`
+- `UIColor+Fragrans.h`
+- `UIDevice+Fragrans.h`
+- `UIFont+Fragrans.h`
+- `UIScreen+Fragrans.h1
+
+### Function  
+- `CABasicAnimation+Fragrans.h`
+- `CALayer+Fragrans.h`
+- `NSFileManager+Fragrans.h`
+- `NSNetService+Fragrans.h`
+- `NSNetServiceBrowser+Fragrans.h`
+- `NSURLRequest+Fragrans.h`
+- `NSURLSession+Fragrans.h`  
+
+### Custom  
+- `FragransDefine.h`
+
+
 
 部分代码示例  
 =
