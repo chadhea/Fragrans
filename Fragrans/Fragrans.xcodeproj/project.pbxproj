@@ -345,10 +345,10 @@
 			isa = PBXGroup;
 			children = (
 				F5694DAA2250A3E500BD4F80 /* Fragrans.h */,
-				F5394DE422548C1C0064AD54 /* Custom */,
+				F5394D6922548BF60064AD54 /* UIKit */,
 				F5394DB322548C0C0064AD54 /* Extend */,
 				F5394D9D22548C050064AD54 /* Function */,
-				F5394D6922548BF60064AD54 /* UIKit */,
+				F5394DE422548C1C0064AD54 /* Custom */,
 			);
 			path = Fragrans;
 			sourceTree = "<group>";
