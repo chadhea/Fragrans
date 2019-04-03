@@ -68,7 +68,7 @@ end
 部分代码示例  
 =
 
-UITextField+Frafrans   
+### UITextField+Frafrans   
 ```objective-c
 UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30) 
 placeholder:@"测试"   font:@14 textColor:@3  delegate:self];
@@ -81,9 +81,8 @@ placeholder:@"测试"   font:@14 textColor:@3  delegate:self];
     //返回长度内字符串
 }];
 ```  
-效果  
 ![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)  
-UIView+Fragrans  
+### UIView+Fragrans  
 ```objective-c
 UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) 
 backgroundColor:@9 tap:^(id  _Nonnull sender) {
@@ -93,9 +92,9 @@ backgroundColor:@9 tap:^(id  _Nonnull sender) {
 //设置上边圆角
 [view setCornerWithTop:20];
 //设置渐变色
-view.backgroundColor = [UIColor gradientForLeftToRightWithColors:@[[UIColor cyanColor],[UIColor blueColor],@9] width:50];
-```
-效果  
+view.backgroundColor = [UIColor gradientForLeftToRightWithColors:
+@[[UIColor cyanColor],[UIColor blueColor],@9] width:50];
+```  
 ![uiview_02](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_02.png)  
 ```objective-c
 - (void)drawRect:(CGRect)rect {
@@ -108,7 +107,6 @@ fillColor:[UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[
 width:100]];
 }
 ```  
-效果  
 ![uiview_03](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_03.png)  
 ```objective-c
 - (void)drawRect:(CGRect)rect {
@@ -118,18 +116,17 @@ lineColor:[UIColor gradientForTopToBottomFromColor:[UIColor blueColor] toColor:[
 height:15] round:YES];
 }
 ```  
-效果  
 ![uiview_04](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_04.png)  
 ```objective-c
 - (void)drawRect:(CGRect)rect {
 [UIView drawCircleFrame:CGRectMake(100, 100, 100, 70) 
-color:[UIColor gradientForLeftToRightWithColors:@[[UIColor redColor],[UIColor blueColor],[UIColor cyanColor],[UIColor brownColor],@9,[UIColor greenColor],[UIColor orangeColor]] 
+color:[UIColor gradientForLeftToRightWithColors:@[[UIColor redColor],[UIColor blueColor],
+[UIColor cyanColor],[UIColor brownColor],@9,[UIColor greenColor],[UIColor orangeColor]] 
 width:100]];
 }
 ```  
-效果  
 ![uiview_05](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_05.png)  
-CABasicAnimation+Fragrans  
+### CABasicAnimation+Fragrans  
 ```objective-c
 for (int i = 0; i < 3; i ++) {
         UIView   *view = [UIView viewWithFrame:CGRectMake(30 + 110 * i, 100, 80, 80) 
@@ -147,7 +144,7 @@ for (int i = 0; i < 3; i ++) {
         }
     }
 ```    
-UILabel+Fragrans  
+### UILabel+Fragrans  
 ```objective-c
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" 
 font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter 
@@ -160,10 +157,9 @@ tap:^(id  _Nonnull sender) {
 //设置行间距和字间距
 [label lineSpacing:20 wordSpacing:6];
 ```
-效果  
 ![uilabel_01](https://github.com/chadhea/Fragrans_image/blob/master/UILabel/uilabel_01.png)  
 
-UIButton+Fragrans  
+### UIButton+Fragrans  
 ```objective-c
 UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) 
 bounds:CGRectMake(0, 0, 150, 100) title:@"测试" font:@"15" titleColor:[UIColor redColor]
@@ -175,9 +171,9 @@ backgroundColor:@"e" target:self action:@selector(ceshiclick)];
 //FRGButtonEdgeInsetsStyleTop、Bottom、Left、Right、Center
 [button layoutButtonWithEdgeInsetsStyle:FRGButtonEdgeInsetsStyleCenter imageTitleSpace:10];
 ```  
-效果  
 ![button_top](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_top.png)![button_bottom](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_bottom.png)![button_left](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_left.png)![button_right](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_right.png)![button_center](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_center.png)  
-NSURLRequest+Fragrans  
+
+### NSURLRequest+Fragrans  
 ```objective-c
 //get
 [NSURLRequest get_requestWithURL:@"" params:nil 
@@ -190,7 +186,7 @@ completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) 
      //数据解析
 }];
 ```  
-NSNetService+Fragrans  
+### NSNetService+Fragrans  
 ```objective-c
 //检查网络状态
 BOOL net = [NSNetService checkNetWork];
@@ -198,7 +194,7 @@ BOOL net = [NSNetService checkNetWork];
   //实时监听网络状态
 };
 ```  
-UIDevice+Fragrans  
+### UIDevice+Fragrans  
 ```objective-c
 [UIDevice getDeviceName];//获取设备型号  
 [UIDevice getDeviceStringName];//获取原装的设备名称  
@@ -221,7 +217,7 @@ UIDevice+Fragrans
 [UIDevice cpuFrequency];//CPU使用频率  
 ...
 ```  
-NSFileManager+Fragrans  
+### NSFileManager+Fragrans  
 ```objective-c
 [NSFileManager homeDirectoryPath];//获取Directory的路径  
 [NSFileManager removeFile:@"xx"];//删除一个文件  
@@ -232,7 +228,7 @@ NSFileManager+Fragrans
 [NSFileManager fileSizeAtPath:@"xx"];//获取文件或者文件夹占用空间（单位跟随文件大小变化）  
 ...
 ```  
-UIPageControl+Fragrans  
+### UIPageControl+Fragrans  
 ```objective-c
 UIPageControl   *pageControl = [UIPageControl pageControlWithFrame:CGRectMake(30, 100, 200, 30)
 numberOfPages:10 currentPage:3 pageIndicatorTintColor:@8 currentPageIndicatorTintColor:@"eb3223"
@@ -240,10 +236,9 @@ target:self action:@selector(pageEvent:)];
 pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
 [self addSubview:pageControl];
 ```  
-效果  
 ![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)  
 
-NSString+Fragrans  
+### NSString+Fragrans  
 ```objective-c
 //判断字符串是否符合要求。比如是否为手机号、邮箱、身份证等，如：
 NSString   *str = @"xxx@163.com";
@@ -257,7 +252,7 @@ NSString *jiami_str = [NSString  encryptAESWithString:@"xxx" secretKey:key];//AE
 [NSString filterHTML:@"xxx"];//去除html标签对
 [NSString filterEmoji:@"xxx"];//去除emoji表情
 ```   
-UISlider+Fragrans  
+### UISlider+Fragrans  
 ```objective-c
 UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 100, 30) 
 value:50 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] 
@@ -265,18 +260,17 @@ minimumTrackTintColor:[UIColor cyanColor]
 maximumTrackTintColor:[UIColor redColor] 
 target:self action:@selector(sliderEvent:)];
 [self addSubview:slider];
-```  
-效果  
+```   
 ![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_02.png)  
 
-UISwitch+Fragrans  
+### UISwitch+Fragrans  
 ```objective-c
 UISwitch   *frg_switch = [UISwitch switchWithStarPoint:CGPointMake(100, 100)   thumbTintColor:[UIColor greenColor] onTintColor:[UIColor yellowColor] tintColor:[UIColor magentaColor]   target:self action:@selector(switchEvent:)];
 [self addSubview:frg_switch];
 ```  
-效果  
 ![switch_01](https://github.com/chadhea/Fragrans_image/blob/master/UISwitch/switch_01.gif)  
-NSDateFormatter+Fragrans  
+
+### NSDateFormatter+Fragrans  
 ```objective-c
 [NSDateFormatter getCurrentTimeStamp];//获取当前系统时间戳
 NSString   *sp = [NSDateFormatter timeStampWithTime:@"2019-01-01 06:00:00" formatter:@"yyyy-MM-dd HH:mm:ss"];//时间转时间戳
@@ -294,7 +288,7 @@ NSString   *sp = [NSDateFormatter timeStampWithTime:@"2019-01-01 06:00:00" forma
 [NSDateFormatter currentHourTime];//获取当前小时
 [NSDateFormatter currentDataTime];//获取当前几号
 ```  
-UITextView+Fragrans  
+### UITextView+Fragrans  
 ```objective-c
 UITextView   *textView = [UITextView textViewWithFrame:CGRectMake(30, 100, 160, 60) 
 text:@"" font:@15 textColor:@3 backgroundColor:@"e" delegate:self];
@@ -306,9 +300,8 @@ text:@"" font:@15 textColor:@3 backgroundColor:@"e" delegate:self];
     NSString  *str = [textView frg_textViewDidChangeWithMaxLength:10];
 }
 ```  
-效果  
 ![textview_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextView/textview_01.gif)  
-UIScrollView+Fragrans  
+### UIScrollView+Fragrans  
 ```objective-c
 UIScrollView   *scroll = [UIScrollView scrollViewWithFrame:
 CGRectMake(10, 100, [UIScreen screenWidth] - 20, 80) 
@@ -325,7 +318,6 @@ taps:^(id  _Nonnull sender, NSInteger index) {
         
 }];
 ```  
-效果  
 ![scroll_01](https://github.com/chadhea/Fragrans_image/blob/master/UIScrollView/scroll_01.gif)  
 
 
