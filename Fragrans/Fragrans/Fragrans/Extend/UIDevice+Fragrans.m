@@ -16,7 +16,6 @@
 #import <sys/sysctl.h>
 #import <mach/mach.h>
 #import <AdSupport/AdSupport.h>
-#import "NSFileManager+Fragrans.h"
 
 #define IOS_CELLULAR    @"pdp_ip0"
 #define IOS_WIFI        @"en0"
@@ -870,7 +869,14 @@ typedef enum : NSUInteger {
  @param length 多少B
  */
 + (NSString *)convertFileSize:(long long)length {
-    return [NSFileManager convertFileSize:length];
+    if(length < 1024)
+        return [NSString stringWithFormat:@"%luB",(unsigned long)length];
+    else if(length >= 1024 && length < 1024*1024)
+        return [NSString stringWithFormat:@"%.2fKB",(float)length/1024.0];
+    else if(length >= 1024*1024 &&length < 1024*1024*1024)
+        return [NSString stringWithFormat:@"%.2fM",(float)length/(1024*1024)];
+    else
+        return [NSString stringWithFormat:@"%.2fG",(float)length/(1024*1024*1024)];
 }
 
 
