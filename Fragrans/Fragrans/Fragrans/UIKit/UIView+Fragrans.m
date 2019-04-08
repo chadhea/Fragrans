@@ -8,8 +8,7 @@
 #import "UIView+Fragrans.h"
 #import "UITapGestureRecognizer+Fragrans.h"
 #import <objc/runtime.h>
-#import "UIScreen+Fragrans.h"
-#import "UIFont+Fragrans.h"
+#import "UIKitBridge.h"
 @implementation UIView (Fragrans)
 - (CGFloat)x {
     if (self.frame.origin.x != [objc_getAssociatedObject(self, _cmd) floatValue]) {
@@ -180,7 +179,7 @@
  */
 + (UIView *)viewWithBackgroundColor:(id)backgroundColor {
     UIView   *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    view.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     return view;
 }
 
@@ -352,7 +351,7 @@
  @param width 描边宽度
  */
 - (void)layerBorderColor:(id)color width:(CGFloat)width {
-    self.layer.borderColor = [UIColor safeColor:color].CGColor;
+    self.layer.borderColor = [UIKitBridge safeColor:color].CGColor;
     if (width > 0) {
         self.layer.borderWidth = width;
     }
@@ -566,7 +565,7 @@
     CGContextSetLineCap(ref, kCGLineCapRound);
     CGContextSetLineJoin(ref, kCGLineJoinRound);
     if (strokeColor) {
-        [[UIColor safeColor:strokeColor baseColor:[UIColor blackColor]] setStroke];
+        [[UIKitBridge safeColor:strokeColor baseColor:[UIColor blackColor]] setStroke];
         CGContextStrokePath(ref);
     }
     return ref;
@@ -597,7 +596,7 @@
     CGContextSetLineJoin(ref, kCGLineJoinRound);
     if (fillColor) {
         
-        [[UIColor safeColor:fillColor baseColor:[UIColor blackColor]] setFill];
+        [[UIKitBridge safeColor:fillColor baseColor:[UIColor blackColor]] setFill];
         CGContextFillPath(ref);
     }
     return ref;
@@ -646,7 +645,7 @@
     CGContextSetLineWidth(ref, lineWidth);
     CGContextSetLineCap(ref, kCGLineCapRound);
     if (strokeColor) {
-        [[UIColor safeColor:strokeColor] setStroke];
+        [[UIKitBridge safeColor:strokeColor] setStroke];
     }
     CGContextStrokePath(ref);
     return ref;
@@ -664,7 +663,7 @@
     CGContextSetLineWidth(ref, lineWidth);
     CGContextSetLineCap(ref, kCGLineCapRound);
     if (fillColor) {
-        [[UIColor safeColor:fillColor]setFill];
+        [[UIKitBridge safeColor:fillColor]setFill];
     }
     CGContextFillPath(ref);
     return ref;
@@ -759,7 +758,7 @@
     CGContextAddArc(ref, circleCenter.x, circleCenter.y, radius, startAngle, endAngle, clockwise);
     CGContextSetLineWidth(ref, lineWidth);
     if (lineColor) {
-        [[UIColor safeColor:lineColor] setStroke];
+        [[UIKitBridge safeColor:lineColor] setStroke];
     }else {
         [[UIColor blackColor] setStroke];
     }
@@ -830,7 +829,7 @@
     CGContextAddArcToPoint(ref, focusPoint.x, focusPoint.y, endPoint.x, endPoint.y, radius);
     CGContextSetLineWidth(ref, lineWidth);
     if (lineColor) {
-        [[UIColor safeColor:lineColor] setStroke];
+        [[UIKitBridge safeColor:lineColor] setStroke];
     }else {
         [[UIColor blackColor] setStroke];
     }
@@ -858,7 +857,7 @@
     CGContextRef   ref = UIGraphicsGetCurrentContext();
     CGContextAddEllipseInRect(ref, frame);
     if (color) {
-        [[UIColor safeColor:color] set];
+        [[UIKitBridge safeColor:color] set];
     }
     CGContextFillPath(ref);
     return ref;
@@ -902,7 +901,7 @@
     CGContextAddEllipseInRect(ref, frame);
     CGContextSetLineWidth(ref, lineWidth);//线的宽度
     if (strokeColor) {
-        [[UIColor safeColor:strokeColor] setStroke];
+        [[UIKitBridge safeColor:strokeColor] setStroke];
     }
     CGContextStrokePath(ref);
     return ref;
@@ -935,7 +934,7 @@
     CGContextRef   ref = UIGraphicsGetCurrentContext();
     CGContextAddEllipseInRect(ref, frame);
     if (fillColor) {
-        [[UIColor safeColor:fillColor] setFill];
+        [[UIKitBridge safeColor:fillColor] setFill];
     }
     CGContextFillPath(ref);
     return ref;
@@ -993,7 +992,7 @@
     CGContextAddArc(ref, circleCenter.x, circleCenter.y,radius, startAngle, endAngle, clockwise);
     CGContextClosePath(ref);
     if (color) {
-        [[UIColor safeColor:color] set];
+        [[UIKitBridge safeColor:color] set];
     }
     CGContextFillPath(ref);
     return ref;
@@ -1007,8 +1006,8 @@
  @param color UIColor或者NSString格式
  */
 + (void)drawString:(NSString *)str center:(CGPoint)center font:(id)font color:(id)color {
-    CGRect   strRect = [str boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont safeFont:font]} context:nil];
-    [str drawAtPoint:CGPointMake(center.x - strRect.size.width * 0.5, center.y - strRect.size.height * 0.5) withAttributes:@{NSFontAttributeName:[UIFont safeFont:font],NSForegroundColorAttributeName:[UIColor safeColor:color]}];
+    CGRect   strRect = [str boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIKitBridge safeFont:font]} context:nil];
+    [str drawAtPoint:CGPointMake(center.x - strRect.size.width * 0.5, center.y - strRect.size.height * 0.5) withAttributes:@{NSFontAttributeName:[UIKitBridge safeFont:font],NSForegroundColorAttributeName:[UIKitBridge safeColor:color]}];
 }
 
 /**
@@ -1019,7 +1018,7 @@
  @param color UIColor或者NSString格式
  */
 + (void)drawString:(NSString *)str rect:(CGRect)rect font:(id)font color:(id)color {
-    [str drawInRect:rect withAttributes:@{NSFontAttributeName:[UIFont safeFont:font],NSForegroundColorAttributeName:[UIColor safeColor:color]}];
+    [str drawInRect:rect withAttributes:@{NSFontAttributeName:[UIKitBridge safeFont:font],NSForegroundColorAttributeName:[UIKitBridge safeColor:color]}];
 }
 
 

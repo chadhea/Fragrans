@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIColor+Fragrans.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

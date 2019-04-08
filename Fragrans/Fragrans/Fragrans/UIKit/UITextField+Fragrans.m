@@ -7,10 +7,7 @@
 
 #import "UITextField+Fragrans.h"
 #import <objc/runtime.h>
-#import "NSString+Fragrans.h"
-#import "UIFont+Fragrans.h"
-#import "UIColor+Fragrans.h"
-#import "FragransDefine.h"
+#import "UIKitBridge.h"
 static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
 
 @implementation UITextField (Fragrans)
@@ -957,11 +954,11 @@ static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
  */
 + (UITextField *)textFieldWithText:(nullable NSString *)text placeholder:(nullable NSString *)placeholder font:(nullable id)font textColor:(nullable id)textColor backgroundColor:(nullable id)backgroundColor textAlignment:(NSTextAlignment)textAlignment {
     UITextField   *textField = [[UITextField alloc] init];
-    textField.text = [NSString safeString:text];
-    textField.placeholder = [NSString safeString:placeholder];
-    textField.font = [UIFont safeFont:font baseFont:FRG_TextFieldBaseFontSize];
-    textField.textColor = [UIColor safeColor:textColor baseColor:FRG_TextFieldBaseColorHex];
-    textField.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    textField.text = [UIKitBridge safeString:text];
+    textField.placeholder = [UIKitBridge safeString:placeholder];
+    textField.font = [UIKitBridge safeFont:font baseFont:FRG_TextFieldBaseFontSize];
+    textField.textColor = [UIKitBridge safeColor:textColor baseColor:FRG_TextFieldBaseColorHex];
+    textField.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     if (textAlignment >= NSTextAlignmentLeft && textAlignment <= NSTextAlignmentNatural) {
         textField.textAlignment = textAlignment;
     }else {
@@ -2972,11 +2969,11 @@ static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
     }else {
         attr = [[NSMutableAttributedString alloc] initWithString:self.placeholder];
     }
-    UIColor   *new_placeholderColor = [UIColor safeColor:placeholderColor];
+    UIColor   *new_placeholderColor = [UIKitBridge safeColor:placeholderColor];
     if (new_placeholderColor) {
         [attr addAttribute:NSForegroundColorAttributeName value:new_placeholderColor range:NSMakeRange(0, self.placeholder.length)];
     }
-    [attr addAttribute:NSFontAttributeName value:[UIFont safeFont:placeholderFont baseFont:FRG_TextFieldBaseFontSize] range:NSMakeRange(0, self.placeholder.length)];
+    [attr addAttribute:NSFontAttributeName value:[UIKitBridge safeFont:placeholderFont baseFont:FRG_TextFieldBaseFontSize] range:NSMakeRange(0, self.placeholder.length)];
     self.attributedPlaceholder = attr;
 }
 

@@ -7,7 +7,7 @@
 
 #import "NSFileManager+Fragrans.h"
 #include <sys/stat.h>
-#import "NSString+Fragrans.h"
+#import "FunctionBridge.h"
 @implementation NSFileManager (Fragrans)
 
 /**
@@ -59,7 +59,7 @@
  @return 是否删除成功
  */
 + (BOOL)removeFile:(NSString *)filePath {
-    filePath = [NSString safeString:filePath];
+    filePath = [FunctionBridge safeString:filePath];
     NSFileManager *manager = [NSFileManager defaultManager];
     BOOL find = [manager fileExistsAtPath:filePath];
     if (find) {
@@ -74,7 +74,7 @@
  @return 是否删除成功
  */
 + (BOOL)removeFolder:(NSString *)folderPath {
-    folderPath = [NSString safeString:folderPath];
+    folderPath = [FunctionBridge safeString:folderPath];
     NSFileManager *manager = [NSFileManager defaultManager];
     BOOL find = [manager fileExistsAtPath:folderPath];
     if (find) {
@@ -90,7 +90,7 @@
  @return 返回路径
  */
 + (NSString *)createDirectory:(NSString *)path {
-    path = [NSString safeString:path];
+    path = [FunctionBridge safeString:path];
     if (path.length <= 0) {
         return nil;
     }
@@ -115,7 +115,7 @@
  @return 是否成功
  */
 + (BOOL)copyResourceFileToCachesDirectory:(NSString *)fileName {
-    fileName = [NSString safeString:fileName];
+    fileName = [FunctionBridge safeString:fileName];
     if (fileName.length <= 0) {
         return NO;
     }
@@ -140,7 +140,7 @@
  @return 是否成功
  */
 + (BOOL)copyResourceFileToDocumentDirectory:(NSString *)fileName {
-    fileName = [NSString safeString:fileName];
+    fileName = [FunctionBridge safeString:fileName];
     if (fileName.length <= 0) {
         return NO;
     }
@@ -166,7 +166,7 @@
  @return 是否成功
  */
 + (BOOL)copyResourceSubdirectoryToCachesDirectoryPath:(NSString *)subPath {
-    subPath = [NSString safeString:subPath];
+    subPath = [FunctionBridge safeString:subPath];
     if (subPath.length <= 0) {
         return NO;
     }

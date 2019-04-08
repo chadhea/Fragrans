@@ -27,26 +27,27 @@ Pod::Spec.new do |s|
 
   s.source_files  = "Fragrans/Fragrans/Fragrans/Fragrans.h"
   s.public_header_files = "Fragrans/Fragrans/Fragrans/Fragrans.h"
+
+  s.subspec 'Custom' do |c|
+    #c.public_header_files = 'Fragrans/Fragrans/Fragrans/Custom'
+    c.source_files = 'Fragrans/Fragrans/Fragrans/Custom/**/*'
+  end
+
+  s.subspec 'Extend' do |e|
+    #e.public_header_files = 'Fragrans/Fragrans/Fragrans/Extend'
+    e.source_files = 'Fragrans/Fragrans/Fragrans/Extend/**/*'
+  end
+
+  s.subspec 'Function' do |f|
+    #f.public_header_files = 'Fragrans/Fragrans/Fragrans/Function'
+    f.source_files = 'Fragrans/Fragrans/Fragrans/Function/**/*'
+  end
+
+  s.subspec 'UIKit' do |u|
+    #u.public_header_files = 'Fragrans/Fragrans/Fragrans/UIKit'
+    u.source_files = 'Fragrans/Fragrans/Fragrans/UIKit/**/*'
+  end
   
-  s.subspec 'Custom' do |ss|
-    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Custom'
-    ss.source_files = 'Fragrans/Fragrans/Fragrans/Custom/**/*'
-  end
-
-  s.subspec 'Extend' do |ss|
-    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Extend'
-    ss.source_files = 'Fragrans/Fragrans/Fragrans/Extend/**/*'
-  end
-
-  s.subspec 'Function' do |ss|
-    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/Function'
-    ss.source_files = 'Fragrans/Fragrans/Fragrans/Function/**/*'
-  end
-
-  s.subspec 'UIKit' do |ss|
-    ss.public_header_files = 'Fragrans/Fragrans/Fragrans/UIKit'
-    ss.source_files = 'Fragrans/Fragrans/Fragrans/UIKit/**/*'
-  end
 
 
   # s.resource  = "icon.png"

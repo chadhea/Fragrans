@@ -6,7 +6,6 @@
 //
 
 #import "UIImageView+Fragrans.h"
-#import "UIImageView+Fragrans.h"
 #import "UIView+Fragrans.h"
 #import "UIImage+Fragrans.h"
 @implementation UIImageView (Fragrans)

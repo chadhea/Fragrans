@@ -7,11 +7,8 @@
 
 #import "UIButton+Fragrans.h"
 #import <objc/runtime.h>
-#import "NSObject+Fragrans.h"
 #import "UIImage+Fragrans.h"
-#import "UIFont+Fragrans.h"
-#import "UIColor+Fragrans.h"
-#import "NSString+Fragrans.h"
+#import "UIKitBridge.h"
 static const char  *frg_titleRectKey = "frg_titleRectKey";
 static const char  *frg_imageRectKey = "frg_imageRectKey";
 
@@ -671,10 +668,10 @@ static const char  *frg_imageRectKey = "frg_imageRectKey";
  */
 + (UIButton *)buttonWithTitle:(nullable NSString *)title font:(nullable id)font titleColor:(nullable id)titleColor backgroundColor:(nullable id)backgroundColor target:(nullable id)target action:(nullable SEL)action {
     UIButton   *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:[NSString safeString:title] forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont safeFont:font baseFont:FRG_ButtonBaseFontSize];
-    [button setTitleColor:[UIColor safeColor:titleColor baseColor:FRG_ButtonBaseColorHex] forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    [button setTitle:[UIKitBridge safeString:title] forState:UIControlStateNormal];
+    button.titleLabel.font = [UIKitBridge safeFont:font baseFont:FRG_ButtonBaseFontSize];
+    [button setTitleColor:[UIKitBridge safeColor:titleColor baseColor:FRG_ButtonBaseColorHex] forState:UIControlStateNormal];
+    button.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     if (target && action) {
         [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     }
@@ -2122,8 +2119,8 @@ static const char  *frg_imageRectKey = "frg_imageRectKey";
 - (void)layoutButtonWithEdgeInsetsStyle:(FRGButtonEdgeInsetsStyle)style imageTitleSpace:(CGFloat)space {
     CGFloat imageWith   = self.imageView.frame.size.width;
     CGFloat imageHeight = self.imageView.frame.size.height;
-    CGFloat labelWidth  = [self.currentTitle boundingWidthForFont:self.titleLabel.font];
-    CGFloat labelHeight = [self.currentTitle boundingHeightForFont:self.titleLabel.font];
+    CGFloat labelWidth  = [UIKitBridge boundingWidthWithString:self.currentTitle font:self.titleLabel.font];
+    CGFloat labelHeight = [UIKitBridge boundingHeightWithString:self.currentTitle font:self.titleLabel.font];
     if (self.frame.size.width != 0 && self.frame.size.width - imageWith < labelWidth) {
         labelWidth = self.frame.size.width - imageWith;
     }
@@ -2161,8 +2158,8 @@ static const char  *frg_imageRectKey = "frg_imageRectKey";
             imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth/2.0, 0, -labelWidth/2.0);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith/2.0, 0, imageWith/2.0);
             
-            CGFloat labelWidth  = [self.currentTitle boundingWidthForFont:self.titleLabel.font];
-            CGFloat labelHeight = [self.currentTitle boundingHeightForFont:self.titleLabel.font];
+            CGFloat labelWidth  = [UIKitBridge boundingWidthWithString:self.currentTitle font:self.titleLabel.font];
+            CGFloat labelHeight = [UIKitBridge boundingHeightWithString:self.currentTitle font:self.titleLabel.font];
             if (self.frame.size.width != 0 && self.frame.size.width < labelWidth) {
                 labelWidth = self.frame.size.width;
             }
