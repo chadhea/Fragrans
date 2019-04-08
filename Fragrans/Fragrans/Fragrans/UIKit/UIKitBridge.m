@@ -2,7 +2,7 @@
 //  UIKitBridge.m
 //  Fragrans
 //
-//  Created by 祁明振 on 2019/4/8.
+//  Created by qmz on 2019/4/8.
 //
 
 #import "UIKitBridge.h"
