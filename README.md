@@ -1,5 +1,5 @@
 ![fragrans_icon](https://github.com/chadhea/Fragrans_image/blob/master/fragrans_icon.png)
-类属性与方法扩展
+类属性与方法扩展及常用方法的封装。
 
 Installation with CocoaPods  
 Podfile  
@@ -319,7 +319,12 @@ taps:^(id  _Nonnull sender, NSInteger index) {
 }];
 ```  
 ![scroll_01](https://github.com/chadhea/Fragrans_image/blob/master/UIScrollView/scroll_01.gif)  
-
+### FRGAlertView  
+```objective-c
+[FRGAlertView alertWithTitle:@"测试" message:@"这是一个弹框" preferredStyle:UIAlertControllerStyleAlert actionTitles:@[@"一",@"二",@"三"] styles:@[@(UIAlertActionStyleDestructive),@(UIAlertActionStyleDefault),@(UIAlertActionStyleCancel)] handler:^(UIAlertAction * _Nonnull action, NSInteger index) {
+     //点击事件
+}];
+```  
 
 
 
