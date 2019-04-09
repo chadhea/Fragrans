@@ -52,6 +52,8 @@
 		F5394E5B22548C760064AD54 /* UISlider+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4622548C750064AD54 /* UISlider+Fragrans.m */; };
 		F5394E5C22548C760064AD54 /* UIView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4A22548C750064AD54 /* UIView+Fragrans.m */; };
 		F5394E5D22548C760064AD54 /* UIScrollView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */; };
+		F55FE14E225C45EB00CE55F6 /* FRGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */; };
+		F55FE151225C48F100CE55F6 /* CustomBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE150225C48F100CE55F6 /* CustomBridge.m */; };
 		F5694DA82250A21B00BD4F80 /* FragransDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694DA72250A21B00BD4F80 /* FragransDemoController.m */; };
 		F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FA225B9BF0002066D5 /* FunctionBridge.m */; };
 		F5F047FE225B9D30002066D5 /* UIKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FD225B9D30002066D5 /* UIKitBridge.m */; };
@@ -167,6 +169,10 @@
 		F5394E4A22548C750064AD54 /* UIView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fragrans.m"; sourceTree = "<group>"; };
 		F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Fragrans.m"; sourceTree = "<group>"; };
 		F5394E4C22548C760064AD54 /* UITapGestureRecognizer+Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Fragrans.h"; sourceTree = "<group>"; };
+		F55FE14C225C45EB00CE55F6 /* FRGAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGAlertView.h; sourceTree = "<group>"; };
+		F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGAlertView.m; sourceTree = "<group>"; };
+		F55FE14F225C48F100CE55F6 /* CustomBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBridge.h; sourceTree = "<group>"; };
+		F55FE150225C48F100CE55F6 /* CustomBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBridge.m; sourceTree = "<group>"; };
 		F5694DA62250A21B00BD4F80 /* FragransDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoController.h; sourceTree = "<group>"; };
 		F5694DA72250A21B00BD4F80 /* FragransDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoController.m; sourceTree = "<group>"; };
 		F5694DAA2250A3E500BD4F80 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
@@ -336,6 +342,10 @@
 			isa = PBXGroup;
 			children = (
 				F5394DE522548C1C0064AD54 /* FragransDefine.h */,
+				F55FE14C225C45EB00CE55F6 /* FRGAlertView.h */,
+				F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */,
+				F55FE14F225C48F100CE55F6 /* CustomBridge.h */,
+				F55FE150225C48F100CE55F6 /* CustomBridge.m */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -538,6 +548,7 @@
 				F5394E1522548C420064AD54 /* NSArray+Fragrans.m in Sources */,
 				F5394E4E22548C760064AD54 /* UITextView+Fragrans.m in Sources */,
 				F5394E0822548C420064AD54 /* NSBundle+Fragrans.m in Sources */,
+				F55FE14E225C45EB00CE55F6 /* FRGAlertView.m in Sources */,
 				F5FAB6B222003B4E00618786 /* ViewController.m in Sources */,
 				F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */,
 				F5394E2422548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m in Sources */,
@@ -548,6 +559,7 @@
 				F5394E5C22548C760064AD54 /* UIView+Fragrans.m in Sources */,
 				F5394E5322548C760064AD54 /* UITapGestureRecognizer+Fragrans.m in Sources */,
 				F5394E5522548C760064AD54 /* UIImage+Fragrans.m in Sources */,
+				F55FE151225C48F100CE55F6 /* CustomBridge.m in Sources */,
 				F5394E5022548C760064AD54 /* UIPageControl+Fragrans.m in Sources */,
 				F5394E0722548C420064AD54 /* NSData+Fragrans.m in Sources */,
 				F5394E5722548C760064AD54 /* UITextField+Fragrans.m in Sources */,
