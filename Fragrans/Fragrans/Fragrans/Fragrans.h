@@ -26,6 +26,7 @@
 #import "UITextView+Fragrans.h"
 #import "UIView+Fragrans.h"
 #import "UIViewController+Fragrans.h"
+#import "UIImagePickerController+Fragrans.h"
 
 //=============Extend=============
 #import "NSArray+Fragrans.h"

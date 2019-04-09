@@ -54,6 +54,7 @@
 		F5394E5D22548C760064AD54 /* UIScrollView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */; };
 		F55FE14E225C45EB00CE55F6 /* FRGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */; };
 		F55FE151225C48F100CE55F6 /* CustomBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE150225C48F100CE55F6 /* CustomBridge.m */; };
+		F55FE154225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE153225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m */; };
 		F5694DA82250A21B00BD4F80 /* FragransDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694DA72250A21B00BD4F80 /* FragransDemoController.m */; };
 		F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FA225B9BF0002066D5 /* FunctionBridge.m */; };
 		F5F047FE225B9D30002066D5 /* UIKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FD225B9D30002066D5 /* UIKitBridge.m */; };
@@ -173,6 +174,8 @@
 		F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGAlertView.m; sourceTree = "<group>"; };
 		F55FE14F225C48F100CE55F6 /* CustomBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBridge.h; sourceTree = "<group>"; };
 		F55FE150225C48F100CE55F6 /* CustomBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBridge.m; sourceTree = "<group>"; };
+		F55FE152225C6D9200CE55F6 /* UIImagePickerController+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+Fragrans.h"; sourceTree = "<group>"; };
+		F55FE153225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+Fragrans.m"; sourceTree = "<group>"; };
 		F5694DA62250A21B00BD4F80 /* FragransDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoController.h; sourceTree = "<group>"; };
 		F5694DA72250A21B00BD4F80 /* FragransDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoController.m; sourceTree = "<group>"; };
 		F5694DAA2250A3E500BD4F80 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
@@ -248,6 +251,8 @@
 				F5394E3B22548C750064AD54 /* UIImage+Fragrans.m */,
 				F5394E3D22548C750064AD54 /* UIImageView+Fragrans.h */,
 				F5394E4022548C750064AD54 /* UIImageView+Fragrans.m */,
+				F55FE152225C6D9200CE55F6 /* UIImagePickerController+Fragrans.h */,
+				F55FE153225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m */,
 				F5394E2F22548C740064AD54 /* UILabel+Fragrans.h */,
 				F5394E3C22548C750064AD54 /* UILabel+Fragrans.m */,
 				F5394E2E22548C740064AD54 /* UIPageControl+Fragrans.h */,
@@ -584,6 +589,7 @@
 				F5394E1122548C420064AD54 /* NSDateFormatter+Fragrans.m in Sources */,
 				F5394E0D22548C420064AD54 /* NSMutableString+Fragrans.m in Sources */,
 				F5394E4D22548C760064AD54 /* UISwitch+Fragrans.m in Sources */,
+				F55FE154225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m in Sources */,
 				F5394E5A22548C760064AD54 /* UICollectionViewCell+Fragrans.m in Sources */,
 				F5394E5122548C760064AD54 /* UIButton+Fragrans.m in Sources */,
 			);
