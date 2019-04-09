@@ -39,6 +39,71 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)removeAllActionBlocks;
 
+/**
+ 添加手势
+ 单击事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)tapWith:(UIView *)view target:(id)target action:(SEL)action;
+
+/**
+ 添加手势
+ 单击和双击事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)tapWith:(UIView *)view target:(id)target singleAction:(SEL)singleAction  doubleAction:(SEL)doubleAction;
+
+/**
+ 添加手势
+ 指定点击次数的事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)tapWith:(UIView *)view tapCount:(NSInteger)count target:(id)target action:(SEL)action;
+
+/**
+ 添加手势
+ 拖动事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)panWith:(UIView *)view target:(id)target action:(SEL)action;
+
+/**
+ 添加手势
+ 缩放事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)pinchWith:(UIView *)view target:(id)target action:(SEL)action;
+
+/**
+ 添加手势
+ 旋转事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)rotationWith:(UIView *)view target:(id)target action:(SEL)action;
+
+/**
+ 添加手势
+ 长按事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)longPressWith:(UIView *)view target:(id)target action:(SEL)action;
+
+/**
+ 添加手势
+ 拖动事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)swipeWith:(UIView *)view target:(id)target action:(SEL)action;
+
+
 
 @end
 

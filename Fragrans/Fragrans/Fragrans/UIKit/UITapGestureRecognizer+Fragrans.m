@@ -67,5 +67,98 @@ static const int block_key;
     return targets;
 }
 
+/**
+ 添加手势
+ 单击事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)tapWith:(UIView *)view target:(id)target action:(SEL)action {
+    UITapGestureRecognizer   *tap = [[UITapGestureRecognizer alloc]initWithTarget:target action:action];
+    [view addGestureRecognizer:tap];
+}
+
+/**
+ 添加手势
+ 单击和双击事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)tapWith:(UIView *)view target:(id)target singleAction:(SEL)singleAction  doubleAction:(SEL)doubleAction {
+    UITapGestureRecognizer   *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:target action:singleAction];
+    singleTap.numberOfTapsRequired = 1;
+    UITapGestureRecognizer   *doubleTap = [[UITapGestureRecognizer alloc]initWithTarget:target action:doubleAction];
+    doubleTap.numberOfTapsRequired = 2;
+    [singleTap requireGestureRecognizerToFail:doubleTap];
+    [view addGestureRecognizer:singleTap];
+    [view addGestureRecognizer:doubleTap];
+}
+
+/**
+ 添加手势
+ 指定点击次数的事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)tapWith:(UIView *)view tapCount:(NSInteger)count target:(id)target action:(SEL)action {
+    UITapGestureRecognizer   *tap = [[UITapGestureRecognizer alloc]initWithTarget:target action:action];
+    tap.numberOfTapsRequired = count;
+    [view addGestureRecognizer:tap];
+}
+
+/**
+ 添加手势
+ 拖动事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)panWith:(UIView *)view target:(id)target action:(SEL)action {
+    UIPanGestureRecognizer   *pan = [[UIPanGestureRecognizer alloc]initWithTarget:target action:action];
+    [view addGestureRecognizer:pan];
+}
+
+/**
+ 添加手势
+ 缩放事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)pinchWith:(UIView *)view target:(id)target action:(SEL)action {
+    UIPinchGestureRecognizer   *pinch = [[UIPinchGestureRecognizer alloc]initWithTarget:target action:action];
+    [view addGestureRecognizer:pinch];
+}
+
+/**
+ 添加手势
+ 旋转事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)rotationWith:(UIView *)view target:(id)target action:(SEL)action {
+    UIRotationGestureRecognizer   *rotation = [[UIRotationGestureRecognizer alloc]initWithTarget:target action:action];
+    [view addGestureRecognizer:rotation];
+}
+
+/**
+ 添加手势
+ 长按事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)longPressWith:(UIView *)view target:(id)target action:(SEL)action {
+    UILongPressGestureRecognizer   *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:target action:action];
+    [view addGestureRecognizer:longPress];
+}
+
+/**
+ 添加手势
+ 拖动事件
+ 
+ @param view 需要添加手势的view
+ */
++ (void)swipeWith:(UIView *)view target:(id)target action:(SEL)action {
+    UISwipeGestureRecognizer   *swipe = [[UISwipeGestureRecognizer alloc]initWithTarget:target action:action];
+    [view addGestureRecognizer:swipe];
+}
 
 @end
