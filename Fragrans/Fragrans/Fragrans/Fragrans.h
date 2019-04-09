@@ -18,6 +18,7 @@
 #import "UILabel+Fragrans.h"
 #import "UIPageControl+Fragrans.h"
 #import "UIScrollView+Fragrans.h"
+#import "UISegmentedControl+Fragrans.h"
 #import "UISlider+Fragrans.h"
 #import "UISwitch+Fragrans.h"
 #import "UITableView+Fragrans.h"
