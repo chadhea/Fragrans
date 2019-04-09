@@ -15,6 +15,7 @@
 #import "UICollectionViewCell+Fragrans.h"
 #import "UIImage+Fragrans.h"
 #import "UIImageView+Fragrans.h"
+#import "UIImagePickerController+Fragrans.h"
 #import "UILabel+Fragrans.h"
 #import "UIPageControl+Fragrans.h"
 #import "UIScrollView+Fragrans.h"
@@ -27,7 +28,6 @@
 #import "UITextView+Fragrans.h"
 #import "UIView+Fragrans.h"
 #import "UIViewController+Fragrans.h"
-#import "UIImagePickerController+Fragrans.h"
 
 //=============Extend=============
 #import "NSArray+Fragrans.h"
