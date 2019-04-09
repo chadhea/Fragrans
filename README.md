@@ -9,60 +9,61 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'Fragrans', '~> 0.1.2'
+pod 'Fragrans', '~> 0.1.3'
 end
 ```  
 ## Architecture  
 
 ### UIKit  
-- `UIAlertController+Fragrans.h`
-- `UIBarButtonItem+Fragrans.h`
-- `UIButton+Fragrans.h`
-- `UICollectionViewCell+Fragrans.h`
-- `UIImage+Fragrans.h`
-- `UIImageView+Fragrans.h`
-- `UILabel+Fragrans.h`
-- `UIPageControl+Fragrans.h`
-- `UIScrollView+Fragrans.h`
-- `UISlider+Fragrans.h`
-- `UISwitch+Fragrans.h`
-- `UITableView+Fragrans.h`
-- `UITapGestureRecognizer+Fragrans.h`
-- `UITextField+Fragrans.h`
-- `UITextView+Fragrans.h`
-- `UIView+Fragrans.h`
-- `UIViewController+Fragrans.h`
+- `UIAlertController+Fragrans`
+- `UIBarButtonItem+Fragrans`
+- `UIButton+Fragrans`
+- `UICollectionViewCell+Fragrans`
+- `UIImage+Fragrans`
+- `UIImageView+Fragrans`
+- `UIImagePickerController+Fragrans`
+- `UILabel+Fragrans`
+- `UIPageControl+Fragrans`
+- `UIScrollView+Fragrans`
+- `UISlider+Fragrans`
+- `UISwitch+Fragrans`
+- `UITableView+Fragrans`
+- `UITapGestureRecognizer+Fragrans`
+- `UITextField+Fragrans`
+- `UITextView+Fragrans`
+- `UIView+Fragrans`
+- `UIViewController+Fragrans`
 
 ### Extend  
-- `NSArray+Fragrans.h`
-- `NSBundle+Fragrans.h`
-- `NSData+Fragrans.h`
-- `NSDate+Fragrans.h`
-- `NSDateFormatter+Fragrans.h`
-- `NSDictionary+Fragrans.h`
-- `NSMutableArray+Fragrans.h`
-- `NSMutableAttributedString+Fragrans.h`
-- `NSMutableDictionary+Fragrans.h`
-- `NSMutableString+Fragrans.h`
-- `NSObject+Fragrans.h`
-- `NSString+Fragrans.h`
-- `UIColor+Fragrans.h`
-- `UIDevice+Fragrans.h`
-- `UIFont+Fragrans.h`
-- `UIScreen+Fragrans.h1
+- `NSArray+Fragrans`
+- `NSBundle+Fragrans`
+- `NSData+Fragrans`
+- `NSDate+Fragrans`
+- `NSDateFormatter+Fragrans`
+- `NSDictionary+Fragrans`
+- `NSMutableArray+Fragrans`
+- `NSMutableAttributedString+Fragrans`
+- `NSMutableDictionary+Fragrans`
+- `NSMutableString+Fragrans`
+- `NSObject+Fragrans`
+- `NSString+Fragrans`
+- `UIColor+Fragrans`
+- `UIDevice+Fragrans`
+- `UIFont+Fragrans`
+- `UIScreen+Fragrans`
 
 ### Function  
-- `CABasicAnimation+Fragrans.h`
-- `CALayer+Fragrans.h`
-- `NSFileManager+Fragrans.h`
-- `NSNetService+Fragrans.h`
-- `NSNetServiceBrowser+Fragrans.h`
-- `NSURLRequest+Fragrans.h`
-- `NSURLSession+Fragrans.h`  
+- `CABasicAnimation+Fragrans`
+- `CALayer+Fragrans`
+- `NSFileManager+Fragrans`
+- `NSNetService+Fragrans`
+- `NSNetServiceBrowser+Fragrans`
+- `NSURLRequest+Fragrans`
+- `NSURLSession+Fragrans`  
 
 ### Custom  
-- `FragransDefine.h`
-
+- `FragransDefine`
+- `FRGAlertView`
 
 
 部分代码示例  
