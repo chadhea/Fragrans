@@ -15,6 +15,7 @@ end
 ## Architecture  
 
 ### UIKit  
+- `UIActivityIndicatorView+Fragrans`
 - `UIAlertController+Fragrans`
 - `UIBarButtonItem+Fragrans`
 - `UIButton+Fragrans`
@@ -24,6 +25,7 @@ end
 - `UIImagePickerController+Fragrans`
 - `UILabel+Fragrans`
 - `UIPageControl+Fragrans`
+- `UIProgressView+Fragrans`
 - `UIScrollView+Fragrans`
 - `UISlider+Fragrans`
 - `UISwitch+Fragrans`
@@ -96,7 +98,6 @@ backgroundColor:@9 tap:^(id  _Nonnull sender) {
 view.backgroundColor = [UIColor gradientForLeftToRightWithColors:
 @[[UIColor cyanColor],[UIColor blueColor],@9] width:50];
 ```  
-![uiview_02](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_02.png)  
 ```objective-c
 - (void)drawRect:(CGRect)rect {
 //drawRect重绘
@@ -241,9 +242,6 @@ pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
 
 ### NSString+Fragrans  
 ```objective-c
-//判断字符串是否符合要求。比如是否为手机号、邮箱、身份证等，如：
-NSString   *str = @"xxx@163.com";
-[str isEmailValidate];//是否为邮箱
 //对字符串进行加密和解密,如：
 [NSString encrypt_md5With:@"xxx"];//md5加密
 NSString *key = @"key";//加密解密的key
@@ -320,6 +318,13 @@ taps:^(id  _Nonnull sender, NSInteger index) {
 }];
 ```  
 ![scroll_01](https://github.com/chadhea/Fragrans_image/blob/master/UIScrollView/scroll_01.gif)  
+### UIActivityIndicatorView+Fragrans  
+```objective-c
+//自由控制中间动画部分的大小
+UIActivityIndicatorView   *activityView = [UIActivityIndicatorView activityIndicatorViewWithFrame:CGRectMake(100, 100, 100, 100) hudSize:CGSizeMake(70, 70) hudColor:[UIColor blueColor] backgroundColor:@9 startAnimate:YES];
+[self addSubview:activityView];
+```  
+![uiview_07](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_07.png)  
 ### FRGAlertView  
 ```objective-c
 [FRGAlertView alertWithTitle:@"测试" message:@"这是一个弹框" preferredStyle:UIAlertControllerStyleAlert actionTitles:@[@"一",@"二",@"三"] styles:@[@(UIAlertActionStyleDestructive),@(UIAlertActionStyleDefault),@(UIAlertActionStyleCancel)] handler:^(UIAlertAction * _Nonnull action, NSInteger index) {
