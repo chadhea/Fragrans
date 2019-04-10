@@ -9,7 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'Fragrans', '~> 0.1.3'
+pod 'Fragrans', '~> 0.1.4'
 end
 ```  
 ## Architecture  
@@ -26,6 +26,7 @@ end
 - `UILabel+Fragrans`
 - `UIPageControl+Fragrans`
 - `UIProgressView+Fragrans`
+- `UIRefreshControl+Fragrans`  
 - `UIScrollView+Fragrans`
 - `UISlider+Fragrans`
 - `UISwitch+Fragrans`
