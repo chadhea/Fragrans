@@ -56,7 +56,9 @@
 		F55FE151225C48F100CE55F6 /* CustomBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE150225C48F100CE55F6 /* CustomBridge.m */; };
 		F55FE154225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE153225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m */; };
 		F55FE157225C851E00CE55F6 /* UISegmentedControl+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE156225C851E00CE55F6 /* UISegmentedControl+Fragrans.m */; };
+		F55FE15A225CC77C00CE55F6 /* UIProgressView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE159225CC77C00CE55F6 /* UIProgressView+Fragrans.m */; };
 		F5694DA82250A21B00BD4F80 /* FragransDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694DA72250A21B00BD4F80 /* FragransDemoController.m */; };
+		F5E21220225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2121F225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m */; };
 		F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FA225B9BF0002066D5 /* FunctionBridge.m */; };
 		F5F047FE225B9D30002066D5 /* UIKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FD225B9D30002066D5 /* UIKitBridge.m */; };
 		F5FAB6AF22003B4E00618786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6AE22003B4E00618786 /* AppDelegate.m */; };
@@ -179,9 +181,13 @@
 		F55FE153225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+Fragrans.m"; sourceTree = "<group>"; };
 		F55FE155225C851E00CE55F6 /* UISegmentedControl+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+Fragrans.h"; sourceTree = "<group>"; };
 		F55FE156225C851E00CE55F6 /* UISegmentedControl+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+Fragrans.m"; sourceTree = "<group>"; };
+		F55FE158225CC77C00CE55F6 /* UIProgressView+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+Fragrans.h"; sourceTree = "<group>"; };
+		F55FE159225CC77C00CE55F6 /* UIProgressView+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+Fragrans.m"; sourceTree = "<group>"; };
 		F5694DA62250A21B00BD4F80 /* FragransDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoController.h; sourceTree = "<group>"; };
 		F5694DA72250A21B00BD4F80 /* FragransDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoController.m; sourceTree = "<group>"; };
 		F5694DAA2250A3E500BD4F80 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
+		F5E2121E225D98AC003F364C /* UIActivityIndicatorView+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+Fragrans.h"; sourceTree = "<group>"; };
+		F5E2121F225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+Fragrans.m"; sourceTree = "<group>"; };
 		F5F047F9225B9BF0002066D5 /* FunctionBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionBridge.h; sourceTree = "<group>"; };
 		F5F047FA225B9BF0002066D5 /* FunctionBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionBridge.m; sourceTree = "<group>"; };
 		F5F047FC225B9D30002066D5 /* UIKitBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitBridge.h; sourceTree = "<group>"; };
@@ -242,6 +248,8 @@
 		F5394D6922548BF60064AD54 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F5E2121E225D98AC003F364C /* UIActivityIndicatorView+Fragrans.h */,
+				F5E2121F225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m */,
 				F5394E3122548C740064AD54 /* UIAlertController+Fragrans.h */,
 				F5394E3A22548C750064AD54 /* UIAlertController+Fragrans.m */,
 				F5394E4922548C750064AD54 /* UIBarButtonItem+Fragrans.h */,
@@ -260,6 +268,8 @@
 				F5394E3C22548C750064AD54 /* UILabel+Fragrans.m */,
 				F5394E2E22548C740064AD54 /* UIPageControl+Fragrans.h */,
 				F5394E3222548C740064AD54 /* UIPageControl+Fragrans.m */,
+				F55FE158225CC77C00CE55F6 /* UIProgressView+Fragrans.h */,
+				F55FE159225CC77C00CE55F6 /* UIProgressView+Fragrans.m */,
 				F5394E4222548C750064AD54 /* UIScrollView+Fragrans.h */,
 				F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */,
 				F55FE155225C851E00CE55F6 /* UISegmentedControl+Fragrans.h */,
@@ -580,6 +590,7 @@
 				F5394E2922548C5B0064AD54 /* CALayer+Fragrans.m in Sources */,
 				F5394E5422548C760064AD54 /* UIAlertController+Fragrans.m in Sources */,
 				F5394D2A2252F6560064AD54 /* FragransDemoView.m in Sources */,
+				F55FE15A225CC77C00CE55F6 /* UIProgressView+Fragrans.m in Sources */,
 				F5394E0922548C420064AD54 /* NSDictionary+Fragrans.m in Sources */,
 				F5394E0C22548C420064AD54 /* UIColor+Fragrans.m in Sources */,
 				F5394E5922548C760064AD54 /* UIViewController+Fragrans.m in Sources */,
@@ -590,6 +601,7 @@
 				F5394E0A22548C420064AD54 /* NSDate+Fragrans.m in Sources */,
 				F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */,
 				F5394E2622548C5B0064AD54 /* NSURLRequest+Fragrans.m in Sources */,
+				F5E21220225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m in Sources */,
 				F5394E0B22548C420064AD54 /* NSMutableDictionary+Fragrans.m in Sources */,
 				F5394E1322548C420064AD54 /* UIDevice+Fragrans.m in Sources */,
 				F5394E1122548C420064AD54 /* NSDateFormatter+Fragrans.m in Sources */,

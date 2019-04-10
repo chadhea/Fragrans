@@ -9,6 +9,7 @@
 #define Fragrans_h
 
 //=============UIKit=============
+#import "UIActivityIndicatorView+Fragrans.h"
 #import "UIAlertController+Fragrans.h"
 #import "UIBarButtonItem+Fragrans.h"
 #import "UIButton+Fragrans.h"
@@ -18,6 +19,7 @@
 #import "UIImagePickerController+Fragrans.h"
 #import "UILabel+Fragrans.h"
 #import "UIPageControl+Fragrans.h"
+#import "UIProgressView+Fragrans.h"
 #import "UIScrollView+Fragrans.h"
 #import "UISegmentedControl+Fragrans.h"
 #import "UISlider+Fragrans.h"
