@@ -20,6 +20,7 @@
 #import "UILabel+Fragrans.h"
 #import "UIPageControl+Fragrans.h"
 #import "UIProgressView+Fragrans.h"
+#import "UIRefreshControl+Fragrans.h"
 #import "UIScrollView+Fragrans.h"
 #import "UISegmentedControl+Fragrans.h"
 #import "UISlider+Fragrans.h"

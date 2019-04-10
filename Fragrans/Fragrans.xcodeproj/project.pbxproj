@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F50C90F1222527D000DC5113 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50C90F0222527D000DC5113 /* AVFoundation.framework */; };
+		F50E8904225DFEE900451FE9 /* UIRefreshControl+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E8903225DFEE900451FE9 /* UIRefreshControl+Fragrans.m */; };
 		F521EE4B2238E09C00B0BC2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4A2238E09C00B0BC2B /* UIKit.framework */; };
 		F521EE4D2238E0A300B0BC2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4C2238E0A200B0BC2B /* Foundation.framework */; };
 		F521EE4F2238E0AD00B0BC2B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */; };
@@ -87,6 +88,8 @@
 
 /* Begin PBXFileReference section */
 		F50C90F0222527D000DC5113 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F50E8902225DFEE900451FE9 /* UIRefreshControl+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+Fragrans.h"; sourceTree = "<group>"; };
+		F50E8903225DFEE900451FE9 /* UIRefreshControl+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+Fragrans.m"; sourceTree = "<group>"; };
 		F521EE4A2238E09C00B0BC2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F521EE4C2238E0A200B0BC2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -270,6 +273,8 @@
 				F5394E3222548C740064AD54 /* UIPageControl+Fragrans.m */,
 				F55FE158225CC77C00CE55F6 /* UIProgressView+Fragrans.h */,
 				F55FE159225CC77C00CE55F6 /* UIProgressView+Fragrans.m */,
+				F50E8902225DFEE900451FE9 /* UIRefreshControl+Fragrans.h */,
+				F50E8903225DFEE900451FE9 /* UIRefreshControl+Fragrans.m */,
 				F5394E4222548C750064AD54 /* UIScrollView+Fragrans.h */,
 				F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */,
 				F55FE155225C851E00CE55F6 /* UISegmentedControl+Fragrans.h */,
@@ -578,6 +583,7 @@
 				F5394E5622548C760064AD54 /* UILabel+Fragrans.m in Sources */,
 				F5F047FE225B9D30002066D5 /* UIKitBridge.m in Sources */,
 				F5394E5C22548C760064AD54 /* UIView+Fragrans.m in Sources */,
+				F50E8904225DFEE900451FE9 /* UIRefreshControl+Fragrans.m in Sources */,
 				F5394E5322548C760064AD54 /* UITapGestureRecognizer+Fragrans.m in Sources */,
 				F5394E5522548C760064AD54 /* UIImage+Fragrans.m in Sources */,
 				F55FE151225C48F100CE55F6 /* CustomBridge.m in Sources */,
