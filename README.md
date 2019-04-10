@@ -325,14 +325,24 @@ UIActivityIndicatorView   *activityView = [UIActivityIndicatorView activityIndic
 [self addSubview:activityView];
 ```  
 ![uiview_07](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_07.png)  
+### UIRefreshControl+Fragrans  
+```objective-c  
+if (@available(iOS 10.0, *)) {
+FRG_WEAKSELF(self, weakSelf)
+self.scroll.refreshControl = [[UIRefreshControl alloc] initWithTintColor:[UIColor redColor] attributedTitle:[[NSAttributedString alloc]initWithString:@"测试"] startRefresh:^{
+//开始刷新的回调
+FRG_STRONGSELF(weakSelf, strongSelf)
+[strongSelf.scroll.refreshControl endRefreshing];
+}];
+} else {
+// Fallback on earlier versions
+}
+```  
 ### FRGAlertView  
 ```objective-c
 [FRGAlertView alertWithTitle:@"测试" message:@"这是一个弹框" preferredStyle:UIAlertControllerStyleAlert actionTitles:@[@"一",@"二",@"三"] styles:@[@(UIAlertActionStyleDestructive),@(UIAlertActionStyleDefault),@(UIAlertActionStyleCancel)] handler:^(UIAlertAction * _Nonnull action, NSInteger index) {
      //点击事件
 }];
 ```  
-
-
-
 
 
