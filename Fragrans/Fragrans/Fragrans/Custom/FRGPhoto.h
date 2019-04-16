@@ -57,10 +57,10 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  添加图片
  
- @parma image 需要添加的图片
+ @parma image 需要添加的图片 UIImage或者NSString格式
  @parma result 添加结果的block
  */
-+ (void)addPhoto:(UIImage *)image result:(void (^)(BOOL success, NSError *error))result;
++ (void)addPhoto:(id)image result:(void (^)(BOOL success, NSError *error))result;
 
 /**
  获取图片名称

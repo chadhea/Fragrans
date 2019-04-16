@@ -61,6 +61,15 @@
     }
     return [NSString stringWithFormat:@"%@",string];
 }
++ (UIImage *)safeImage:(id)image {
+    UIImage   *new_image = nil;
+    if ([image isKindOfClass:[UIImage class]]) {
+        new_image = image;
+    }else if ([image isKindOfClass:[NSString class]]) {
+        new_image = [UIImage imageNamed:[self safeString:image]];
+    }
+    return new_image;
+}
 + (UIViewController *)getCurrentVC {
     UIViewController   *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
     return [self getCurrentVCFrom:rootVC];

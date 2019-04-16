@@ -6,7 +6,7 @@
 //
 
 #import "FRGPhoto.h"
-
+#import "CustomBridge.h"
 @interface FRGPhoto()
 
 @end
@@ -142,12 +142,16 @@
 /**
  添加图片
  
- @parma image 需要添加的图片
+ @parma image 需要添加的图片 UIImage或者NSString格式
  @parma result 添加结果的block
  */
-+ (void)addPhoto:(UIImage *)image result:(void (^)(BOOL success, NSError *error))result {
++ (void)addPhoto:(id)image result:(void (^)(BOOL success, NSError *error))result {
+    UIImage  *new_image = [CustomBridge safeImage:image];
+    if (!new_image) {
+        return;
+    }
     [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-        [PHAssetChangeRequest creationRequestForAssetFromImage:image];
+        [PHAssetChangeRequest creationRequestForAssetFromImage:new_image];
     } completionHandler:^(BOOL success, NSError *error) {
         if (result) {
             result(success,error);

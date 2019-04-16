@@ -4,6 +4,7 @@
 
 
 #define frg_kUSER_DEFAULT [NSUserDefaults standardUserDefaults]
+#define frg_kValueWithPoint(POINT_X,POINT_Y) [NSValue valueWithCGPoint:CGPointMake(POINT_X, POINT_Y)]
 /**
  强引用弱引用
  */

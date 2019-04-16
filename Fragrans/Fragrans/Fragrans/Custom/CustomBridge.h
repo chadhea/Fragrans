@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CustomBridge : NSObject
 + (BOOL)isEmpty:(NSObject *)object;
 + (NSString *)safeString:(NSString *)string;
++ (UIImage *)safeImage:(id)image;
 + (UIViewController *)getCurrentVC;
 @end
 

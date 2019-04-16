@@ -14,7 +14,7 @@ static   FRGAccountInfo   *accountInfo;
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
-        self.face = [aDecoder decodeObjectForKey:@"face"];
+        self.headPic = [aDecoder decodeObjectForKey:@"headPic"];
         self.nickname = [aDecoder decodeObjectForKey:@"nickname"];
         self.sex = [aDecoder decodeObjectForKey:@"sex"];
         self.mobile = [aDecoder decodeObjectForKey:@"mobile"];
@@ -36,7 +36,7 @@ static   FRGAccountInfo   *accountInfo;
     return self;
 }
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.face forKey:@"face"];
+    [aCoder encodeObject:self.headPic forKey:@"headPic"];
     [aCoder encodeObject:self.nickname forKey:@"nickname"];
     [aCoder encodeObject:self.sex forKey:@"sex"];
     [aCoder encodeObject:self.mobile forKey:@"mobile"];
