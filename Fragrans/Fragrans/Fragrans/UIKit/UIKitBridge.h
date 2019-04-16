@@ -5,8 +5,8 @@
 //  Created by qmz on 2019/4/8.
 //
 
-#define FRG_WEAKSELF(OBJC,NAME) typeof(OBJC) __weak NAME = OBJC;
-#define FRG_STRONGSELF(OBJC,NAME) typeof(OBJC) __strong NAME = OBJC;
+#define FRG_WEAKSELF_UIKitBridge(OBJC,NAME) typeof(OBJC) __weak NAME = OBJC;
+#define FRG_STRONGSELF_UIKitBridge(OBJC,NAME) typeof(OBJC) __strong NAME = OBJC;
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
