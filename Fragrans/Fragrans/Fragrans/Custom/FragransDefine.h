@@ -2,7 +2,8 @@
 //  FragransDefine.h
 //  Fragrans
 
-
+#define FRGLog(fmt, ...) NSLog((@"[%s %s %d行] " fmt), [[NSString stringWithFormat:@"%s", __FILE__].lastPathComponent UTF8String], __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define frg_statusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height;
 #define frg_kUSER_DEFAULT [NSUserDefaults standardUserDefaults]
 #define frg_kValueWithPoint(POINT_X,POINT_Y) [NSValue valueWithCGPoint:CGPointMake(POINT_X, POINT_Y)]
 /**

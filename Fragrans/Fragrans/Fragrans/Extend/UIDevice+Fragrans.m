@@ -583,6 +583,21 @@ typedef enum : NSUInteger {
 }
 
 /**
+ 判断设备是否为iPhoneX系列
+ */
++ (BOOL)isIPhoneX {
+    NSString   *deviceStr = [self getDeviceStringName];
+    if ([deviceStr isEqualToString:@"iPhone10,3"] ||
+        [deviceStr isEqualToString:@"iPhone10,6"] ||
+        [deviceStr isEqualToString:@"iPhone11,2"] ||
+        [deviceStr isEqualToString:@"iPhone11,4"] ||
+        [deviceStr isEqualToString:@"iPhone11,6"] ||
+        [deviceStr isEqualToString:@"iPhone11,8"])  {
+        return YES;
+    }
+    return NO;
+}
+/**
  判断设备是否为iPad
  */
 + (BOOL)isIPad {

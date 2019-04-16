@@ -63,6 +63,7 @@
 //=============Custom=============
 #import "FragransDefine.h"
 #import "FRGAccountInfo.h"
+#import "FRGAdapter.h"
 #import "FRGAlertView.h"
 #import "FRGPhoto.h"
 #import "FRGWebView.h"

@@ -6,6 +6,7 @@
 //
 
 #import "CustomBridge.h"
+#import <sys/utsname.h>
 
 @implementation CustomBridge
 + (BOOL)isEmpty:(NSObject *)object {
@@ -88,5 +89,23 @@
     }
     return currentVC;
     
+}
++ (NSString *)getDeviceStringName {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    return deviceString;
+}
++ (BOOL)isIPhoneX {
+    NSString   *deviceStr = [self getDeviceStringName];
+    if ([deviceStr isEqualToString:@"iPhone10,3"] ||
+        [deviceStr isEqualToString:@"iPhone10,6"] ||
+        [deviceStr isEqualToString:@"iPhone11,2"] ||
+        [deviceStr isEqualToString:@"iPhone11,4"] ||
+        [deviceStr isEqualToString:@"iPhone11,6"] ||
+        [deviceStr isEqualToString:@"iPhone11,8"])  {
+        return YES;
+    }
+    return NO;
 }
 @end

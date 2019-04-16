@@ -180,6 +180,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isIPhone;
 
 /**
+ 判断设备是否为iPhoneX系列
+ */
++ (BOOL)isIPhoneX;
+
+/**
  判断设备是否为iPad
  */
 + (BOOL)isIPad;

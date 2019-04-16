@@ -16,6 +16,7 @@
 		F52E05FD2265AA390068A626 /* FRGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05FC2265AA390068A626 /* FRGWebView.m */; };
 		F52E06002265B9EB0068A626 /* FRGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05FF2265B9EB0068A626 /* FRGPhoto.m */; };
 		F52E06032265BFC70068A626 /* FRGAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E06022265BFC70068A626 /* FRGAccountInfo.m */; };
+		F52E06062265DBE00068A626 /* FRGAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E06052265DBE00068A626 /* FRGAdapter.m */; };
 		F5394D2A2252F6560064AD54 /* FragransDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394D292252F6560064AD54 /* FragransDemoView.m */; };
 		F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DE622548C410064AD54 /* NSString+Fragrans.m */; };
 		F5394E0722548C420064AD54 /* NSData+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DE922548C410064AD54 /* NSData+Fragrans.m */; };
@@ -105,6 +106,8 @@
 		F52E05FF2265B9EB0068A626 /* FRGPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGPhoto.m; sourceTree = "<group>"; };
 		F52E06012265BFC70068A626 /* FRGAccountInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGAccountInfo.h; sourceTree = "<group>"; };
 		F52E06022265BFC70068A626 /* FRGAccountInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGAccountInfo.m; sourceTree = "<group>"; };
+		F52E06042265DBE00068A626 /* FRGAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGAdapter.h; sourceTree = "<group>"; };
+		F52E06052265DBE00068A626 /* FRGAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGAdapter.m; sourceTree = "<group>"; };
 		F5394D282252F6560064AD54 /* FragransDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoView.h; sourceTree = "<group>"; };
 		F5394D292252F6560064AD54 /* FragransDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoView.m; sourceTree = "<group>"; };
 		F5394DE522548C1C0064AD54 /* FragransDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragransDefine.h; sourceTree = "<group>"; };
@@ -383,6 +386,8 @@
 				F5394DE522548C1C0064AD54 /* FragransDefine.h */,
 				F52E06012265BFC70068A626 /* FRGAccountInfo.h */,
 				F52E06022265BFC70068A626 /* FRGAccountInfo.m */,
+				F52E06042265DBE00068A626 /* FRGAdapter.h */,
+				F52E06052265DBE00068A626 /* FRGAdapter.m */,
 				F55FE14C225C45EB00CE55F6 /* FRGAlertView.h */,
 				F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */,
 				F52E05FE2265B9EB0068A626 /* FRGPhoto.h */,
@@ -596,6 +601,7 @@
 				F5394E0822548C420064AD54 /* NSBundle+Fragrans.m in Sources */,
 				F55FE14E225C45EB00CE55F6 /* FRGAlertView.m in Sources */,
 				F5FAB6B222003B4E00618786 /* ViewController.m in Sources */,
+				F52E06062265DBE00068A626 /* FRGAdapter.m in Sources */,
 				F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */,
 				F5394E2422548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m in Sources */,
 				F52E05FA2265A3560068A626 /* WKWebView+Fragrans.m in Sources */,
