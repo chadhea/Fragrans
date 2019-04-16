@@ -35,7 +35,8 @@ end
 - `UITextField+Fragrans`
 - `UITextView+Fragrans`
 - `UIView+Fragrans`
-- `UIViewController+Fragrans`
+- `UIViewController+Fragrans`  
+- `WKWebView+Fragrans`  
 
 ### Extend  
 - `NSArray+Fragrans`
@@ -66,7 +67,10 @@ end
 
 ### Custom  
 - `FragransDefine`
+- `FRGAccountInfo`
 - `FRGAlertView`
+- `FRGPhoto`
+- `FRGWebView`
 
 
 部分代码示例  
@@ -74,8 +78,7 @@ end
 
 ### UITextField+Frafrans   
 ```objective-c
-UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30) 
-placeholder:@"测试"   font:@14 textColor:@3  delegate:self];
+UITextField   *textField = [UITextField textFieldWithFrame:CGRectMake(100, 100, 200, 30) placeholder:@"测试" font:@14 textColor:@3 delegate:self];
 [self addSubview:textField];
 [textField layerBorderColor:@9 width:1];
 //设置placeholder颜色和字体
@@ -88,47 +91,32 @@ placeholder:@"测试"   font:@14 textColor:@3  delegate:self];
 ![textfield_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextField/textfield_01.gif)  
 ### UIView+Fragrans  
 ```objective-c
-UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) 
-backgroundColor:@9 tap:^(id  _Nonnull sender) {
-   //点击事件
+UIView   *view = [UIView viewWithFrame:CGRectMake(100, 100, 100, 100) backgroundColor:@9 tap:^(id  _Nonnull sender) {
+     //点击事件
 }];
 [self addSubview:view];
 //设置上边圆角
 [view setCornerWithTop:20];
 //设置渐变色
-view.backgroundColor = [UIColor gradientForLeftToRightWithColors:
-@[[UIColor cyanColor],[UIColor blueColor],@9] width:50];
+view.backgroundColor = [UIColor gradientForLeftToRightWithColors:@[[UIColor cyanColor],[UIColor blueColor],@9] width:50];
 ```  
 ```objective-c
 - (void)drawRect:(CGRect)rect {
 //drawRect重绘
-[UIView drawLinePointArray: 
-@[frg_kValueWithPoint(100, 300),frg_kValueWithPoint(200, 300),
-frg_kValueWithPoint(200, 200),frg_kValueWithPoint(100, 300)] 
-lineWidth:3 strokeColor:[UIColor yellowColor] 
-fillColor:[UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[UIColor redColor]
-width:100]];
+/*
+//画线
+[UIView drawLinePointArray:@[frg_kValueWithPoint(100, 300),frg_kValueWithPoint(200, 300),frg_kValueWithPoint(200,200),frg_kValueWithPoint(100, 300)]lineWidth:3 strokeColor:[UIColor yellowColor]fillColor:[UIColor gradientForLeftToRightFromColor:[UIColor cyanColor] toColor:[UIColor redColor]width:100]];
+*/
+/*
+//画曲线
+[UIView drawCurveCenter:CGPointMake(200, 200)radius:60 startAngle:0 endAngle:M_PI clockwise:1 lineWidth:40 lineColor:[UIColor gradientForTopToBottomFromColor:[UIColor blueColor] toColor:[UIColor magentaColor]height:15] round:YES];
+*/
+/*
+//画圆
+[UIView drawCircleFrame:CGRectMake(100, 100, 100, 70) color:[UIColor gradientForLeftToRightWithColors:@[[UIColor redColor],[UIColor blueColor],[UIColor cyanColor],[UIColor brownColor],@9,[UIColor greenColor],[UIColor orangeColor]] width:100]];
+*/
 }
-```  
-![uiview_03](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_03.png)  
-```objective-c
-- (void)drawRect:(CGRect)rect {
-[UIView drawCurveCenter:CGPointMake(200, 200)
-radius:60 startAngle:0 endAngle:M_PI clockwise:1 lineWidth:40 
-lineColor:[UIColor gradientForTopToBottomFromColor:[UIColor blueColor] toColor:[UIColor magentaColor] 
-height:15] round:YES];
-}
-```  
-![uiview_04](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_04.png)  
-```objective-c
-- (void)drawRect:(CGRect)rect {
-[UIView drawCircleFrame:CGRectMake(100, 100, 100, 70) 
-color:[UIColor gradientForLeftToRightWithColors:@[[UIColor redColor],[UIColor blueColor],
-[UIColor cyanColor],[UIColor brownColor],@9,[UIColor greenColor],[UIColor orangeColor]] 
-width:100]];
-}
-```  
-![uiview_05](https://github.com/chadhea/Fragrans_image/blob/master/UIView/uiview_05.png)  
+```   
 ### CABasicAnimation+Fragrans  
 ```objective-c
 for (int i = 0; i < 3; i ++) {
@@ -149,9 +137,7 @@ for (int i = 0; i < 3; i ++) {
 ```    
 ### UILabel+Fragrans  
 ```objective-c
-UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" 
-font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter 
-tap:^(id  _Nonnull sender) {
+UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter tap:^(id  _Nonnull sender) {
     //点击事件
 }];
 [self addSubview:label];
@@ -164,9 +150,7 @@ tap:^(id  _Nonnull sender) {
 
 ### UIButton+Fragrans  
 ```objective-c
-UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) 
-bounds:CGRectMake(0, 0, 150, 100) title:@"测试" font:@"15" titleColor:[UIColor redColor]
-backgroundColor:@"e" target:self action:@selector(ceshiclick)];
+UIButton  *button = [UIButton buttonWithCenter:CGPointMake(100, 100) bounds:CGRectMake(0, 0, 150, 100) title:@"测试" font:@"15" titleColor:[UIColor redColor]backgroundColor:@"e" target:self action:@selector(ceshiclick)];
 [self addSubview:button];
 //设置图片
 [button normalImage:@"ceshi_normal" selectImage:@"ceshi_select"];
@@ -174,18 +158,20 @@ backgroundColor:@"e" target:self action:@selector(ceshiclick)];
 //FRGButtonEdgeInsetsStyleTop、Bottom、Left、Right、Center
 [button layoutButtonWithEdgeInsetsStyle:FRGButtonEdgeInsetsStyleCenter imageTitleSpace:10];
 ```  
-![button_top](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_top.png)![button_bottom](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_bottom.png)![button_left](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_left.png)![button_right](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_right.png)![button_center](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_center.png)  
+![button_top](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_top.png)
+![button_bottom](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_bottom.png)
+![button_left](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_left.png)
+![button_right](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_right.png)
+![button_center](https://github.com/chadhea/Fragrans_image/blob/master/UIButton/button_center.png)  
 
 ### NSURLRequest+Fragrans  
 ```objective-c
 //get
-[NSURLRequest get_requestWithURL:@"" params:nil 
-completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
+[NSURLRequest get_requestWithURL:@"" params:nil completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
      //数据解析
 }];
 //post
-[NSURLRequest post_requestWithURL:@"xxx" params:@{} 
-completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
+[NSURLRequest post_requestWithURL:@"xxx" params:@{} completionHandler:^(NSDictionary * _Nonnull response, NSError * _Nonnull error) {
      //数据解析
 }];
 ```  
@@ -233,13 +219,10 @@ BOOL net = [NSNetService checkNetWork];
 ```  
 ### UIPageControl+Fragrans  
 ```objective-c
-UIPageControl   *pageControl = [UIPageControl pageControlWithFrame:CGRectMake(30, 100, 200, 30)
-numberOfPages:10 currentPage:3 pageIndicatorTintColor:@8 currentPageIndicatorTintColor:@"eb3223"
-target:self action:@selector(pageEvent:)];
+UIPageControl   *pageControl = [UIPageControl pageControlWithFrame:CGRectMake(30, 100, 200, 30) numberOfPages:10 currentPage:3 pageIndicatorTintColor:@8 currentPageIndicatorTintColor:@"eb3223" target:self action:@selector(pageEvent:)];
 pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
 [self addSubview:pageControl];
 ```  
-![pageControl_01](https://github.com/chadhea/Fragrans_image/blob/master/UIPageControl/pageControl_01.png)  
 
 ### NSString+Fragrans  
 ```objective-c
@@ -254,18 +237,13 @@ NSString *jiami_str = [NSString  encryptAESWithString:@"xxx" secretKey:key];//AE
 ```   
 ### UISlider+Fragrans  
 ```objective-c
-UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 100, 30) 
-value:50 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] 
-minimumTrackTintColor:[UIColor cyanColor] 
-maximumTrackTintColor:[UIColor redColor] 
-target:self action:@selector(sliderEvent:)];
+UISlider   *slider = [UISlider sliderWithFrame:CGRectMake(100, 100, 100, 30) value:50 minimumValue:0 maximumValue:100 thumbTintColor:[UIColor blueColor] minimumTrackTintColor:[UIColor cyanColor] maximumTrackTintColor:[UIColor redColor] target:self action:@selector(sliderEvent:)];
 [self addSubview:slider];
 ```   
-![slider_01](https://github.com/chadhea/Fragrans_image/blob/master/UISlider/slider_02.png)  
 
 ### UISwitch+Fragrans  
 ```objective-c
-UISwitch   *frg_switch = [UISwitch switchWithStarPoint:CGPointMake(100, 100)   thumbTintColor:[UIColor greenColor] onTintColor:[UIColor yellowColor] tintColor:[UIColor magentaColor]   target:self action:@selector(switchEvent:)];
+UISwitch   *frg_switch = [UISwitch switchWithStarPoint:CGPointMake(100, 100) thumbTintColor:[UIColor greenColor] onTintColor:[UIColor yellowColor] tintColor:[UIColor magentaColor] target:self action:@selector(switchEvent:)];
 [self addSubview:frg_switch];
 ```  
 ![switch_01](https://github.com/chadhea/Fragrans_image/blob/master/UISwitch/switch_01.gif)  
@@ -303,17 +281,10 @@ text:@"" font:@15 textColor:@3 backgroundColor:@"e" delegate:self];
 ![textview_01](https://github.com/chadhea/Fragrans_image/blob/master/UITextView/textview_01.gif)  
 ### UIScrollView+Fragrans  
 ```objective-c
-UIScrollView   *scroll = [UIScrollView scrollViewWithFrame:
-CGRectMake(10, 100, [UIScreen screenWidth] - 20, 80) 
-contentSize:CGSizeZero backgroundColor:@"c" showsScrollIndicator:NO 
-bounces:YES delegate:self];
+UIScrollView   *scroll = [UIScrollView scrollViewWithFrame:CGRectMake(10, 100, [UIScreen screenWidth] - 20, 80) contentSize:CGSizeZero backgroundColor:@"c" showsScrollIndicator:NO bounces:YES delegate:self];
 [self addSubview:scroll];
 //scroll上添加图片,contentSize属性自动适应
-[scroll addimages:@[@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",
-@"ceshi_normal",@"ceshi_normal"]
-starPoint:CGPointMake(10, 10) interval:10 
-direction:Frg_ScrollViewAddImageDirectionType_Horizontal 
-taps:^(id  _Nonnull sender, NSInteger index) {
+[scroll addimages:@[@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",@"ceshi_normal",@"ceshi_normal"] starPoint:CGPointMake(10, 10) interval:10 direction:Frg_ScrollViewAddImageDirectionType_Horizontal taps:^(id  _Nonnull sender, NSInteger index) {
    //每张图片的点击事件
         
 }];
@@ -339,11 +310,76 @@ FRG_STRONGSELF(weakSelf, strongSelf)
 // Fallback on earlier versions
 }
 ```  
+### FRGAccountInfo
+```objective-c
+ //获取本地存储对象
+FRGAccountInfo   *accountInfo = [FRGAccountInfo shareAccountInfo];
+//对本地对象进行赋值
+accountInfo.nickname = @"测试";
+accountInfo.userID = @"000";
+accountInfo.headPic = @"xxx";
+//更新本地对象
+[accountInfo archiverAccount];
+```  
 ### FRGAlertView  
 ```objective-c
 [FRGAlertView alertWithTitle:@"测试" message:@"这是一个弹框" preferredStyle:UIAlertControllerStyleAlert actionTitles:@[@"一",@"二",@"三"] styles:@[@(UIAlertActionStyleDestructive),@(UIAlertActionStyleDefault),@(UIAlertActionStyleCancel)] handler:^(UIAlertAction * _Nonnull action, NSInteger index) {
      //点击事件
 }];
 ```  
+### FRGPhoto
+```objective-c
+//获取没有任何子类型的图片资源的集合
+[FRGPhoto getNormalPhoto];
+//获取photoLive图片资源的集合
+[FRGPhoto getLivePhoto];
+//获取视频资源的集合
+[FRGPhoto getVideoPhoto];
+//获取截图资源的集合
+[FRGPhoto getShotPhoto];
+//获取全景图资源的集合
+[FRGPhoto getPanoramaPhoto];
+//获取HDR图片资源的集合
+[FRGPhoto getHDRPhoto];
+//删除照片
+[FRGPhoto delPhoto:[[FRGPhoto getHDRPhoto]firstObject] result:^(BOOL success, NSError * _Nonnull error) {
+    //删除照片结果
+}];
+//添加照片
+[FRGPhoto addPhoto:@"ceshi_image" result:^(BOOL success, NSError * _Nonnull error) {
+    //添加照片结果
+}];
+```  
+### FRGWebView
+```objective-c
+FRGWebView   *webView = [[FRGWebView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen screenWidth], [UIScreen screenHeight]) url:@"xxx"];
+[self addSubview:webView];
+webView.starLoad = ^{
+    //开始加载
+};
+webView.failLoad = ^{
+  //加载失败
+};
+webView.finishLoad = ^{
+  //加载完成
+};
+webView.scrollOffHeight = ^(CGFloat offHeight) {
+  //webView加载高度
+};
+webView.imageClick = ^(int index, NSArray * _Nonnull imageArray) {
+  //图片的点击事件
+};
+webView.currentURL = ^(NSString * _Nonnull currentURL) {
+  //当前的url
+};
+webView.currentTitle = ^(NSString * _Nonnull currentTitle) {
+  //当前标题
+};
+//刷新webview
+[webView refresh];
+```
+
+
+
 
 
