@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "Fragrans"
-  s.version      = "0.1.4"
+  s.version      = "0.2.0"
   s.summary      = "The method of class attribute auxiliary tool"
 
   s.description  = <<-DESC
