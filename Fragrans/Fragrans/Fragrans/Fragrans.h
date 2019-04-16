@@ -31,6 +31,7 @@
 #import "UITextView+Fragrans.h"
 #import "UIView+Fragrans.h"
 #import "UIViewController+Fragrans.h"
+#import "WKWebView+Fragrans.h"
 
 //=============Extend=============
 #import "NSArray+Fragrans.h"
@@ -61,9 +62,10 @@
 
 //=============Custom=============
 #import "FragransDefine.h"
+#import "FRGAccountInfo.h"
 #import "FRGAlertView.h"
-
-
+#import "FRGPhoto.h"
+#import "FRGWebView.h"
 
 #endif /* Fragrans_h */
 

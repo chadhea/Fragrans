@@ -3,6 +3,7 @@
 //  Fragrans
 
 
+#define frg_kUSER_DEFAULT [NSUserDefaults standardUserDefaults]
 /**
  强引用弱引用
  */
