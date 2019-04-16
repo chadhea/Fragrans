@@ -48,7 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param message 弹框的message
  @param preferredStyle 弹框的样式
  @param actionTitles 弹框的按钮title的集合
- @param styles 弹框的按钮a样式的集合(NSNumber的是范围@0~@2)
+ @param styles 弹框的按钮样式的集合(NSNumber的是范围@0~@2)
  @param handler 点击事件的block
  */
 + (void)alertWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle actionTitles:(NSArray <NSString *>*)actionTitles styles:(NSArray <NSNumber *>*)styles handler:(void(^)(UIAlertAction *action,NSInteger index))handler;

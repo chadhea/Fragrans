@@ -44,4 +44,13 @@ static const void  *frg_refreshControl_UtilityKey = &frg_refreshControl_UtilityK
         self.refreshChangedBlock();
     }
 }
+/**
+ UIRefreshControl
+ 
+ @param tintColor UIColor或者NSString或者NSNumber格式
+ @param startRefreshBlock 开始刷新的block回调
+ */
++ (UIRefreshControl *)refreshControlWithTintColor:(id)tintColor attributedTitle:(NSAttributedString *)attributedString startRefresh:(void(^)(void))startRefreshBlock {
+    return [[UIRefreshControl alloc] initWithTintColor:tintColor attributedTitle:attributedString startRefresh:startRefreshBlock];
+}
 @end

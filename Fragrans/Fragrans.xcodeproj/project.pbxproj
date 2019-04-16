@@ -12,6 +12,8 @@
 		F521EE4B2238E09C00B0BC2B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4A2238E09C00B0BC2B /* UIKit.framework */; };
 		F521EE4D2238E0A300B0BC2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4C2238E0A200B0BC2B /* Foundation.framework */; };
 		F521EE4F2238E0AD00B0BC2B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */; };
+		F52E05FA2265A3560068A626 /* WKWebView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05F92265A3560068A626 /* WKWebView+Fragrans.m */; };
+		F52E05FD2265AA390068A626 /* FRGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05FC2265AA390068A626 /* FRGWebView.m */; };
 		F5394D2A2252F6560064AD54 /* FragransDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394D292252F6560064AD54 /* FragransDemoView.m */; };
 		F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DE622548C410064AD54 /* NSString+Fragrans.m */; };
 		F5394E0722548C420064AD54 /* NSData+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5394DE922548C410064AD54 /* NSData+Fragrans.m */; };
@@ -93,6 +95,10 @@
 		F521EE4A2238E09C00B0BC2B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F521EE4C2238E0A200B0BC2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F52E05F82265A3560068A626 /* WKWebView+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Fragrans.h"; sourceTree = "<group>"; };
+		F52E05F92265A3560068A626 /* WKWebView+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Fragrans.m"; sourceTree = "<group>"; };
+		F52E05FB2265AA390068A626 /* FRGWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGWebView.h; sourceTree = "<group>"; };
+		F52E05FC2265AA390068A626 /* FRGWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGWebView.m; sourceTree = "<group>"; };
 		F5394D282252F6560064AD54 /* FragransDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FragransDemoView.h; sourceTree = "<group>"; };
 		F5394D292252F6560064AD54 /* FragransDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FragransDemoView.m; sourceTree = "<group>"; };
 		F5394DE522548C1C0064AD54 /* FragransDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragransDefine.h; sourceTree = "<group>"; };
@@ -295,6 +301,8 @@
 				F5394E4A22548C750064AD54 /* UIView+Fragrans.m */,
 				F5394E2D22548C740064AD54 /* UIViewController+Fragrans.h */,
 				F5394E4122548C750064AD54 /* UIViewController+Fragrans.m */,
+				F52E05F82265A3560068A626 /* WKWebView+Fragrans.h */,
+				F52E05F92265A3560068A626 /* WKWebView+Fragrans.m */,
 				F5F047FC225B9D30002066D5 /* UIKitBridge.h */,
 				F5F047FD225B9D30002066D5 /* UIKitBridge.m */,
 			);
@@ -369,6 +377,8 @@
 				F5394DE522548C1C0064AD54 /* FragransDefine.h */,
 				F55FE14C225C45EB00CE55F6 /* FRGAlertView.h */,
 				F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */,
+				F52E05FB2265AA390068A626 /* FRGWebView.h */,
+				F52E05FC2265AA390068A626 /* FRGWebView.m */,
 				F55FE14F225C48F100CE55F6 /* CustomBridge.h */,
 				F55FE150225C48F100CE55F6 /* CustomBridge.m */,
 			);
@@ -578,6 +588,7 @@
 				F5FAB6B222003B4E00618786 /* ViewController.m in Sources */,
 				F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */,
 				F5394E2422548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m in Sources */,
+				F52E05FA2265A3560068A626 /* WKWebView+Fragrans.m in Sources */,
 				F5394E1222548C420064AD54 /* NSMutableArray+Fragrans.m in Sources */,
 				F5FAB6BD22003B5200618786 /* main.m in Sources */,
 				F5394E5622548C760064AD54 /* UILabel+Fragrans.m in Sources */,
@@ -608,6 +619,7 @@
 				F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */,
 				F5394E2622548C5B0064AD54 /* NSURLRequest+Fragrans.m in Sources */,
 				F5E21220225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m in Sources */,
+				F52E05FD2265AA390068A626 /* FRGWebView.m in Sources */,
 				F5394E0B22548C420064AD54 /* NSMutableDictionary+Fragrans.m in Sources */,
 				F5394E1322548C420064AD54 /* UIDevice+Fragrans.m in Sources */,
 				F5394E1122548C420064AD54 /* NSDateFormatter+Fragrans.m in Sources */,
