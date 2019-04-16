@@ -68,6 +68,7 @@ end
 ### Custom  
 - `FragransDefine`
 - `FRGAccountInfo`
+- `FRGAdapter`
 - `FRGAlertView`
 - `FRGPhoto`
 - `FRGWebView`
