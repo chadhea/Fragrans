@@ -9,7 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'Fragrans', '~> 0.2.0'
+pod 'Fragrans', '~> 0.2.1'
 end
 ```  
 ## Architecture  
@@ -301,10 +301,10 @@ UIActivityIndicatorView   *activityView = [UIActivityIndicatorView activityIndic
 ### UIRefreshControl+Fragrans  
 ```objective-c  
 if (@available(iOS 10.0, *)) {
-FRG_WEAKSELF(self, weakSelf)
+FRG_WEAKSELF
 self.scroll.refreshControl = [[UIRefreshControl alloc] initWithTintColor:[UIColor redColor] attributedTitle:[[NSAttributedString alloc]initWithString:@"测试"] startRefresh:^{
 //开始刷新的回调
-FRG_STRONGSELF(weakSelf, strongSelf)
+FRG_STRONGSELF
 [strongSelf.scroll.refreshControl endRefreshing];
 }];
 } else {

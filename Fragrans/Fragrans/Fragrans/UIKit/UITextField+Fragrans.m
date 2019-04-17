@@ -3051,9 +3051,9 @@ static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
  result:返回length长度内的字符串
  */
 - (void)maxLength:(NSInteger)length textStringBlock:(void(^)(NSString *textString))result{
-    FRG_WEAKSELF(self, weakSelf)
+    FRG_WEAKSELF_UIKitBridge(self, weakSelf)
     self.frg_maxLengthBlock = ^{
-        FRG_STRONGSELF(weakSelf, strongSelf)
+        FRG_STRONGSELF_UIKitBridge(weakSelf, strongSelf)
         if (result) {
             result(strongSelf.text);
         }
