@@ -5,9 +5,6 @@
 //  Created by qmz on 2019/2/28.
 //
 
-#define FRG_WEAKSELF(OBJC,NAME) typeof(OBJC) __weak NAME = OBJC;
-#define FRG_STRONGSELF(OBJC,NAME) typeof(OBJC) __strong NAME = OBJC;
-
 #import "UITextField+Fragrans.h"
 #import <objc/runtime.h>
 #import "UIKitBridge.h"
@@ -3051,9 +3048,9 @@ static const void  *frg_textField_UtilityKey = &frg_textField_UtilityKey;
  result:返回length长度内的字符串
  */
 - (void)maxLength:(NSInteger)length textStringBlock:(void(^)(NSString *textString))result{
-    FRG_WEAKSELF_UIKitBridge(self, weakSelf)
+    typeof(self) __weak weakSelf = self;
     self.frg_maxLengthBlock = ^{
-        FRG_STRONGSELF_UIKitBridge(weakSelf, strongSelf)
+        typeof(weakSelf) __strong strongSelf = weakSelf;
         if (result) {
             result(strongSelf.text);
         }
