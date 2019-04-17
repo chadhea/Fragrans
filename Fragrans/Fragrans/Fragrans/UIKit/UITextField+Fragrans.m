@@ -5,6 +5,9 @@
 //  Created by qmz on 2019/2/28.
 //
 
+#define FRG_WEAKSELF(OBJC,NAME) typeof(OBJC) __weak NAME = OBJC;
+#define FRG_STRONGSELF(OBJC,NAME) typeof(OBJC) __strong NAME = OBJC;
+
 #import "UITextField+Fragrans.h"
 #import <objc/runtime.h>
 #import "UIKitBridge.h"
