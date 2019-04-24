@@ -6,6 +6,9 @@
 #define frg_statusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height;
 #define frg_kUSER_DEFAULT [NSUserDefaults standardUserDefaults]
 #define frg_kValueWithPoint(POINT_X,POINT_Y) [NSValue valueWithCGPoint:CGPointMake(POINT_X, POINT_Y)]
+#define FRG_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }
+#define FRG_REMOVE_VIEW(__VIEW) { [__VIEW removeFromSuperview]; __VIEW = nil; }
+
 /**
  强引用弱引用
  */

@@ -30,6 +30,30 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (CGFloat)frg_toolHeight;
 
+/**
+ 自动适配宽
+ 以6尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithSix_width:(CGFloat)width;
+
+/**
+ 自动适配高
+ 以6尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithSix_height:(CGFloat)height;
+
+/**
+ 自动适配宽
+ 以plus尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithPlus_width:(CGFloat)width;
+
+/**
+ 自动适配高
+ 以plus尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithPlus_height:(CGFloat)height;
+
 @end
 
 NS_ASSUME_NONNULL_END

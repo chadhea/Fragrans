@@ -53,4 +53,36 @@
     }
 }
 
+/**
+ 自动适配宽
+ 以6尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithSix_width:(CGFloat)width {
+    return width * ([UIScreen mainScreen].bounds.size.width) / 375.0;
+}
+
+/**
+ 自动适配高
+ 以6尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithSix_height:(CGFloat)height {
+    return (height * ([UIScreen mainScreen].bounds.size.height) / 667.0);
+}
+
+/**
+ 自动适配宽
+ 以plus尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithPlus_width:(CGFloat)width {
+    return width * ([UIScreen mainScreen].bounds.size.width) / 414.0;
+}
+
+/**
+ 自动适配高
+ 以plus尺寸等比例缩放
+ */
++ (CGFloat)frg_atuoSizeWithPlus_height:(CGFloat)height {
+    return (height * ([UIScreen mainScreen].bounds.size.height) / 736.0);
+}
+
 @end
