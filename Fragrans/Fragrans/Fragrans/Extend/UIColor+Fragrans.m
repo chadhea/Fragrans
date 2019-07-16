@@ -128,6 +128,7 @@
     range.location = 2;
     NSString   *gString = [newHexString substringWithRange:range];
     //b
+    range.location = 4;
     NSString   *bString = [newHexString substringWithRange:range];
     
     unsigned int r,g,b;

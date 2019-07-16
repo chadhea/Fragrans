@@ -11,7 +11,7 @@
 /**
  获取导航的高度
  */
-- (CGFloat)frg_navHeight {
++ (CGFloat)frg_navHeight {
     if ([CustomBridge isIPhoneX]) {
         return 88;
     }else {
@@ -22,7 +22,7 @@
 /**
  获取tabBar的高度
  */
-- (CGFloat)frg_tabBarHeight {
++ (CGFloat)frg_tabBarHeight {
     if ([CustomBridge isIPhoneX]) {
         return 85;
     }else {
@@ -33,9 +33,9 @@
 /**
  获取底部圆角的高度
  */
-- (CGFloat)frg_bottomRoundHeight {
++ (CGFloat)frg_bottomRoundHeight {
     if ([CustomBridge isIPhoneX]) {
-        return 24;
+        return 34;
     }else {
         //不是iPhoneX系列手机没有底部圆角
         return 0;
@@ -45,7 +45,7 @@
 /**
  获取工具栏高度
  */
-- (CGFloat)frg_toolHeight {
++ (CGFloat)frg_toolHeight {
     if ([CustomBridge isIPhoneX]) {
         return 44;
     }else {
