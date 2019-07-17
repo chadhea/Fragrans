@@ -9,7 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'Fragrans', '~> 0.2.2'
+pod 'Fragrans', '~> 0.2.3'
 end
 ```  
 ## Architecture  
@@ -118,24 +118,6 @@ view.backgroundColor = [UIColor gradientForLeftToRightWithColors:@[[UIColor cyan
 */
 }
 ```   
-### CABasicAnimation+Fragrans  
-```objective-c
-for (int i = 0; i < 3; i ++) {
-        UIView   *view = [UIView viewWithFrame:CGRectMake(30 + 110 * i, 100, 80, 80) 
-        backgroundColor:[UIColor gradientForLeftToRightWithColors:@[[UIColor randomColor],[UIColor randomColor],[UIColor randomColor],[UIColor randomColor]] width:80]];
-        [self addSubview:view];
-        if (i == 0) {
-            //y轴旋转动画
-            [view.layer addAnimation:[CABasicAnimation yAxisRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_1"];
-        }else if (i == 1) {
-            //x轴旋转动画
-            [view.layer addAnimation:[CABasicAnimation xAxisRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_2"];
-        }else {
-            //平面旋转动画
-            [view.layer addAnimation:[CABasicAnimation planeRotateWithFromValue:0 toValue:M_PI * 2 repeatCount:MAXFLOAT duration:3 autoreverses:NO] forKey:@"animate_3"];
-        }
-    }
-```    
 ### UILabel+Fragrans  
 ```objective-c
 UILabel    *label = [UILabel labelWithFrame:CGRectMake(100, 100, 100, 100) text:@"测试\n换行" font:@20 textColor:@3 backgroundColor:@"f" textAlignment:NSTextAlignmentCenter tap:^(id  _Nonnull sender) {
@@ -216,14 +198,8 @@ BOOL net = [NSNetService checkNetWork];
 [NSFileManager saveImageToDirectoryPath:@"xx" image:[UIImage imageNamed:@"ceshi"] imageName:@"ceshi" imageType:@"png"];//存储图片到指定的目录下  
 [NSFileManager loadResourceByDirectoryPath:@"xx"];//获取指定目录下的资源  
 [NSFileManager fileSizeAtPath:@"xx"];//获取文件或者文件夹占用空间（单位跟随文件大小变化）  
-...
-```  
-### UIPageControl+Fragrans  
-```objective-c
-UIPageControl   *pageControl = [UIPageControl pageControlWithFrame:CGRectMake(30, 100, 200, 30) numberOfPages:10 currentPage:3 pageIndicatorTintColor:@8 currentPageIndicatorTintColor:@"eb3223" target:self action:@selector(pageEvent:)];
-pageControl.backgroundColor = [UIColor colorWithHexString:@"e"];
-[self addSubview:pageControl];
-```  
+...  
+``` 
 
 ### NSString+Fragrans  
 ```objective-c
