@@ -568,6 +568,20 @@ typedef enum : NSUInteger {
 }
 
 /**
+ 判断系统版本
+ */
++ (BOOL)systemVersion_iOS_13_AndLater {
+    return [[UIDevice  systemVersion] floatValue] >= 13.0;
+}
+
+/**
+ 判断系统版本
+ */
++ (BOOL)systemVersion_iOS_14_AndLater {
+    return [[UIDevice  systemVersion] floatValue] >= 14.0;
+}
+
+/**
  获取区域标志符（非语言标志）
  */
 + (NSString *)localeIdentifier {
@@ -583,25 +597,24 @@ typedef enum : NSUInteger {
 }
 
 /**
- 判断设备是否为iPhoneX系列
- */
-+ (BOOL)isIPhoneX {
-    NSString   *deviceStr = [self getDeviceStringName];
-    if ([deviceStr isEqualToString:@"iPhone10,3"] ||
-        [deviceStr isEqualToString:@"iPhone10,6"] ||
-        [deviceStr isEqualToString:@"iPhone11,2"] ||
-        [deviceStr isEqualToString:@"iPhone11,4"] ||
-        [deviceStr isEqualToString:@"iPhone11,6"] ||
-        [deviceStr isEqualToString:@"iPhone11,8"])  {
-        return YES;
-    }
-    return NO;
-}
-/**
  判断设备是否为iPad
  */
 + (BOOL)isIPad {
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+}
+
+/**
+ 是否为刘海屏
+ */
++ (BOOL)isLeoHair {
+    
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) return NO;
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow * mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0 ) return YES;
+    }
+    return NO;
 }
 
 /**

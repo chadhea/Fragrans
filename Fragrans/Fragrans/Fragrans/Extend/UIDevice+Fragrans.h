@@ -170,6 +170,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)systemVersion_iOS_12_AndLater;
 
 /**
+ 判断系统版本
+ */
++ (BOOL)systemVersion_iOS_13_AndLater;
+
+/**
+ 判断系统版本
+ */
++ (BOOL)systemVersion_iOS_14_AndLater;
+
+/**
  获取区域标志符（非语言标志）
 */
 + (NSString *)localeIdentifier;
@@ -180,14 +190,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)isIPhone;
 
 /**
- 判断设备是否为iPhoneX系列
- */
-+ (BOOL)isIPhoneX;
-
-/**
  判断设备是否为iPad
  */
 + (BOOL)isIPad;
+
+/**
+ 是否为刘海屏
+ */
++ (BOOL)isLeoHair;
 
 /**
  是否为视网膜屏幕
