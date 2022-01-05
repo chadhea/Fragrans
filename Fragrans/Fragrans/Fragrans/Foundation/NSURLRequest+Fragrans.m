@@ -6,7 +6,9 @@
 //
 
 #import "NSURLRequest+Fragrans.h"
-#import "FunctionBridge.h"
+#import "NSString+Fragrans.h"
+#import "NSObject+Fragrans.h"
+#import "FragransDefine.h"
 
 @implementation NSURLRequest (Fragrans)
 
@@ -22,11 +24,11 @@
  */
 + (void)get_requestWithURL:(NSString *)url params:(nullable NSDictionary *)params completionHandler:(void(^)(NSDictionary *response, NSError *error))completionHandler {
     NSURLSession  *session = [NSURLSession sharedSession];
-    NSString   *new_url = [FunctionBridge safeString:url];
-    if (![FunctionBridge isEmpty:params]) {
+    NSString   *new_url = [NSString safeString:url];
+    if (![NSObject isEmpty:params]) {
         for (int i = 0;i < params.allKeys.count;i ++) {
-            NSString  *key = [FunctionBridge stringToUrlStringEncoding:[FunctionBridge safeString:params.allKeys[i]]];
-            NSString  *value = [FunctionBridge stringToUrlStringEncoding:[FunctionBridge safeString:params[key]]];
+            NSString  *key = [NSString stringToUrlStringEncoding:[NSString safeString:params.allKeys[i]]];
+            NSString  *value = [NSString stringToUrlStringEncoding:[NSString safeString:params[key]]];
             if (i == 0) {
                 new_url = [NSString stringWithFormat:@"%@?%@=%@",new_url,key,value];
             }else {
@@ -58,8 +60,8 @@
     NSString  *new_parastr = @"";
     NSInteger  index = 0;
     for (NSString *key in params.allKeys) {
-        NSString  *nkey = [FunctionBridge stringToUrlStringEncoding:[FunctionBridge safeString:key]];
-        NSString  *value = [FunctionBridge stringToUrlStringEncoding:[FunctionBridge safeString:params[key]]];
+        NSString  *nkey = [NSString stringToUrlStringEncoding:[NSString safeString:key]];
+        NSString  *value = [NSString stringToUrlStringEncoding:[NSString safeString:params[key]]];
         if (index == 0) {
             new_parastr = [NSString stringWithFormat:@"%@=%@",nkey,value];
         }else {
@@ -70,6 +72,7 @@
     request.HTTPBody = [new_parastr dataUsingEncoding:NSUTF8StringEncoding];
     dispatch_frg_global_async_safe(^{
         NSURLSessionDataTask  *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            
             dispatch_frg_main_async_safe(^{
                 NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
                 if (completionHandler) {

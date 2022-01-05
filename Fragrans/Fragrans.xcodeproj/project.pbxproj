@@ -13,7 +13,6 @@
 		F521EE4D2238E0A300B0BC2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4C2238E0A200B0BC2B /* Foundation.framework */; };
 		F521EE4F2238E0AD00B0BC2B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */; };
 		F52E05FA2265A3560068A626 /* WKWebView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05F92265A3560068A626 /* WKWebView+Fragrans.m */; };
-		F52E05FD2265AA390068A626 /* FRGWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05FC2265AA390068A626 /* FRGWebView.m */; };
 		F52E06002265B9EB0068A626 /* FRGPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E05FF2265B9EB0068A626 /* FRGPhoto.m */; };
 		F52E06032265BFC70068A626 /* FRGAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E06022265BFC70068A626 /* FRGAccountInfo.m */; };
 		F52E06062265DBE00068A626 /* FRGAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E06052265DBE00068A626 /* FRGAdapter.m */; };
@@ -65,7 +64,6 @@
 		F55FE15A225CC77C00CE55F6 /* UIProgressView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F55FE159225CC77C00CE55F6 /* UIProgressView+Fragrans.m */; };
 		F5694DA82250A21B00BD4F80 /* FragransDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5694DA72250A21B00BD4F80 /* FragransDemoController.m */; };
 		F5E21220225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E2121F225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m */; };
-		F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FA225B9BF0002066D5 /* FunctionBridge.m */; };
 		F5F047FE225B9D30002066D5 /* UIKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F047FD225B9D30002066D5 /* UIKitBridge.m */; };
 		F5FAB6AF22003B4E00618786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6AE22003B4E00618786 /* AppDelegate.m */; };
 		F5FAB6B222003B4E00618786 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FAB6B122003B4E00618786 /* ViewController.m */; };
@@ -100,8 +98,6 @@
 		F521EE4E2238E0AC00B0BC2B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		F52E05F82265A3560068A626 /* WKWebView+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKWebView+Fragrans.h"; sourceTree = "<group>"; };
 		F52E05F92265A3560068A626 /* WKWebView+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+Fragrans.m"; sourceTree = "<group>"; };
-		F52E05FB2265AA390068A626 /* FRGWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGWebView.h; sourceTree = "<group>"; };
-		F52E05FC2265AA390068A626 /* FRGWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGWebView.m; sourceTree = "<group>"; };
 		F52E05FE2265B9EB0068A626 /* FRGPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGPhoto.h; sourceTree = "<group>"; };
 		F52E05FF2265B9EB0068A626 /* FRGPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRGPhoto.m; sourceTree = "<group>"; };
 		F52E06012265BFC70068A626 /* FRGAccountInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRGAccountInfo.h; sourceTree = "<group>"; };
@@ -206,8 +202,6 @@
 		F5694DAA2250A3E500BD4F80 /* Fragrans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fragrans.h; sourceTree = "<group>"; };
 		F5E2121E225D98AC003F364C /* UIActivityIndicatorView+Fragrans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+Fragrans.h"; sourceTree = "<group>"; };
 		F5E2121F225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+Fragrans.m"; sourceTree = "<group>"; };
-		F5F047F9225B9BF0002066D5 /* FunctionBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FunctionBridge.h; sourceTree = "<group>"; };
-		F5F047FA225B9BF0002066D5 /* FunctionBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionBridge.m; sourceTree = "<group>"; };
 		F5F047FC225B9D30002066D5 /* UIKitBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitBridge.h; sourceTree = "<group>"; };
 		F5F047FD225B9D30002066D5 /* UIKitBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitBridge.m; sourceTree = "<group>"; };
 		F5FAB6AA22003B4E00618786 /* Fragrans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fragrans.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,12 +270,20 @@
 				F5394E3322548C740064AD54 /* UIButton+Fragrans.m */,
 				F5394E4422548C750064AD54 /* UICollectionViewCell+Fragrans.h */,
 				F5394E4522548C750064AD54 /* UICollectionViewCell+Fragrans.m */,
+				F5394DF922548C410064AD54 /* UIColor+Fragrans.h */,
+				F5394DF222548C410064AD54 /* UIColor+Fragrans.m */,
+				F5394DF622548C410064AD54 /* UIDevice+Fragrans.h */,
+				F5394DFE22548C420064AD54 /* UIDevice+Fragrans.m */,
+				F5394E0322548C420064AD54 /* UIFont+Fragrans.h */,
+				F5394E0222548C420064AD54 /* UIFont+Fragrans.m */,
 				F5394E3822548C740064AD54 /* UIImage+Fragrans.h */,
 				F5394E3B22548C750064AD54 /* UIImage+Fragrans.m */,
-				F5394E3D22548C750064AD54 /* UIImageView+Fragrans.h */,
-				F5394E4022548C750064AD54 /* UIImageView+Fragrans.m */,
 				F55FE152225C6D9200CE55F6 /* UIImagePickerController+Fragrans.h */,
 				F55FE153225C6D9200CE55F6 /* UIImagePickerController+Fragrans.m */,
+				F5394E3D22548C750064AD54 /* UIImageView+Fragrans.h */,
+				F5394E4022548C750064AD54 /* UIImageView+Fragrans.m */,
+				F5F047FC225B9D30002066D5 /* UIKitBridge.h */,
+				F5F047FD225B9D30002066D5 /* UIKitBridge.m */,
 				F5394E2F22548C740064AD54 /* UILabel+Fragrans.h */,
 				F5394E3C22548C750064AD54 /* UILabel+Fragrans.m */,
 				F5394E2E22548C740064AD54 /* UIPageControl+Fragrans.h */,
@@ -290,6 +292,8 @@
 				F55FE159225CC77C00CE55F6 /* UIProgressView+Fragrans.m */,
 				F50E8902225DFEE900451FE9 /* UIRefreshControl+Fragrans.h */,
 				F50E8903225DFEE900451FE9 /* UIRefreshControl+Fragrans.m */,
+				F5394E0122548C420064AD54 /* UIScreen+Fragrans.h */,
+				F5394DF722548C410064AD54 /* UIScreen+Fragrans.m */,
 				F5394E4222548C750064AD54 /* UIScrollView+Fragrans.h */,
 				F5394E4B22548C750064AD54 /* UIScrollView+Fragrans.m */,
 				F55FE155225C851E00CE55F6 /* UISegmentedControl+Fragrans.h */,
@@ -312,19 +316,24 @@
 				F5394E4122548C750064AD54 /* UIViewController+Fragrans.m */,
 				F52E05F82265A3560068A626 /* WKWebView+Fragrans.h */,
 				F52E05F92265A3560068A626 /* WKWebView+Fragrans.m */,
-				F5F047FC225B9D30002066D5 /* UIKitBridge.h */,
-				F5F047FD225B9D30002066D5 /* UIKitBridge.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		F5394D9D22548C050064AD54 /* Function */ = {
+		F5394D9D22548C050064AD54 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
 				F5394E1A22548C5B0064AD54 /* CABasicAnimation+Fragrans.h */,
 				F5394E2322548C5B0064AD54 /* CABasicAnimation+Fragrans.m */,
 				F5394E1C22548C5B0064AD54 /* CALayer+Fragrans.h */,
 				F5394E1F22548C5B0064AD54 /* CALayer+Fragrans.m */,
+			);
+			path = QuartzCore;
+			sourceTree = "<group>";
+		};
+		F5394DB322548C0C0064AD54 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
 				F5394E2122548C5B0064AD54 /* NSFileManager+Fragrans.h */,
 				F5394E1D22548C5B0064AD54 /* NSFileManager+Fragrans.m */,
 				F5394E2222548C5B0064AD54 /* NSNetService+Fragrans.h */,
@@ -335,15 +344,6 @@
 				F5394E1822548C5B0064AD54 /* NSURLRequest+Fragrans.m */,
 				F5394E2022548C5B0064AD54 /* NSURLSession+Fragrans.h */,
 				F5394E1722548C5B0064AD54 /* NSURLSession+Fragrans.m */,
-				F5F047F9225B9BF0002066D5 /* FunctionBridge.h */,
-				F5F047FA225B9BF0002066D5 /* FunctionBridge.m */,
-			);
-			path = Function;
-			sourceTree = "<group>";
-		};
-		F5394DB322548C0C0064AD54 /* Extend */ = {
-			isa = PBXGroup;
-			children = (
 				F5394DED22548C410064AD54 /* NSArray+Fragrans.h */,
 				F5394E0522548C420064AD54 /* NSArray+Fragrans.m */,
 				F5394DFD22548C420064AD54 /* NSBundle+Fragrans.h */,
@@ -368,16 +368,8 @@
 				F5394DF422548C410064AD54 /* NSObject+Fragrans.m */,
 				F5394E0422548C420064AD54 /* NSString+Fragrans.h */,
 				F5394DE622548C410064AD54 /* NSString+Fragrans.m */,
-				F5394DF922548C410064AD54 /* UIColor+Fragrans.h */,
-				F5394DF222548C410064AD54 /* UIColor+Fragrans.m */,
-				F5394DF622548C410064AD54 /* UIDevice+Fragrans.h */,
-				F5394DFE22548C420064AD54 /* UIDevice+Fragrans.m */,
-				F5394E0322548C420064AD54 /* UIFont+Fragrans.h */,
-				F5394E0222548C420064AD54 /* UIFont+Fragrans.m */,
-				F5394E0122548C420064AD54 /* UIScreen+Fragrans.h */,
-				F5394DF722548C410064AD54 /* UIScreen+Fragrans.m */,
 			);
-			path = Extend;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		F5394DE422548C1C0064AD54 /* Custom */ = {
@@ -392,8 +384,6 @@
 				F55FE14D225C45EB00CE55F6 /* FRGAlertView.m */,
 				F52E05FE2265B9EB0068A626 /* FRGPhoto.h */,
 				F52E05FF2265B9EB0068A626 /* FRGPhoto.m */,
-				F52E05FB2265AA390068A626 /* FRGWebView.h */,
-				F52E05FC2265AA390068A626 /* FRGWebView.m */,
 				F55FE14F225C48F100CE55F6 /* CustomBridge.h */,
 				F55FE150225C48F100CE55F6 /* CustomBridge.m */,
 			);
@@ -416,8 +406,8 @@
 			children = (
 				F5694DAA2250A3E500BD4F80 /* Fragrans.h */,
 				F5394D6922548BF60064AD54 /* UIKit */,
-				F5394DB322548C0C0064AD54 /* Extend */,
-				F5394D9D22548C050064AD54 /* Function */,
+				F5394DB322548C0C0064AD54 /* Foundation */,
+				F5394D9D22548C050064AD54 /* QuartzCore */,
 				F5394DE422548C1C0064AD54 /* Custom */,
 			);
 			path = Fragrans;
@@ -602,7 +592,6 @@
 				F55FE14E225C45EB00CE55F6 /* FRGAlertView.m in Sources */,
 				F5FAB6B222003B4E00618786 /* ViewController.m in Sources */,
 				F52E06062265DBE00068A626 /* FRGAdapter.m in Sources */,
-				F5F047FB225B9BF0002066D5 /* FunctionBridge.m in Sources */,
 				F5394E2422548C5B0064AD54 /* NSNetServiceBrowser+Fragrans.m in Sources */,
 				F52E05FA2265A3560068A626 /* WKWebView+Fragrans.m in Sources */,
 				F5394E1222548C420064AD54 /* NSMutableArray+Fragrans.m in Sources */,
@@ -637,7 +626,6 @@
 				F5394E0622548C420064AD54 /* NSString+Fragrans.m in Sources */,
 				F5394E2622548C5B0064AD54 /* NSURLRequest+Fragrans.m in Sources */,
 				F5E21220225D98AC003F364C /* UIActivityIndicatorView+Fragrans.m in Sources */,
-				F52E05FD2265AA390068A626 /* FRGWebView.m in Sources */,
 				F5394E0B22548C420064AD54 /* NSMutableDictionary+Fragrans.m in Sources */,
 				F5394E1322548C420064AD54 /* UIDevice+Fragrans.m in Sources */,
 				F5394E1122548C420064AD54 /* NSDateFormatter+Fragrans.m in Sources */,
@@ -808,10 +796,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S7V2XW58C5;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Fragrans/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,10 +817,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S7V2XW58C5;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Fragrans/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

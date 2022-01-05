@@ -66,7 +66,6 @@
 #import "FRGAdapter.h"
 #import "FRGAlertView.h"
 #import "FRGPhoto.h"
-#import "FRGWebView.h"
 
 #endif /* Fragrans_h */
 
