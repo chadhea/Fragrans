@@ -6,7 +6,8 @@
 //
 
 #import "UITableView+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
+
 @implementation UITableView (Fragrans)
 
 #pragma clang diagnostic push
@@ -153,7 +154,7 @@
     }else {
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
-    tableView.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    tableView.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     if (delegateAndDataSource) {
         tableView.delegate = delegateAndDataSource;
         tableView.dataSource = delegateAndDataSource;

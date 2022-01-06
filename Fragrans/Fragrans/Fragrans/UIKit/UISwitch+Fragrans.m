@@ -6,7 +6,8 @@
 //
 
 #import "UISwitch+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
+
 @implementation UISwitch (Fragrans)
 
 #pragma clang diagnostic push
@@ -145,9 +146,9 @@
  */
 + (UISwitch *)switchWithThumbTintColor:(nullable id)thumbTintColor onTintColor:(nullable id)onTintColor tintColor:(nullable id)tintColor target:(nullable id)target action:(nullable SEL)action {
     UISwitch   *swit = [[UISwitch alloc] init];
-    swit.thumbTintColor = [UIKitBridge safeColor:thumbTintColor];
-    swit.onTintColor = [UIKitBridge safeColor:onTintColor];
-    swit.tintColor = [UIKitBridge safeColor:tintColor];
+    swit.thumbTintColor = [UIColor safeColor:thumbTintColor];
+    swit.onTintColor = [UIColor safeColor:onTintColor];
+    swit.tintColor = [UIColor safeColor:tintColor];
     if (target && action) {
         [swit addTarget:target action:action forControlEvents:UIControlEventValueChanged];
     }

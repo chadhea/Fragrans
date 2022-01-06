@@ -97,10 +97,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)getOriginalImage:(id)image;
 
-
-
-
-
 @end
 
 NS_ASSUME_NONNULL_END

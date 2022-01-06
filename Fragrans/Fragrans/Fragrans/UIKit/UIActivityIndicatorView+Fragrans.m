@@ -6,7 +6,7 @@
 //
 
 #import "UIActivityIndicatorView+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
 @implementation UIActivityIndicatorView (Fragrans)
 
 /**
@@ -32,10 +32,10 @@
     UIActivityIndicatorView *activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:frame];
     [activityIndicator setActivityIndicatorViewStyle:style];
     if (color) {
-        activityIndicator.color = [UIKitBridge safeColor:color baseColor:[UIColor whiteColor]];
+        activityIndicator.color = [UIColor safeColor:color baseColor:[UIColor whiteColor]];
     }
     if (backgroundColor) {
-        activityIndicator.backgroundColor = [UIKitBridge safeColor:backgroundColor];
+        activityIndicator.backgroundColor = [UIColor safeColor:backgroundColor];
     }
     if (startAnimate) {
         [activityIndicator startAnimating];
@@ -77,12 +77,12 @@
     CGAffineTransform transform = CGAffineTransformMakeScale(ratioW, ratioH);
     activityIndicator.transform = transform;
     if (hudColor) {
-        activityIndicator.color = [UIKitBridge safeColor:hudColor baseColor:[UIColor whiteColor]];
+        activityIndicator.color = [UIColor safeColor:hudColor baseColor:[UIColor whiteColor]];
     }else {
         activityIndicator.color = [UIColor whiteColor];
     }
     if (backgroundColor) {
-        activityIndicator.backgroundColor = [UIKitBridge safeColor:backgroundColor];
+        activityIndicator.backgroundColor = [UIColor safeColor:backgroundColor];
     }
     if (startAnimate) {
         [activityIndicator startAnimating];

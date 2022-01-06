@@ -6,7 +6,9 @@
 //
 
 #import "UIImage+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
+#import "NSString+Fragrans.h"
+
 @implementation UIImage (Fragrans)
 
 /**
@@ -15,11 +17,11 @@
  @param image UIImage或者NSString格式
  */
 + (UIImage *)safeImage:(id)image {
-    UIImage   *new_image = nil;
+    UIImage *new_image = nil;
     if ([image isKindOfClass:[UIImage class]]) {
         new_image = image;
     }else if ([image isKindOfClass:[NSString class]]) {
-        new_image = [UIImage imageNamed:[UIKitBridge safeString:image]];
+        new_image = [UIImage imageNamed:[NSString safeString:image]];
     }
     return new_image;
 }
@@ -35,8 +37,8 @@
  @return 渐变图片
  */
 + (UIImage *)imageFromColor:(id)fromColor toColor:(id)toColor fromPoint:(CGPoint)start toPoint:(CGPoint)end size:(CGSize)size {
-    UIColor   *newFromColor = [UIKitBridge safeColor:fromColor];
-    UIColor   *newToColor = [UIKitBridge safeColor:toColor];
+    UIColor   *newFromColor = [UIColor safeColor:fromColor];
+    UIColor   *newToColor = [UIColor safeColor:toColor];
     if (!newFromColor || !newToColor) {
         return nil;
     }
@@ -63,7 +65,7 @@
  @return 图片
  */
 + (UIImage *)imageWithColor:(id)color size:(CGSize)size {
-    UIColor   *newColor = [UIKitBridge safeColor:color];
+    UIColor   *newColor = [UIColor safeColor:color];
     if (!newColor) {
         return nil;
     }

@@ -7,7 +7,8 @@
 
 #import "UISlider+Fragrans.h"
 #import "UIImage+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
+
 @implementation UISlider (Fragrans)
 
 /**
@@ -240,9 +241,9 @@
     }else {
         slider.value = minimumValue;
     }
-    slider.thumbTintColor = [UIKitBridge safeColor:thumbTintColor];
-    slider.minimumTrackTintColor = [UIKitBridge safeColor:minimumTrackTintColor];
-    slider.maximumTrackTintColor = [UIKitBridge safeColor:maximumTrackTintColor];
+    slider.thumbTintColor = [UIColor safeColor:thumbTintColor];
+    slider.minimumTrackTintColor = [UIColor safeColor:minimumTrackTintColor];
+    slider.maximumTrackTintColor = [UIColor safeColor:maximumTrackTintColor];
     slider.minimumValueImage = [UIImage safeImage:minimumValueImage];
     slider.maximumValueImage = [UIImage safeImage:maximumValueImage];
     if (target && action) {

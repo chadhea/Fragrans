@@ -6,7 +6,8 @@
 //
 
 #import "WKWebView+Fragrans.h"
-#import "UIKitBridge.h"
+#import "NSString+Fragrans.h"
+
 @implementation WKWebView (Fragrans)
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
@@ -36,7 +37,7 @@
  */
 + (WKWebView *)webViewWithHTML:(NSString *)html delegate:(nullable id)delegate {
     WKWebView   *webView = [[WKWebView alloc] initWithFrame:CGRectZero];
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[UIKitBridge safeString:html]]]];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString safeString:html]]]];
     if (delegate) {
         webView.UIDelegate = delegate;
         webView.navigationDelegate = delegate;
@@ -100,7 +101,7 @@
  */
 + (WKWebView *)webViewWithResource:(NSString *)resource type:(NSString *)type delegate:(nullable id)delegate {
     WKWebView   *webView = [[WKWebView alloc]initWithFrame:CGRectZero];
-    NSString   *pathStr = [[NSBundle mainBundle]pathForResource:[UIKitBridge safeString:resource] ofType:type];
+    NSString   *pathStr = [[NSBundle mainBundle]pathForResource:[NSString safeString:resource] ofType:type];
     NSString   *htmlStr = [NSString stringWithContentsOfFile:pathStr encoding:NSUTF8StringEncoding error:nil];
     [webView loadHTMLString:htmlStr baseURL:[NSURL URLWithString:pathStr]];
     if (delegate) {

@@ -7,7 +7,6 @@
 
 #import "UIRefreshControl+Fragrans.h"
 #import <objc/runtime.h>
-#import "UIKitBridge.h"
 
 static const void  *frg_refreshControl_UtilityKey = &frg_refreshControl_UtilityKey;
 

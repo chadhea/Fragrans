@@ -7,7 +7,8 @@
 
 #import "UIPageControl+Fragrans.h"
 #import <objc/runtime.h>
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
+
 @implementation UIPageControl (Fragrans)
 /**
  create pageControl by target + action
@@ -181,8 +182,8 @@
     }else {
         pageControl.currentPage = 0;
     }
-    pageControl.pageIndicatorTintColor = [UIKitBridge safeColor:pageIndicatorTintColor baseColor:@"c"];
-    pageControl.currentPageIndicatorTintColor = [UIKitBridge safeColor:currentPageIndicatorTintColor baseColor:@"f"];
+    pageControl.pageIndicatorTintColor = [UIColor safeColor:pageIndicatorTintColor baseColor:@"c"];
+    pageControl.currentPageIndicatorTintColor = [UIColor safeColor:currentPageIndicatorTintColor baseColor:@"f"];
     if (target && action) {
         [pageControl addTarget:target action:action forControlEvents:UIControlEventValueChanged];
     }

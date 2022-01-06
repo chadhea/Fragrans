@@ -7,8 +7,11 @@
 
 #import "UITextView+Fragrans.h"
 #import <objc/runtime.h>
-#import "UIKitBridge.h"
+#import "UIFont+Fragrans.h"
+#import "UIColor+Fragrans.h"
 #import "UILabel+Fragrans.h"
+#import "NSString+Fragrans.h"
+
 @implementation UITextView (Fragrans)
 
 #pragma clang diagnostic push
@@ -291,10 +294,10 @@
  */
 + (UITextView *)textViewWithText:(nullable NSString *)text font:(nullable id)font textColor:(nullable id)textColor backgroundColor:(nullable id)backgroundColor textAlignment:(NSTextAlignment)textAlignment {
     UITextView   *textView = [[UITextView alloc] init];
-    textView.text = [UIKitBridge safeString:text];
-    textView.font = [UIKitBridge safeFont:font baseFont:FRG_TextViewBaseFontSize];
-    textView.textColor = [UIKitBridge safeColor:textColor baseColor:FRG_TextViewBaseColorHex];
-    textView.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    textView.text = [NSString safeString:text];
+    textView.font = [UIFont safeFont:font baseFont:FRG_TextViewBaseFontSize];
+    textView.textColor = [UIColor safeColor:textColor baseColor:FRG_TextViewBaseColorHex];
+    textView.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     if (textAlignment >= NSTextAlignmentLeft && textAlignment <= NSTextAlignmentNatural) {
         textView.textAlignment = textAlignment;
     }else {
@@ -1027,13 +1030,13 @@
  @param color UIColor或者NSString格式
  */
 - (void)placeholder:(NSString *)placeholder font:(id)font color:(id)color {
-    placeholder = [UIKitBridge safeString:placeholder];
+    placeholder = [NSString safeString:placeholder];
     if (placeholder.length <= 0) {
         return;
     }
     
-    CGFloat  fontstr = [UIKitBridge safeFont:font].pointSize;
-    UILabel   *placeholderLab = [UILabel labelWithFrame:CGRectMake(5, 10 * fontstr / 15.0, [UIKitBridge boundingRectWithString:placeholder font:font size:CGSizeMake(MAXFLOAT, MAXFLOAT) mode:NSLineBreakByWordWrapping lineSpacing:0].width + 3, 17) text:placeholder font:font textColor:color backgroundColor:[UIColor clearColor]];
+    CGFloat  fontstr = [UIFont safeFont:font].pointSize;
+    UILabel   *placeholderLab = [UILabel labelWithFrame:CGRectMake(5, 10 * fontstr / 15.0, [placeholder boundingWidthForFont:font] + 3, 17) text:placeholder font:font textColor:color backgroundColor:[UIColor clearColor]];
     [self addSubview:placeholderLab];
     self.frg_placeholderLabel = placeholderLab;
     if (self.text.length > 0) {
@@ -1090,6 +1093,4 @@
     }
     return self.text;
 }
-
-
 @end

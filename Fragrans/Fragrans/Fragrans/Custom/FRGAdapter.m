@@ -6,7 +6,7 @@
 //
 
 #import "FRGAdapter.h"
-#import "CustomBridge.h"
+#import "UIDevice+Fragrans.h"
 @implementation FRGAdapter
 /**
  获取导航的高度
@@ -15,7 +15,7 @@
     return [FRGAdapter frg_navHeight];
 }
 + (CGFloat)frg_navHeight {
-    if ([CustomBridge isIPhoneX]) {
+    if ([UIDevice isLeoHair]) {
         return 88;
     }else {
         return 64;
@@ -29,7 +29,7 @@
     return [FRGAdapter frg_tabBarHeight];
 }
 + (CGFloat)frg_tabBarHeight {
-    if ([CustomBridge isIPhoneX]) {
+    if ([UIDevice isLeoHair]) {
         return 85;
     }else {
         return 49;
@@ -43,7 +43,7 @@
     return [FRGAdapter frg_bottomRoundHeight];
 }
 + (CGFloat)frg_bottomRoundHeight {
-    if ([CustomBridge isIPhoneX]) {
+    if ([UIDevice isLeoHair]) {
         return 34;
     }else {
         //不是iPhoneX系列手机没有底部圆角
@@ -58,7 +58,7 @@
     return [FRGAdapter frg_toolHeight];
 }
 + (CGFloat)frg_toolHeight {
-    if ([CustomBridge isIPhoneX]) {
+    if ([UIDevice isLeoHair]) {
         return 44;
     }else {
         return 20;

@@ -6,7 +6,8 @@
 //
 
 #import "FRGPhoto.h"
-#import "CustomBridge.h"
+#import "UIImage+Fragrans.h"
+
 @interface FRGPhoto()
 
 @end
@@ -146,7 +147,7 @@
  @parma result 添加结果的block
  */
 + (void)addPhoto:(id)image result:(void (^)(BOOL success, NSError *error))result {
-    UIImage  *new_image = [CustomBridge safeImage:image];
+    UIImage  *new_image = [UIImage safeImage:image];
     if (!new_image) {
         return;
     }

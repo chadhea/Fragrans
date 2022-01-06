@@ -7,7 +7,10 @@
 
 #import "UILabel+Fragrans.h"
 #import "UIView+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIFont+Fragrans.h"
+#import "UIColor+Fragrans.h"
+#import "NSString+Fragrans.h"
+
 @implementation UILabel (Fragrans)
 
 /**
@@ -545,10 +548,10 @@
 + (UILabel *)labelWithText:(nullable NSString *)text font:(nullable id)font textColor:(nullable id)textColor backgroundColor:(nullable id)backgroundColor textAlignment:(NSTextAlignment)textAlignment tap:(nullable void(^)(id sender))tapBlock {
     UILabel   *label = [[UILabel alloc] init];
     label.numberOfLines = 0;
-    label.text = [UIKitBridge safeString:text];
-    label.font = [UIKitBridge safeFont:font baseFont:FRG_LabelBaseFontSize];
-    label.textColor = [UIKitBridge safeColor:textColor baseColor:FRG_LabelBaseColorHex];
-    label.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    label.text = [NSString safeString:text];
+    label.font = [UIFont safeFont:font baseFont:FRG_LabelBaseFontSize];
+    label.textColor = [UIColor safeColor:textColor baseColor:FRG_LabelBaseColorHex];
+    label.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     if (textAlignment >= NSTextAlignmentLeft && textAlignment <= NSTextAlignmentNatural) {
         label.textAlignment = textAlignment;
     }else {

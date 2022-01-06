@@ -6,9 +6,10 @@
 //
 
 #import "UIProgressView+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
 #import "UIImage+Fragrans.h"
 #import "UIView+Fragrans.h"
+
 @implementation UIProgressView (Fragrans)
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
@@ -56,7 +57,7 @@
     UIProgressView   *progressView = [[UIProgressView alloc] initWithProgressViewStyle:style];
     progressView.progress = progress;
     if (backgroundColor) {
-        progressView.backgroundColor = [UIKitBridge safeColor:backgroundColor];
+        progressView.backgroundColor = [UIColor safeColor:backgroundColor];
     }
     
     return progressView;
@@ -112,10 +113,10 @@
     UIProgressView   *progressView = [[UIProgressView alloc] initWithProgressViewStyle:style];
     progressView.progress = progress;
     if (progressTintColor) {
-        progressView.progressTintColor = [UIKitBridge safeColor:progressTintColor];
+        progressView.progressTintColor = [UIColor safeColor:progressTintColor];
     }
     if (trackTintColor) {
-        progressView.trackTintColor = [UIKitBridge safeColor:trackTintColor];
+        progressView.trackTintColor = [UIColor safeColor:trackTintColor];
     }
     if (tapBlock) {
         [progressView addTapGestureRecognizerWithActionBlock:tapBlock];

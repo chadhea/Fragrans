@@ -9,7 +9,9 @@
 #import "UIView+Fragrans.h"
 #import "UIImage+Fragrans.h"
 #import "UIImageView+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIColor+Fragrans.h"
+#import "NSObject+Fragrans.h"
+
 @implementation UIScrollView (Fragrans)
 
 /**
@@ -168,7 +170,7 @@
 + (UIScrollView *)scrollViewWithContentSize:(CGSize)contentSize backgroundColor:(nullable id)backgroundColor showsScrollIndicator:(BOOL)showsScrollIndicator bounces:(BOOL)bounces {
     UIScrollView   *scrollView = [[UIScrollView alloc] init];
     scrollView.contentSize = contentSize;
-    scrollView.backgroundColor = [UIKitBridge safeColor:backgroundColor baseColor:[UIColor whiteColor]];
+    scrollView.backgroundColor = [UIColor safeColor:backgroundColor baseColor:[UIColor whiteColor]];
     if (showsScrollIndicator) {
         scrollView.showsHorizontalScrollIndicator = YES;
         scrollView.showsVerticalScrollIndicator = YES;
@@ -724,9 +726,9 @@
             viewFrame = CGRectMake(starPoint.x,newInterval, viewSize.width, viewSize.height);
         }
         UIColor   *new_backgroundColor = [UIColor whiteColor];
-        if (![UIKitBridge isEmpty:backgroundColors] && backgroundColors.count > 0) {
+        if (![NSObject isEmpty:backgroundColors] && backgroundColors.count > 0) {
             if (backgroundColors.count > i) {
-                new_backgroundColor = [UIKitBridge safeColor:backgroundColors[i] baseColor:[UIColor whiteColor]];
+                new_backgroundColor = [UIColor safeColor:backgroundColors[i] baseColor:[UIColor whiteColor]];
             }
         }
         UIView   *view = [UIView viewWithFrame:viewFrame backgroundColor:new_backgroundColor tap:^(id  _Nonnull sender) {
@@ -823,7 +825,7 @@
  @param tapBlock 添加的图片的点击事件
  */
 - (void)addimages:(NSArray <id>*)imagesArray starPoint:(CGPoint)starPoint interval:(CGFloat)interval direction:(Frg_ScrollViewAddImageDirectionType)direction taps:(nullable void(^)(id sender,NSInteger index))tapBlock {
-    if ([UIKitBridge isEmpty:imagesArray] || imagesArray.count == 0) {
+    if ([NSObject isEmpty:imagesArray] || imagesArray.count == 0) {
         return;
     }
     CGFloat  newInterval = 0;

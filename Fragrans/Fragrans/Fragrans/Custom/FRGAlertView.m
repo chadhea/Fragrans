@@ -6,7 +6,9 @@
 //
 
 #import "FRGAlertView.h"
-#import "CustomBridge.h"
+#import "UIViewController+Fragrans.h"
+#import "NSObject+Fragrans.h"
+#import "NSString+Fragrans.h"
 
 @implementation FRGAlertView
 
@@ -36,7 +38,7 @@
     UIAlertController   *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:preferredStyle];
     UIAlertAction       *action = [UIAlertAction actionWithTitle:actionTitle style:actionStyle handler:handler];
     [alertController addAction:action];
-    [[CustomBridge getCurrentVC] presentViewController:alertController animated:YES completion:nil];
+    [[UIViewController getCurrentVC] presentViewController:alertController animated:YES completion:nil];
 }
 
 /**
@@ -48,7 +50,7 @@
     UIAlertAction   *secondAction = [UIAlertAction actionWithTitle:secondTitle style:secondStyle handler:secondHandler];
     [alertController addAction:firstAction];
     [alertController addAction:secondAction];
-    [[CustomBridge getCurrentVC] presentViewController:alertController animated:YES completion:nil];
+    [[UIViewController getCurrentVC] presentViewController:alertController animated:YES completion:nil];
 }
 
 /**
@@ -62,7 +64,7 @@
     [alertController addAction:firstAction];
     [alertController addAction:secondAction];
     [alertController addAction:thirdAction];
-    [[CustomBridge getCurrentVC] presentViewController:alertController animated:YES completion:nil];
+    [[UIViewController getCurrentVC] presentViewController:alertController animated:YES completion:nil];
 }
 
 /**
@@ -76,19 +78,19 @@
  @param handler 点击事件的block
  */
 + (void)alertWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(UIAlertControllerStyle)preferredStyle actionTitles:(NSArray <NSString *>*)actionTitles styles:(NSArray <NSNumber *>*)styles handler:(void(^)(UIAlertAction *action,NSInteger index))handler {
-    if ([CustomBridge isEmpty:actionTitles]) {
+    if ([NSObject isEmpty:actionTitles]) {
         return;
     }
     UIAlertController   *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:preferredStyle];
     for (int i = 0; i < actionTitles.count; i ++) {
-        NSString   *actionTitle = [CustomBridge safeString:actionTitles[i]];
+        NSString   *actionTitle = [NSString safeString:actionTitles[i]];
         UIAlertActionStyle   actionStyle = UIAlertActionStyleDefault;
-        if (![CustomBridge isEmpty:styles] && styles.count > i) {
+        if (![NSObject isEmpty:styles] && styles.count > i) {
             if ([styles[i] integerValue] >= UIAlertActionStyleDefault && [styles[i] integerValue] <= UIAlertActionStyleDestructive) {
                 actionStyle = [styles[i] integerValue];
             }
         }
-        UIAlertAction       *action = [UIAlertAction actionWithTitle:actionTitle style:actionStyle handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle style:actionStyle handler:^(UIAlertAction * _Nonnull action){
             if (handler) {
                 handler(action,i);
             }
@@ -96,16 +98,8 @@
         [alertController addAction:action];
     }
     
-    [[CustomBridge getCurrentVC] presentViewController:alertController animated:YES completion:nil];
+    [[UIViewController getCurrentVC] presentViewController:alertController animated:YES completion:nil];
     
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

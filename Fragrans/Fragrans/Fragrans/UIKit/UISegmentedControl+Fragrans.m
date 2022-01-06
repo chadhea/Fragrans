@@ -6,7 +6,9 @@
 //
 
 #import "UISegmentedControl+Fragrans.h"
-#import "UIKitBridge.h"
+#import "UIFont+Fragrans.h"
+#import "UIColor+Fragrans.h"
+#import "NSObject+Fragrans.h"
 
 @implementation UISegmentedControl (Fragrans)
 
@@ -143,28 +145,28 @@
  @param backgroundColor UIColor或者NSString或者NSNumber格式
  */
 + (UISegmentedControl *)segmentedControlWithItems:(NSArray <NSString *>*)items selectedSegmentIndex:(NSUInteger)selectedSegmentIndex normalTitleFont:(nullable id)normalTitleFont normalTitleColor:(nullable id)normalTitleColor selectTitleFont:(nullable id)selectTitleFont selectTitleColor:(nullable id)selectTitleColor tintColor:(nullable id)tintColor backgroundColor:(nullable id)backgroundColor target:(nullable id)target action:(nullable SEL)action {
-    if ([UIKitBridge isEmpty:items]) {
+    if ([NSObject isEmpty:items]) {
         return [[UISegmentedControl alloc] init];
     }
     UISegmentedControl   *segment = [[UISegmentedControl alloc] initWithItems:items];
     segment.selectedSegmentIndex = selectedSegmentIndex;
     if (normalTitleFont) {
-        [segment setTitleTextAttributes:@{NSFontAttributeName:[UIKitBridge safeFont:normalTitleFont]} forState:UIControlStateNormal];
+        [segment setTitleTextAttributes:@{NSFontAttributeName:[UIFont safeFont:normalTitleFont]} forState:UIControlStateNormal];
     }
     if (normalTitleColor) {
-        [segment setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIKitBridge safeColor:normalTitleColor]} forState:UIControlStateNormal];
+        [segment setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor safeColor:normalTitleColor]} forState:UIControlStateNormal];
     }
     if (selectTitleFont) {
-        [segment setTitleTextAttributes:@{NSFontAttributeName:[UIKitBridge safeFont:selectTitleFont]} forState:UIControlStateSelected];
+        [segment setTitleTextAttributes:@{NSFontAttributeName:[UIFont safeFont:selectTitleFont]} forState:UIControlStateSelected];
     }
     if (selectTitleColor) {
-        [segment setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIKitBridge safeColor:selectTitleColor]} forState:UIControlStateSelected];
+        [segment setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor safeColor:selectTitleColor]} forState:UIControlStateSelected];
     }
     if (tintColor) {
-        segment.tintColor = [UIKitBridge safeColor:tintColor];
+        segment.tintColor = [UIColor safeColor:tintColor];
     }
     if (backgroundColor) {
-        segment.backgroundColor = [UIKitBridge safeColor:backgroundColor];
+        segment.backgroundColor = [UIColor safeColor:backgroundColor];
     }
     if (target && action) {
         [segment addTarget:target action:action forControlEvents:UIControlEventValueChanged];
